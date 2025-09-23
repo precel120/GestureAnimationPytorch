@@ -1,0 +1,9 @@
+annotations/*
+blurred/*
+__pycache__/*
+cropped/*
+images/*
+no_hands/*
+project1_venv
+checkpoints*
+output*
