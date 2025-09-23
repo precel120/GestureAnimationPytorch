@@ -7,9 +7,10 @@ from tqdm.auto import tqdm
 import glob
 from models import Generator, Discriminator, Pix2Pix
 import numpy as np
+from perceptual import vgg_loss, VGGPerceptual
 
 class Train():
-    def __init__(self, device, train_loader, learning_rate, epochs, lambda_l1):
+    def __init__(self, device, train_loader, learning_rate, epochs, lambda_l1, lambda_vgg):
         self.device = device
         self.generator = Generator().to(device)
         self.discriminator = Discriminator().to(device)
@@ -18,7 +19,9 @@ class Train():
         self.pix2pix = Pix2Pix(self.generator, self.discriminator).to(device)
         self.epochs = epochs
         self.lambda_l1 = lambda_l1
+        self.lambda_vgg = lambda_vgg
         self.train_loader = train_loader
+        self.vgg_model = VGGPerceptual(device=device)
         self.load_checkpoint()
 
     def train_pix2pix(self, display_interval):
@@ -49,11 +52,15 @@ class Train():
                 fake_images = self.pix2pix.generator(segmented_images)
                 fake_output = self.pix2pix.discriminator(segmented_images, fake_images)
                 g_loss = self.pix2pix.generator_loss(fake_output, fake_images, real_images, self.lambda_l1)
-                g_loss.backward()
+
+                loss_vgg = vgg_loss(fake_images, real_images, self.vgg_model)
+                g_loss_total = g_loss + self.lambda_vgg * loss_vgg
+
+                g_loss_total.backward()
                 self.g_optimizer.step()
 
                 train_d_loss += d_loss.item()
-                train_g_loss += g_loss.item()
+                train_g_loss += g_loss_total.item()
 
             # average train loss per epoch
             train_d_losses.append(train_d_loss / len(self.train_loader))

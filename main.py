@@ -1,22 +1,29 @@
 import torch
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, WeightedRandomSampler
 from dataset import HandsDataset
 from train import Train
+from prepare_images import prepare_images
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+
 SIZE = 256
-batch_size = 32
+batch_size = 16
 num_epochs = 100
-learning_rate = 2e-4
-lambda_l1 = 50
+learning_rate = 1e-4
+lambda_l1 = 15
+lambda_vgg = 0.1
 display_interval = 10
-train_dir = "./no_hands/train/like"
+train_dir = "./"
+GESTURES = ['like', 'three_gun']
 
-train_dataset = HandsDataset(train_dir, size=SIZE)
-train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=2, persistent_workers=True)
+# prepare_images(GESTURES, SIZE)
 
-train = Train(device, train_loader, learning_rate, num_epochs, lambda_l1)
+train_dataset = HandsDataset(train_dir, GESTURES, size=SIZE)
+sampler = WeightedRandomSampler(train_dataset.weights, len(train_dataset))
+train_loader = DataLoader(train_dataset, batch_size=batch_size, num_workers=2, sampler=sampler, persistent_workers=True)
+
+train = Train(device, train_loader, learning_rate, num_epochs, lambda_l1, lambda_vgg)
 # train_g_losses, train_d_losses = train.train_pix2pix(display_interval)
 
 train.generate_image('./replace.jpg')
