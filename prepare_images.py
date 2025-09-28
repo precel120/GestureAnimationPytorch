@@ -1,81 +1,9 @@
 import cv2
-import numpy as np
-from dataclasses import dataclass
-import mediapipe as mp
 import os
-from typing import List, Dict
 import json
 from tqdm import tqdm
-from consts import ANNOTATIONS_PATH, IMAGES_PATH
-
-mp_hands = mp.solutions.hands
-mp_drawing = mp.solutions.drawing_utils
-mp_drawing_styles = mp.solutions.drawing_styles
-hands = mp_hands.Hands(static_image_mode=True, max_num_hands=2)
-
-def remove_hand_and_draw_skeleton_blank(path, it, expand=60, fill_color=(255,255,255)):
-    if os.path.exists(path) == False:
-        return
-    image_bgr = cv2.imread(path)
-    h, w = image_bgr.shape[:2]
-    img_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
-
-    result = hands.process(img_rgb)
-
-    if not result.multi_hand_landmarks or it >= len(result.multi_hand_landmarks):
-        return
-
-    # --- STEP 1: create mask ---
-    mask = np.zeros((h, w), dtype=np.uint8)
-    hand = result.multi_hand_landmarks[it]
-    pts = np.array([(int(lm.x * w), int(lm.y * h)) for lm in hand.landmark], dtype=np.int32)
-    hull = cv2.convexHull(pts)
-    cv2.fillConvexPoly(mask, hull, 255)
-
-    # expand mask so it covers entire hand
-    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (expand, expand))
-    mask = cv2.dilate(mask, kernel, iterations=1)
-
-    # --- STEP 2: remove hand by filling ---
-    out = image_bgr.copy()
-    out[mask == 255] = fill_color  # paint hand area white (or black)
-
-    # --- STEP 3: draw skeleton ---
-    mp_drawing.draw_landmarks(out, hand, mp_hands.HAND_CONNECTIONS)
-    
-    out_path = path.replace("cropped", "no_hands")
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    cv2.imwrite(out_path, out)
-
-def replace_gesture(source_gesture, target_gesture, expand=60, fill_color=(255,255,255)):
-    image_bgr = cv2.imread(target_gesture)
-    h, w = image_bgr.shape[:2]
-    img_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
-
-    result = hands.process(img_rgb)
-
-    # --- STEP 1: create mask ---
-    mask = np.zeros((h, w), dtype=np.uint8)
-    for hand in result.multi_hand_landmarks:
-        pts = np.array([(int(lm.x * w), int(lm.y * h)) for lm in hand.landmark], dtype=np.int32)
-        hull = cv2.convexHull(pts)
-        cv2.fillConvexPoly(mask, hull, 255)
-
-    # expand mask so it covers entire hand
-    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (expand, expand))
-    mask = cv2.dilate(mask, kernel, iterations=1)
-
-    # --- STEP 2: remove hand by filling ---
-    out = cv2.imread(source_gesture)
-    out[mask == 255] = fill_color  # paint hand area white (or black)
-
-    # --- STEP 3: draw skeleton ---
-    for hand in result.multi_hand_landmarks:
-        mp_drawing.draw_landmarks(out, hand, mp_hands.HAND_CONNECTIONS)
-
-    cv2.imwrite('./replace.jpg', out)
-
-# replace_gesture('./0a9ddce1-2cd4-4b14-9e43-3889b6a6e87c.jpg', './0a14f51b-4cf4-4694-adb2-4f3f41ae9f19.jpg', 40)
+from consts import ANNOTATIONS_PATH, IMAGES_PATH, DataStructure, Record
+from prepare_skeleton import remove_hand_and_draw_skeleton_blank, create_transition_sequence
 
 def _crop_centered_box(image, bbox, image_size):
     output_size = (image_size, image_size)
@@ -119,13 +47,6 @@ def _crop_centered_box(image, bbox, image_size):
     crop = image[top:bottom, left:right]
     return crop
 
-@dataclass
-class Record:
-    bboxes: List[List[float]]  # List of [x, y, width, height]
-    labels: List[str]
-    hand_landmarks: List[List[List[float]]]  # 2D landmarks per hand
-DataStructure = Dict[str, Record]
-
 def _process_custom_json(image_dir, json_path, gesture_label, output_dir, image_size):
     os.makedirs(output_dir, exist_ok=True)
 
@@ -159,7 +80,13 @@ def _process_custom_json(image_dir, json_path, gesture_label, output_dir, image_
             filename = f"{image_id}.jpg"
             out_path = os.path.join(output_dir, filename)
             cv2.imwrite(out_path, crop)
-            remove_hand_and_draw_skeleton_blank(out_path, it, expand=30, fill_color=(255,255,255))
+
+            # Create hands with mask and skeleton
+            out_path = out_path.replace("cropped", "no_hands")
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            out = remove_hand_and_draw_skeleton_blank(out_path, it, expand=30, fill_color=(255,255,255))
+            cv2.imwrite(out_path, out)
+            break
 
     print(f"✅ Cropped images saved to: {output_dir}")
 

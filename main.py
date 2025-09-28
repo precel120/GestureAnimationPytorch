@@ -11,8 +11,8 @@ SIZE = 256
 batch_size = 16
 num_epochs = 100
 learning_rate = 1e-4
-lambda_l1 = 15
-lambda_vgg = 0.1
+lambda_l1 = 20
+lambda_vgg = 0.05
 display_interval = 10
 train_dir = "./"
 GESTURES = ['like', 'three_gun']
@@ -26,4 +26,7 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, num_workers=2, s
 train = Train(device, train_loader, learning_rate, num_epochs, lambda_l1, lambda_vgg)
 # train_g_losses, train_d_losses = train.train_pix2pix(display_interval)
 
-train.generate_image('./replace.jpg')
+for dirpath, _, filenames in os.walk('./gesture_seq'):
+    for filename in filenames:
+        file_path = os.path.join(dirpath, filename)
+        train.generate_image(file_path, output_path='./replace.jpg')
