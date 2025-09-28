@@ -1,8 +1,10 @@
 import torch
+import os
 from torch.utils.data import DataLoader, WeightedRandomSampler
 from dataset import HandsDataset
 from train import Train
-from prepare_images import prepare_images
+# from animation import create_animation
+# from prepare_images import prepare_images
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -26,7 +28,9 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, num_workers=2, s
 train = Train(device, train_loader, learning_rate, num_epochs, lambda_l1, lambda_vgg)
 # train_g_losses, train_d_losses = train.train_pix2pix(display_interval)
 
-for dirpath, _, filenames in os.walk('./gesture_seq'):
-    for filename in filenames:
-        file_path = os.path.join(dirpath, filename)
-        train.generate_image(file_path, output_path='./replace.jpg')
+# for dirpath, _, filenames in os.walk('./gesture_seq'):
+#     for filename in filenames:
+#         file_path = os.path.join(dirpath, filename)
+#         train.generate_image(file_path, output_path=file_path.replace('gesture_seq', 'frames'))
+
+# create_animation('./frames', './animation.mp4')

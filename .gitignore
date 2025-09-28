@@ -8,3 +8,4 @@ project1_venv
 checkpoints*
 output*
 gesture_seq
+frames

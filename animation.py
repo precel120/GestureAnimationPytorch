@@ -3,7 +3,7 @@ import glob
 from prepare_skeleton import get_landmarks, create_transition_sequence
 
 
-def create_animation():
+def create_skeleton_frames():
     source = "./0a9ddce1-2cd4-4b14-9e43-3889b6a6e87c.jpg"
     target = "./0a14f51b-4cf4-4694-adb2-4f3f41ae9f19.jpg"
     source_keypoints = get_landmarks(source)
@@ -11,7 +11,7 @@ def create_animation():
     img = cv2.imread(source)
     create_transition_sequence(img, source_keypoints, target_keypoints)
 
-def frames_to_video(frame_folder, output_path, fps=15):
+def create_animation(frame_folder, output_path, fps=30):
     files = sorted(glob.glob(f"{frame_folder}/*.jpg"))
     frame = cv2.imread(files[0])
     h, w, _ = frame.shape
