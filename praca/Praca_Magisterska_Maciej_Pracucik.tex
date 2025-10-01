@@ -1,0 +1,168 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{polski}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage[hyphens]{url}
+\usepackage[style=numeric, backend=biber]{biblatex}
+\usepackage{array}
+\usepackage{float}
+\usepackage{listings}
+
+\addbibresource{bibliografia.bib}
+\graphicspath{{./zdjecia/}}
+
+\renewcommand\lstlistlistingname{Listingi}
+
+\setstretch{1.5}
+
+\geometry{
+ a4paper,
+ left=2.5cm,
+ top=1.25cm,
+ right=2.5cm
+}
+
+\begin{document}
+\begin{sloppypar}
+\includepdf{Strona_Tytulowa.pdf}
+
+\tableofcontents
+\newpage
+
+\section{Wprowadzenie}
+{
+  \subsection{Problematyka}
+  {
+    problem
+  }
+  \subsection{Cel i zakres pracy}
+  {
+    cel
+  }
+  \subsection{Struktura pracy}
+  {
+    struktura
+  }
+}
+
+\section{Sieci GAN, analiza konkurencji i techniczne aspekty realizacji}
+{
+  \subsection{Sieci neuronowe i AI}
+  {
+    sieci
+  }
+  \subsection{Sieci typu GAN}
+  {
+    GAN
+  }
+  \subsection{Generowanie obrazów rąk}
+  {
+    generowanie
+  }
+  \subsection{GestureGAN}
+  {
+    GestureGAN
+  }
+  \subsection{PoseGAN}
+  {
+    PoseGAN
+  }
+}
+
+\section{Narzędzia i technologie wybrane do realizacji projektu}
+{
+  \subsection{Python}
+  {
+    python
+  }
+  \subsection{PyTorch}
+  {
+    pytorch
+  }
+  \subsection{MediaPipe}
+  {
+    mediapipe
+  
+  }
+  \subsection{OpenCV}
+  {
+    opencv
+  }
+}
+
+\section{Proces tworzenia projektu}
+{
+  \subsection{Dobór zbioru danych}
+  {
+    zbior
+  }
+  \subsection{Wybór architektury sieci}
+  {
+    architektura
+  }
+  \subsection{Preprocesowanie danych}
+  {
+    Preprocesowanie
+  }
+  \subsection{Tworzenie modelu}
+  {
+    model
+  }
+  \subsection{Tesotowanie modelu}
+  {
+    Tesotowanie
+  }
+  \subsection{Realizacja projektu}
+  {
+    realizacja
+  }
+}
+
+\section{Wyniki i dyskusja}
+{
+  wyniki
+}
+
+\section{Podsumowanie}
+{
+  \subsection{Zalety i wady przyjętych rozwiązań}
+  {
+    Zalety
+  }
+  \subsection{Napotkane trudności}
+  {
+    trudności
+  }
+  \subsection{Możliwości rozwoju}
+  {
+    rozwoj
+  }
+  \subsection{Wnioski końcowe}
+  {
+    wnioski
+  }
+}
+
+\clearpage
+\printbibliography[
+  heading=bibintoc,
+  title={Bibliografia}
+]
+
+\clearpage
+\listoffigures
+
+\clearpage
+\listoftables
+
+\clearpage
+\addcontentsline{toc}{section}{Listingi}
+\lstlistoflistings
+
+\end{sloppypar}
+\end{document}

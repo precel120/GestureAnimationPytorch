@@ -9,3 +9,5 @@ checkpoints*
 output*
 gesture_seq
 frames
+previous_runs
+.vscode
