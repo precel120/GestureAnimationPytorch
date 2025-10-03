@@ -2344,6 +2344,10 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">&apos;python-docs&apos;</bcf:citekey>
+    <bcf:citekey order="2">&apos;python-ai&apos;</bcf:citekey>
+    <bcf:citekey order="3">&apos;python-docs&apos;</bcf:citekey>
+    <bcf:citekey order="4">&apos;python-ai&apos;</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
