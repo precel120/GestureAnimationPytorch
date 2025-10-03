@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  3 OCT 2025 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  3 OCT 2025 19:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -595,28 +595,39 @@ LaTeX Warning: Citation ''python-docs'' on page 5 undefined on input line 101.
 
 LaTeX Warning: Citation ''python-ai'' on page 5 undefined on input line 111.
 
-[5] [6] [7] [8]
+[5]
 
-LaTeX Warning: Empty bibliography on input line 189.
+LaTeX Warning: Citation ''pytorch-nvidia'' on page 6 undefined on input line 123.
+
+[6]
+
+LaTeX Warning: Citation ''mediapipe'' on page 7 undefined on input line 130.
+
+
+LaTeX Warning: Citation ''opencv'' on page 7 undefined on input line 140.
+
+[7] [8] [9]
+
+LaTeX Warning: Empty bibliography on input line 202.
 
 (./Praca_Magisterska_Maciej_Pracucik.lof)
 \tf@lof=\write5
 \openout5 = `Praca_Magisterska_Maciej_Pracucik.lof'.
 
- [9
+ [10
 
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lot)
 \tf@lot=\write6
 \openout6 = `Praca_Magisterska_Maciej_Pracucik.lot'.
 
- [10
+ [11
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lol)
 \tf@lol=\write7
 \openout7 = `Praca_Magisterska_Maciej_Pracucik.lol'.
 
- [11
+ [12
 
 ] (./Praca_Magisterska_Maciej_Pracucik.aux)
 
@@ -634,16 +645,16 @@ Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.
 Here is how much of TeX's memory you used:
  12541 strings out of 480139
  231540 string characters out of 5893693
- 933819 words of memory out of 5000000
+ 933895 words of memory out of 5000000
  30347 multiletter control sequences out of 15000+600000
  475749 words of font info for 44 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
  60i,17n,68p,799b,1393s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb>
-Output written on Praca_Magisterska_Maciej_Pracucik.pdf (11 pages, 200618 bytes).
+Output written on Praca_Magisterska_Maciej_Pracucik.pdf (12 pages, 204035 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

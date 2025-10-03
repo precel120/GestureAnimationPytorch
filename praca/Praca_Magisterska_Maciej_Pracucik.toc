@@ -11,19 +11,19 @@
 \contentsline {section}{\numberline {3}Narzędzia i technologie wybrane do realizacji projektu}{5}{}%
 \contentsline {subsection}{\numberline {3.1}Python}{5}{}%
 \contentsline {subsection}{\numberline {3.2}PyTorch}{6}{}%
-\contentsline {subsection}{\numberline {3.3}MediaPipe}{6}{}%
-\contentsline {subsection}{\numberline {3.4}OpenCV}{6}{}%
-\contentsline {section}{\numberline {4}Proces tworzenia projektu}{7}{}%
-\contentsline {subsection}{\numberline {4.1}Dobór zbioru danych}{7}{}%
-\contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{7}{}%
-\contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{7}{}%
-\contentsline {subsection}{\numberline {4.4}Tworzenie modelu}{7}{}%
-\contentsline {subsection}{\numberline {4.5}Tesotowanie modelu}{7}{}%
-\contentsline {subsection}{\numberline {4.6}Realizacja projektu}{7}{}%
-\contentsline {section}{\numberline {5}Wyniki i dyskusja}{7}{}%
-\contentsline {section}{\numberline {6}Podsumowanie}{7}{}%
-\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{7}{}%
-\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{8}{}%
-\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{8}{}%
-\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{8}{}%
-\contentsline {section}{Listingi}{11}{}%
+\contentsline {subsection}{\numberline {3.3}MediaPipe}{7}{}%
+\contentsline {subsection}{\numberline {3.4}OpenCV}{7}{}%
+\contentsline {section}{\numberline {4}Proces tworzenia projektu}{8}{}%
+\contentsline {subsection}{\numberline {4.1}Dobór zbioru danych}{8}{}%
+\contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{8}{}%
+\contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{8}{}%
+\contentsline {subsection}{\numberline {4.4}Tworzenie modelu}{8}{}%
+\contentsline {subsection}{\numberline {4.5}Tesotowanie modelu}{8}{}%
+\contentsline {subsection}{\numberline {4.6}Realizacja projektu}{8}{}%
+\contentsline {section}{\numberline {5}Wyniki i dyskusja}{8}{}%
+\contentsline {section}{\numberline {6}Podsumowanie}{8}{}%
+\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{8}{}%
+\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{9}{}%
+\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{9}{}%
+\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{9}{}%
+\contentsline {section}{Listingi}{12}{}%
