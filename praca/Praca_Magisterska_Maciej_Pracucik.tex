@@ -162,12 +162,34 @@
       \centering
       \includegraphics[width=0.9\textwidth]{gesturegan-framework.jpg}
       \caption{Zdjęcie wygenerowane przez GestureGAN \cite{gesture-gan}}
-      \label{fig:gesture-gan-budowa}
+      \label{fig:gesture-gan-przyklady}
     \end{figure}
+    Ten projekt stanowiłby bardzo dobrą baze, generuje wyraźnie i zróżnicowane gesty rąk, jest bardzo uniwersalny, ale problem zaczyna się już na początku.
+    Zbiór danych, który tutaj jest wykorzystywany jest niedostępny, albo wymaga dodatkowych dostępów. Nie wszystkie dane też są dostępne, choćby zdjęcia szkieletów.
+    Te dane, które były dostępne, było ich po prostu za mało, plus możliwości tego projektu nie są aż tak potrzebne do realizacji tego, plus nie wiadomo jak z rozszerzalnością kodu.
+    Dlatego najlepszym rozwiązaniem było przygotowanie własnego zbioru danych, własnego modelu i metodą prób i błędów, dochodzenie do rozwiązania.
   }
   \subsection{PoseGAN}
   {
-    PoseGAN
+    PoseGAN\cite{pose-gan} jest dość zbliżony do GestureGAN, jednakże ma zasadniczą różnicę w swoim zastosowaniu.
+    Tak jak GestureGAN, jak sama nazwa wskazuje służy do generowania gestów rąk, tak PoseGAN służy do generowania całych poz ludzkich.
+    Także zakres jest większy jednakże przez fakt, że nie ma skupienia na dłoniach dokładność wykonywanego gestu nie ma tu znaczenia.
+    Jednakże jest to zdecydowanie najbliższe wykonywanemu projektowi.
+    \begin{figure}[H]
+      \centering
+      \includegraphics{pose-gan.png}
+      \caption{Model PoseGAN \cite{pose-gan}}
+      \label{fig:pose-gan-budowa}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{pose-gan-ex.jpg}
+      \caption{Zdjęcie wygenerowane przez PoseGAN \cite{pose-gan}}
+      \label{fig:pose-gan-przyklady}
+    \end{figure}
+    Projekt jest niewątpliwie bardzo imponujący jednakże no właśnie skupia się na czymś kompletnie innym. 
+    Tak jak widać na \ref{fig:pose-gan-przyklady} dłonie nawet nie są wyszczególnione na szkielecie, a przerabianie, a w zasadzie dorabianie takiego elementu byłoby zbyt czasochłonne.
+    Sieć i tak by musiała się uczyć wszystkiego od nowa, plus no właśnie do końca interesuje nas cały ludzki szkielet. Dlatego niezbędne było stworzenie własnego projektu.
   }
 }
 

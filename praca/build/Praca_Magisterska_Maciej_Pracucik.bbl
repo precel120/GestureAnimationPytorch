@@ -19,6 +19,29 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{pose-gan}{article}{}
+      \name{author}{1}{}{%
+        {{hash=958bbb7f6b36097d08f6a84b228456f8}{%
+           family={Enver\bibnamedelimb Sangineto\bibnamedelimb i\bibnamedelimb Stephane\bibnamedelimb Lathuiliere\bibnamedelimb i\bibnamedelimb Nicu\bibnamedelima Sebe},
+           familyi={E\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Aliaksandr\bibnamedelima Siarohin},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           prefix={i},
+           prefixi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{958bbb7f6b36097d08f6a84b228456f8}
+      \strng{fullhash}{958bbb7f6b36097d08f6a84b228456f8}
+      \strng{bibnamehash}{958bbb7f6b36097d08f6a84b228456f8}
+      \strng{authorbibnamehash}{958bbb7f6b36097d08f6a84b228456f8}
+      \strng{authornamehash}{958bbb7f6b36097d08f6a84b228456f8}
+      \strng{authorfullhash}{958bbb7f6b36097d08f6a84b228456f8}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deformable GANs for Pose-based Human Image Generationn}
+      \field{year}{2018}
+    \endentry
     \entry{python-docs}{online}{}
       \name{author}{1}{}{%
         {{hash=9688a568902e4b07b60557b566bdd820}{%
@@ -97,24 +120,21 @@
       \endverb
     \endentry
     \entry{gesture-gan}{article}{}
-      \name{author}{2}{}{%
-        {{hash=5b8b7c2d15069a0b18fdf033d7172e22}{%
-           family={Hao\bibnamedelima Tang},
-           familyi={H\bibinitperiod\bibinitdelim T\bibinitperiod},
-           given={Hong\bibnamedelima Liu},
-           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=da5596827b4ee2721d6b0cc1010c9fa4}{%
-           family={Sebe},
-           familyi={S\bibinitperiod},
-           given={Nicu},
-           giveni={N\bibinitperiod}}}%
+      \name{author}{1}{}{%
+        {{hash=772cf3236c8f824c2ca22b9cbcf4f641}{%
+           family={Hong\bibnamedelimb Liu\bibnamedelimb i\bibnamedelimb Nicu\bibnamedelima Sebe},
+           familyi={H\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Hao\bibnamedelima Tang},
+           giveni={H\bibinitperiod\bibinitdelim T\bibinitperiod},
+           prefix={i},
+           prefixi={i\bibinitperiod}}}%
       }
-      \strng{namehash}{37b0c5de7a01e28d2903adb59c543cda}
-      \strng{fullhash}{37b0c5de7a01e28d2903adb59c543cda}
-      \strng{bibnamehash}{37b0c5de7a01e28d2903adb59c543cda}
-      \strng{authorbibnamehash}{37b0c5de7a01e28d2903adb59c543cda}
-      \strng{authornamehash}{37b0c5de7a01e28d2903adb59c543cda}
-      \strng{authorfullhash}{37b0c5de7a01e28d2903adb59c543cda}
+      \strng{namehash}{772cf3236c8f824c2ca22b9cbcf4f641}
+      \strng{fullhash}{772cf3236c8f824c2ca22b9cbcf4f641}
+      \strng{bibnamehash}{772cf3236c8f824c2ca22b9cbcf4f641}
+      \strng{authorbibnamehash}{772cf3236c8f824c2ca22b9cbcf4f641}
+      \strng{authornamehash}{772cf3236c8f824c2ca22b9cbcf4f641}
+      \strng{authorfullhash}{772cf3236c8f824c2ca22b9cbcf4f641}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}

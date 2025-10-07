@@ -1,31 +1,30 @@
-\contentsline {section}{\numberline {1}Wprowadzenie}{3}{}%
-\contentsline {subsection}{\numberline {1.1}Problematyka}{3}{}%
-\contentsline {subsection}{\numberline {1.2}Cel i zakres pracy}{3}{}%
-\contentsline {subsection}{\numberline {1.3}Struktura pracy}{3}{}%
-\contentsline {section}{\numberline {2}Sieci GAN, analiza konkurencji i techniczne aspekty realizacji}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Sieci neuronowe i AI}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Budowa sieci neuronowej}{4}{}%
-\contentsline {subsection}{\numberline {2.3}Sieci typu GAN}{6}{}%
-\contentsline {subsection}{\numberline {2.4}GestureGAN}{7}{}%
-\contentsline {subsection}{\numberline {2.5}PoseGAN}{8}{}%
-\contentsline {section}{\numberline {3}Narzędzia i technologie wybrane do realizacji projektu}{9}{}%
-\contentsline {subsection}{\numberline {3.1}Python}{9}{}%
-\contentsline {subsection}{\numberline {3.2}PyTorch}{10}{}%
-\contentsline {subsection}{\numberline {3.3}MediaPipe}{10}{}%
-\contentsline {subsection}{\numberline {3.4}OpenCV}{10}{}%
-\contentsline {section}{\numberline {4}Proces tworzenia projektu}{11}{}%
-\contentsline {subsection}{\numberline {4.1}Dobór zbioru danych}{11}{}%
-\contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{11}{}%
-\contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{11}{}%
-\contentsline {subsection}{\numberline {4.4}Tworzenie modelu}{11}{}%
-\contentsline {subsection}{\numberline {4.5}Tesotowanie modelu}{11}{}%
-\contentsline {subsection}{\numberline {4.6}Realizacja projektu}{11}{}%
-\contentsline {section}{\numberline {5}Wyniki i dyskusja}{11}{}%
-\contentsline {section}{\numberline {6}Podsumowanie}{12}{}%
-\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{12}{}%
-\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{12}{}%
-\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{12}{}%
-\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{12}{}%
-\contentsline {section}{Bibliografia}{13}{}%
-\contentsline {section}{Listingi}{16}{}%
-%
+\contentsline {section}{\numberline {1}Wprowadzenie}{4}{}%
+\contentsline {subsection}{\numberline {1.1}Problematyka}{4}{}%
+\contentsline {subsection}{\numberline {1.2}Cel i zakres pracy}{4}{}%
+\contentsline {subsection}{\numberline {1.3}Struktura pracy}{4}{}%
+\contentsline {section}{\numberline {2}Sieci GAN, analiza konkurencji i techniczne aspekty realizacji}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Sieci neuronowe i AI}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Budowa sieci neuronowej}{5}{}%
+\contentsline {subsection}{\numberline {2.3}Sieci typu GAN}{7}{}%
+\contentsline {subsection}{\numberline {2.4}GestureGAN}{8}{}%
+\contentsline {subsection}{\numberline {2.5}PoseGAN}{10}{}%
+\contentsline {section}{\numberline {3}Narzędzia i technologie wybrane do realizacji projektu}{12}{}%
+\contentsline {subsection}{\numberline {3.1}Python}{12}{}%
+\contentsline {subsection}{\numberline {3.2}PyTorch}{13}{}%
+\contentsline {subsection}{\numberline {3.3}MediaPipe}{13}{}%
+\contentsline {subsection}{\numberline {3.4}OpenCV}{13}{}%
+\contentsline {section}{\numberline {4}Proces tworzenia projektu}{14}{}%
+\contentsline {subsection}{\numberline {4.1}Dobór zbioru danych}{14}{}%
+\contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{14}{}%
+\contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{14}{}%
+\contentsline {subsection}{\numberline {4.4}Tworzenie modelu}{14}{}%
+\contentsline {subsection}{\numberline {4.5}Tesotowanie modelu}{14}{}%
+\contentsline {subsection}{\numberline {4.6}Realizacja projektu}{14}{}%
+\contentsline {section}{\numberline {5}Wyniki i dyskusja}{14}{}%
+\contentsline {section}{\numberline {6}Podsumowanie}{15}{}%
+\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{15}{}%
+\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{15}{}%
+\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{15}{}%
+\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{15}{}%
+\contentsline {section}{Bibliografia}{16}{}%
+\contentsline {section}{Listingi}{19}{}%

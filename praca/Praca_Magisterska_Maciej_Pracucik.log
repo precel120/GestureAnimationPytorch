@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  7 OCT 2025 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  7 OCT 2025 21:30
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/precel/GestureGANPyTorch/praca/Praca_Magisterska_Maciej_Pracucik
-(/home/precel/GestureGANPyTorch/praca/Praca_Magisterska_Maciej_Pracucik.tex
+**Praca_Magisterska_Maciej_Pracucik
+(./Praca_Magisterska_Maciej_Pracucik.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -22,19 +22,24 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-)) (/usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
 Package: polski 2021/08/25 v1.3.6 Polish language package
 
    Inputenc package detected. Catcodes not changed.
@@ -44,8 +49,10 @@ File: ot4enc.def 2021/04/29 v2.0v Standard LaTeX file
 Now handling font encoding OT4 ...
 ... no UTF-8 mapping file for font encoding OT4
 )
-LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 362.
- (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmr.fd
+LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 3
+62.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmr.fd
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
@@ -62,6 +69,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 362.
 LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
 (Font)              `operators' in the math version `normal' on input line 362.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 362.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
@@ -78,27 +86,35 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 362.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 362.
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen139
 \Gin@req@width=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
- (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count193
 \calc@Bcount=\count194
@@ -110,7 +126,8 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count195
 \calc@Cskip=\skip51
-) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen143
 \ESO@tempdimb=\dimen144
@@ -118,7 +135,8 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@pagewidth=\dimen145
 \AM@pageheight=\dimen146
 \AM@fboxrule=\dimen147
- (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count196
@@ -128,13 +146,17 @@ File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks20
 \c@AM@survey=\count198
 \AM@templatesizebox=\box51
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count199
@@ -149,34 +171,46 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen154
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks21
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
- (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count268
-) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count269
- (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 \c@tabx@nest=\count270
@@ -237,7 +271,8 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \c@mincompwidth=\count314
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -326,12 +361,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip73
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 \c@textcitecount=\count383
 \c@textcitetotal=\count384
@@ -349,18 +386,21 @@ File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count392
 \c@bbx:relatedtotal=\count393
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -376,14 +416,17 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2022-01-21 L3 programming layer (loader) 
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count394
 \l__pdf_internal_box=\box52
@@ -392,11 +435,14 @@ Package biblatex Info: ... and expl3
 (biblatex)             2022-01-21 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen156
 \ar@mcellbox=\box53
@@ -405,14 +451,16 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \extratabsurround=\skip74
 \backup@length=\skip75
 \ar@cellbox=\box54
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count395
 \float@exts=\toks23
 \float@box=\box55
 \@float@everytoks=\toks24
 \@floatcapt=\box56
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count396
 \lst@gtempboxa=\box57
 \lst@token=\toks25
@@ -425,18 +473,21 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \lst@newlines=\count400
 \lst@lineno=\count401
 \lst@maxwidth=\dimen161
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count402
 \lst@skipnumbers=\count403
 \lst@framebox=\box58
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \@quotelevel=\count404
 \@quotereset=\count405
- (./Praca_Magisterska_Maciej_Pracucik.aux)
+
+(./Praca_Magisterska_Maciej_Pracucik.aux)
 \openout1 = `Praca_Magisterska_Maciej_Pracucik.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -455,7 +506,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count406
 \scratchdimen=\dimen162
@@ -470,12 +522,17 @@ LaTeX Font Info:    ... okay on input line 30.
 \everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -526,7 +583,8 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Praca_Magisterska_Maciej_Pracucik.bbl' found.
- (./Praca_Magisterska_Maciej_Pracucik.bbl)
+
+(./Praca_Magisterska_Maciej_Pracucik.bbl)
 Package biblatex Info: Reference section=0 on input line 30.
 Package biblatex Info: Reference segment=0 on input line 30.
 \c@lstlisting=\count412
@@ -562,117 +620,147 @@ Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 32.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
  [1
 
- <./Strona_Tytulowa.pdf>] (./Praca_Magisterska_Maciej_Pracucik.toc)
+ <./Strona_Tytulowa.pdf>]
+(./Praca_Magisterska_Maciej_Pracucik.toc
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 2
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
+File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
+File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
+File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 2.
+ [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `Praca_Magisterska_Maciej_Pracucik.toc'.
 
- [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [3]
-<./zdjecia//neural-network-stanford.png, id=32, 1505.625pt x 351.3125pt>
+ [3] [4]
+<./zdjecia//neural-network-stanford.png, id=35, 1505.625pt x 351.3125pt>
 File: ./zdjecia//neural-network-stanford.png Graphic file (type png)
 <use ./zdjecia//neural-network-stanford.png>
-Package pdftex.def Info: ./zdjecia//neural-network-stanford.png  used on input line 99.
+Package pdftex.def Info: ./zdjecia//neural-network-stanford.png  used on input 
+line 99.
 (pdftex.def)             Requested size: 409.71692pt x 95.60075pt.
- [4]
-<./zdjecia//perceptron.png, id=36, 523.20468pt x 261.22594pt>
+ [5]
+<./zdjecia//perceptron.png, id=39, 523.20468pt x 261.22594pt>
 File: ./zdjecia//perceptron.png Graphic file (type png)
 <use ./zdjecia//perceptron.png>
 Package pdftex.def Info: ./zdjecia//perceptron.png  used on input line 106.
 (pdftex.def)             Requested size: 409.71692pt x 204.56853pt.
- [5 <./zdjecia//neural-network-stanford.png> <./zdjecia//perceptron.png>]
-<./zdjecia//gan.png, id=41, 769.37437pt x 474.27188pt>
+ [6 <./zdjecia//neural-network-stanford.png> <./zdjecia//perceptron.png>]
+<./zdjecia//gan.png, id=44, 769.37437pt x 474.27188pt>
 File: ./zdjecia//gan.png Graphic file (type png)
 <use ./zdjecia//gan.png>
 Package pdftex.def Info: ./zdjecia//gan.png  used on input line 127.
 (pdftex.def)             Requested size: 409.71692pt x 252.57144pt.
-<./zdjecia//gan-budowa.png, id=43, 733.23938pt x 328.22626pt>
+<./zdjecia//gan-budowa.png, id=46, 733.23938pt x 328.22626pt>
 File: ./zdjecia//gan-budowa.png Graphic file (type png)
 <use ./zdjecia//gan-budowa.png>
 Package pdftex.def Info: ./zdjecia//gan-budowa.png  used on input line 133.
 (pdftex.def)             Requested size: 409.71692pt x 183.40979pt.
- [6 <./zdjecia//gan.png>]
-<./zdjecia//gesture-gan.png, id=49, 150.5625pt x 149.05687pt>
+ [7 <./zdjecia//gan.png>]
+<./zdjecia//gesture-gan.png, id=53, 150.5625pt x 149.05687pt>
 File: ./zdjecia//gesture-gan.png Graphic file (type png)
 <use ./zdjecia//gesture-gan.png>
 Package pdftex.def Info: ./zdjecia//gesture-gan.png  used on input line 156.
 (pdftex.def)             Requested size: 150.56212pt x 149.0565pt.
- [7 <./zdjecia//gan-budowa.png>]
-<./zdjecia//gesturegan-framework.jpg, id=55, 6050.605pt x 3065.4525pt>
+ [8 <./zdjecia//gan-budowa.png>]
+<./zdjecia//gesturegan-framework.jpg, id=58, 6050.605pt x 3065.4525pt>
 File: ./zdjecia//gesturegan-framework.jpg Graphic file (type jpg)
 <use ./zdjecia//gesturegan-framework.jpg>
-Package pdftex.def Info: ./zdjecia//gesturegan-framework.jpg  used on input line 163.
+Package pdftex.def Info: ./zdjecia//gesturegan-framework.jpg  used on input lin
+e 163.
 (pdftex.def)             Requested size: 409.71692pt x 207.54057pt.
- [8 <./zdjecia//gesture-gan.png> <./zdjecia//gesturegan-framework.jpg>] [9] [10] [11] [12]
-LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 282.
+ [9 <./zdjecia//gesture-gan.png> <./zdjecia//gesturegan-framework.jpg>]
+<./zdjecia//pose-gan.png, id=63, 131.74219pt x 91.84312pt>
+File: ./zdjecia//pose-gan.png Graphic file (type png)
+<use ./zdjecia//pose-gan.png>
+Package pdftex.def Info: ./zdjecia//pose-gan.png  used on input line 180.
+(pdftex.def)             Requested size: 131.74185pt x 91.84288pt.
+<./zdjecia//pose-gan-ex.jpg, id=64, 940.51375pt x 1204.5pt>
+File: ./zdjecia//pose-gan-ex.jpg Graphic file (type jpg)
+<use ./zdjecia//pose-gan-ex.jpg>
+Package pdftex.def Info: ./zdjecia//pose-gan-ex.jpg  used on input line 186.
+(pdftex.def)             Requested size: 409.71692pt x 524.70682pt.
+ [10 <./zdjecia//pose-gan.png>] [11 <./zdjecia//pose-gan-ex.jpg>]
+[12] [13] [14] [15]
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
+304.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 282.
- (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
-File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 282.
- (/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
-File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 282.
- (/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
-File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 282.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 282.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 282.
- [13
+) [16
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lof)
 \tf@lof=\write5
 \openout5 = `Praca_Magisterska_Maciej_Pracucik.lof'.
 
- [14
+ [17
 
-] (./Praca_Magisterska_Maciej_Pracucik.lot)
+]
+(./Praca_Magisterska_Maciej_Pracucik.lot)
 \tf@lot=\write6
 \openout6 = `Praca_Magisterska_Maciej_Pracucik.lot'.
 
- [15
+ [18
 
-] (./Praca_Magisterska_Maciej_Pracucik.lol)
+]
+(./Praca_Magisterska_Maciej_Pracucik.lol)
 \tf@lol=\write7
 \openout7 = `Praca_Magisterska_Maciej_Pracucik.lol'.
 
- [16
+ [19
 
-] (./Praca_Magisterska_Maciej_Pracucik.aux)
+]
+(./Praca_Magisterska_Maciej_Pracucik.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package biblatex Warning: Please rerun LaTeX.
 
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Praca_Magisterska_Maciej_Pracucik
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.xml'.
+Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run
+.xml'.
 \openout1 = `Praca_Magisterska_Maciej_Pracucik.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12680 strings out of 480139
- 235350 string characters out of 5893693
- 934696 words of memory out of 5000000
- 30469 multiletter control sequences out of 15000+600000
- 476928 words of font info for 47 fonts, out of 8000000 for 9000
+ 12703 strings out of 480139
+ 235898 string characters out of 5893693
+ 935288 words of memory out of 5000000
+ 30491 multiletter control sequences out of 15000+600000
+ 477432 words of font info for 48 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
- 60i,17n,68p,799b,1585s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca_Magisterska_Maciej_Pracucik.pdf (16 pages, 5589550 bytes).
+ 60i,17n,68p,762b,1585s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/e
+nc/dvips/pl/plit.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/tcrm1200.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.e
+nc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt
+12.pfb>
+Output written on Praca_Magisterska_Maciej_Pracucik.pdf (19 pages, 5785674 byte
+s).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
