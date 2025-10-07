@@ -8,7 +8,7 @@
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage[hyphens]{url}
-\usepackage[style=numeric, backend=biber]{biblatex}
+\usepackage[backend=biber]{biblatex}
 \usepackage{array}
 \usepackage{float}
 \usepackage{listings}
@@ -71,19 +71,99 @@
 {
   \subsection{Sieci neuronowe i AI}
   {
-    sieci
+    Człowiek od samego początku swojego istnienia jest istotą niesamowicie ciekawą. 
+    To ona sprawia, że w głowie ludzi pojawiają się pytania, a co jeśli? 
+    A co jeśli to co wiemy to jest tylko część prawdy? Co jeśli jest coś więcej?
+    To dzięki zadawaniu sobie przeróżnych pytań przez różne osoby, najczęściej przez największe umysły jakie chodziły po tej ziemii tak dużo udało nam się osiągnąć.
+    Poczynająć od wynalezienia koła, silniki parowe, elektryczność, internet aż po loty w kosmos. 
+    Niektóre z tych wynalazków łączy kolejny aspekt, to że człowiek chce sobie ułatwiać codzienne zadania. 
+    Żeby jak najbardziej zwiększyć swoją produktywność, żeby codziennie czynności nie wchodziły w drogę, albo żeby je po prostu ułatwić czy przyspieszyć. \\
+    Kolejnym taki wynalazkiem, który łączy te dwa aspekty jest sztuczna inteligencja. 
+    Już od dawien dawna, przeróżne filmy czy książki science-fiction rozbudzały naszą wyobraźnię, o istnieniu robotów, sztucznej inteligencji równej ludzkiej, czy nawet przewyższająca ją. \\
+    Do stworzenia pierwszych wzorów, inspiracją była ludzka sieć neuronowa, to jak działa nasz mózg. 
+    Takie coś starano się przekuć w pierwszej wzory, pierwsze sieci. Początkowo był to prosty matematyczny opis komórki neuronowej przez McCullocha i Pittsa w 1943 \cite{sztuczna-inteligencja}.
+    W połączeniu z zagadnieniem przetwarzania danych mógł modelować proste funkcje logiczne. 
+    Dopiero w 1949 roku Hebb sformułował regułę, którą uznaje sie za pierwszą regułę uczenia sztucznych sieci neuronowych\cite{sztuczna-inteligencja}.\\
+    Obecnie sieci i modeli sieci jest tysiące. Do najpopularniejszych należą np CNN - Convolutional Neural Network, czy RNN - Recurrent Neural Network.
+    W tym projekcie wykorzystujemy sieci typu GAN, czyli Generative Adversarial Network, o której więcej w kolejnym podrozdziale.
+  }
+  \subsection{Budowa sieci neuronowej}
+  {
+    Najmniejszą składową sieci neuronowej są oczywiście neurony, te neurony są poukładane po kilka w tak zwane warstwy. 
+    Najmniejsza ilość warstw to 3. 
+    Składają się z warstwy wejściowej, reprezentuje dane wejściowe w postaci numerycznej, warstwy ukryte, liczba mnoga tu jest celowa, ponieważ ich może wystąpić nieskończenie wiele, to one wykonują obliczenia.
+    Ostatnim typem warstwy jest warstawa wyjściowa, ona generuje dane wyjściowe. \\
+    Tylko no właśnie dane. Jako, że sieci neuronowe to matematyka, to muszą działać na liczbach także nasze dane muszą być zmienione na liczby, a następnie znormalizowane do zakresu między 0 a 1.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{neural-network-stanford.png}
+      \caption{Budowa sieci neuronowej \cite{nlp}}
+      \label{fig:nn}
+    \end{figure}
+    Zajmijmy się teraz najmniejszą częścią sieci, czyli neuronem.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{perceptron.png}
+      \caption{Budowa neuronu \cite{nlp}}
+      \label{fig:neuron}
+    \end{figure}
+    "W neuronie wartości sygnałów wejściowych (oznaczone na rysunku jako x1, x2, … , xn) mnożone są przez wagi (oznaczone jako w1, w2,…, wn), a iloczyny są ze sobą dodawane (do wyniku dodawana jest wartość b, która nie jest mnożona przez wartość sygnału wejściowego). 
+    Wynik rachunków poddawany jest funkcji aktywacji, która decyduje o ostatecznej wartości wysyłanego sygnału. 
+    W najprostszym przypadku może to być funkcja progowa (1 dla wartości dodatnich, 0 dla wartości niedodatnich), która przypomina działanie ludzkiego neuronu: „wysyłam sygnał lub nie”."\cite{nlp}
   }
   \subsection{Sieci typu GAN}
   {
-    GAN
-  }
-  \subsection{Generowanie obrazów rąk}
-  {
-    generowanie
+    Sieci GAN czyli Generative Adversarial Network, a tłumacząc na polski, generatywne sieci współzawodnicze.
+    Jak sama nazwa wskazuje są to sieci generatywne, czyli generują dane, najczęściej są to obrazy, ale nie ma ograniczeń, mogą być to również np filmiki.
+    Sieci GAN składają się tak naprawdę z dwóch sieci, które ze sobą równocześnie współzawodniczą.
+    Bardzo często są porównywane do fałszowania pieniędzy, mamy jedną sieć, która się uczy generować jak najdokładniejsze fałszywki, a drugą, która ma za zadanie odrzucać fałszywki.
+    Podzielone są na:
+    \begin{itemize}
+      \item Generator uczy się generować wiarygodne dane i docelowo oszukać diskriminator, że to co generuje jest prawdziwe
+      \item Diskriminator, uczy się odróżniać prawdę od fikcji
+    \end{itemize}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{gan.png}
+      \caption{Generative Adversarial Network \cite{google-gan}}
+      \label{fig:gan}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{gan-budowa.png}
+      \caption{Ogólny model sieci GAN \cite{google-gan}}
+      \label{fig:gan-budowa}
+    \end{figure}
+    Sieci GAN mają oczywiście swoje pod typy, czy też może framworki, czy jeszcze inaczej już wcześniej stworzone typy tej sieci, które są powszechnie znane i używane.
+    Wyróżnić można:
+    \begin{itemize}
+      \item Pix2Pix jest to sieć, która przetwarza jedno zdjęcie w drugie, co jest istotne w tej sieci to to, że dane musza być sparowane, czyli jeden z obrazów jest obrazem wejsciowym, a drugim obrazem wyjsciowym
+      \item CycleGAN jest bardzo podobny do Pix2Pix tylko zbiór danych nie jest sparowany. Można za jego pomocą robić takie translację jak np. z koni zebry
+    \end{itemize}
+    Ten pierwszy został wykorzystany do stworzenia tego projektu, choć początkowo to ten drugi był używany, ale o tym w oddzielnym rozdziale.
   }
   \subsection{GestureGAN}
   {
-    GestureGAN
+    GestureGAN\cite{gesture-gan} jest to propozycja stworzona przez specjalistów z różnych uczelni, takich jak OXform czy Texas State Univerity.
+    W swoim założeniu ma robić to samo co sieć stworzona na potrzeby tego projektu, jednakże to jej budowa jest tym co je rozróżnia.
+    Była to bardzo duża inspiracja przy tworzeniu projektu, podobnie jak niniejsza sieć wykorzystywany jest mediapipe do ekstrakcji szkieletu. 
+    Co je np rozróżnia to, że GestureGAN otrzymuje dwa zdjęcia na wejściu, jedno prawdziwe, drugie samego szkieletu docelowego i ma wyjściu otrzymujemy wygenerowane zdjęcie i pierwotny szkielet.
+    Takie rozwiązanie było ok w przypadku ichniego zbioru danych, ponieważ był sparowany, to znaczy ta sama osoba wykonywała wszystkie gesty. 
+    Niestety w wykorzystanym przeze mnie zbiorze danych nie było takiej możliwości, dane stały się sparowane nieco sztucznie, ale o tym później.
+    Bardzo dużą zaletą tego projektu jest to, że jest bardzo uniwersalny, z każdego gestu jesteśmy w stanie uzyskać każdy gest.
+    \begin{figure}[H]
+      \centering
+      \includegraphics{gesture-gan.png}
+      \caption{Model GestureGAN \cite{gesture-gan}}
+      \label{fig:gesture-gan-budowa}
+    \end{figure}
+    i tu jeszcze przykładowe efekty i możliwości GestureGAN\cite{gesture-gan}.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{gesturegan-framework.jpg}
+      \caption{Zdjęcie wygenerowane przez GestureGAN \cite{gesture-gan}}
+      \label{fig:gesture-gan-budowa}
+    \end{figure}
   }
   \subsection{PoseGAN}
   {
@@ -98,7 +178,7 @@
     Językiem programowania wykorzystanym do realizacji projektu jest Python. 
     Jest to bardzo oczywisty wybór, ponieważ jest to najpopularniejszy język programowania do tworzenia sieci neuronowych w dzisiejszych czasach.
     Przybliżmy go jednak, według oficjalnej dokumentacji, jest "łatwym do nauczenia się i potężnym językiem programowania. 
-    Posiada wydajne struktury danych wysokiego poziomu oraz proste, ale skuteczne podejście do programowania obiektowego"\cite{'python-docs'}.
+    Posiada wydajne struktury danych wysokiego poziomu oraz proste, ale skuteczne podejście do programowania obiektowego"\cite{python-docs}.
     Co niejako wyróżnia go na tle innych języków to fakt, że jest dynamicznie typowany oraz jest językiem interpetowanym. 
     To oznacza, że nie posiada kompilatora a interpeter, który nie kompiluje programu do pliku wykonywalnego, a kod jest wykonywany w czasie rzeczywistym.
     Czyni to Python językiem łatwym w testowaniu, kompilowaniu czy wykonywaniu, przenośny, co oznacza, że ten sam kod uruchomi się niezależnie od systemu operacyjnego czy urządzenia.
@@ -108,7 +188,7 @@
     a zyskał na popularności w momencie gdy firma Google, powiedziała, że wykorzystuje go do własnych, wewnętrzych celów.
     \newline
     Jednakże czemu akurat to on jest najczęściej wykorzystany do AI? Odpowiedź jest tak prosta jak sam Python jest prosty.
-    Wynika to z tego, że Python ma bardzo prostą i czytelną składnię, co pozwala developerom skupianie się na logice i samym problemie, a nie na składni\cite{'python-ai'}.
+    Wynika to z tego, że Python ma bardzo prostą i czytelną składnię, co pozwala developerom skupianie się na logice i samym problemie, a nie na składni\cite{python-ai}.
     Dodatkowo Python sam w sobie nie wymaga dużej ilości kodu. Najprostsza sieć neuronowa może zostać stworzona i uruchomiona w zaledwie 4 linijki!
     Kolejnym powodem przemawiającym dlaczego to własnie Python jest najczęściej używany, 
     jest bardzo duża ilość bibliotek, czy to wbudowanych, czy stworzonych przez społeczność. 
@@ -120,14 +200,14 @@
   \subsection{PyTorch}
   {
     "PyTorch to w pełni funkcjonalny framewordk do tworzenia modeli do deep learningu, kóry jest typem machine learningu, najczęściej wykorzystywanym w aplikacjach takich jak
-    rozpoznawanie obrazów czy procesowanie języka."\cite{'pytorch-nvidia'} 
+    rozpoznawanie obrazów czy procesowanie języka."\cite{pytorch-nvidia} 
     Biblioteka ta została napisana w Pythonie, przez developerów z Facebook AI Research, oraz ma doskonałe wsparcie do wykorzystywania GPU, szczególnie dla GPU od firmy Nvidia, który posiadam.
     Co czyni ją idealną biblioteką dla tego projektu. Jednak projekt dotyczy generowania obrazów rąk, czyli dobre wykorzystanie GPU jest bardzo wskazane.
     Początkowo jednak używana była konkurencyjna biblioteka, a dokładnie Tensorflow, jednakże była zdecydowanie wolniejsza i mniej klarowna od PyTorch co zaważyło na finalnym wyborze.
   }
   \subsection{MediaPipe}
   {
-    "MediaPipe Solutions to zestaw bibliotek i narzędzi, które umożliwiają szybkie stosowanie w aplikacjach technik sztucznej inteligencji (AI) i uczenia maszynowego (ML). "\cite{'mediapipe'}
+    "MediaPipe Solutions to zestaw bibliotek i narzędzi, które umożliwiają szybkie stosowanie w aplikacjach technik sztucznej inteligencji (AI) i uczenia maszynowego (ML). "\cite{mediapipe}
     Opis ten pochodzi z oficjalnej dokumentacji Mediapipe, jednakże sam opis jest zbyt ogólny. 
     Ta biblioteka ma masę możliiwości i zastosować. Do nich można zaliczyć np. rozpoznawanie obrazu, nie chcemy pisać sieci do rozpoznawania, czy na danym obrazku jest pies czy kot? Mediapipe daje gotowe rozwiązanie!
     Poza tym do wyboru jest też klasyfikacja obrazu, segmentacja obrazu, wykrywanie twarzy, rozpoznawanie gestu, oraz to co było niezbędne w tym projekcie to wykrywanie rąk.
@@ -137,7 +217,7 @@
   \subsection{OpenCV}
   {
     OpenCV jest to biblioteka do machine learningu oraz computer vision, posiada w swoim arsenale dostęp do takich narzędzi jak wykrywanie i rozpoznawanie twarzy,
-    identyfikowanie obiektów, śledzenie ruchów kamery, śledzenie obiektów 3D, usuwanie czerwonych oczu ze zdjęć, czy nawet łączenie zdjęć razem, by uzyskać obraz całej sceny o wysokiej rozdzielczości.\cite{'opencv'}
+    identyfikowanie obiektów, śledzenie ruchów kamery, śledzenie obiektów 3D, usuwanie czerwonych oczu ze zdjęć, czy nawet łączenie zdjęć razem, by uzyskać obraz całej sceny o wysokiej rozdzielczości.\cite{opencv}
     Jednak to żadna z tych funkcji nie została użyta w projekcie. 
     Wykrywanie i tworzenie szkieletu to zadanie Mediapipe, tworzenie modelu to działka PyTorch. 
     OpenCV miał znacznie prostsze zadanie, został wykorzystany do ładowania zdjęć, czy to dla preprocessingu, czy już bezpośrednio do modelu.

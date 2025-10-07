@@ -1,0 +1,252 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{python-docs}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9688a568902e4b07b60557b566bdd820}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Python\bibnamedelima Software},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{fullhash}{9688a568902e4b07b60557b566bdd820}
+      \strng{bibnamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authorbibnamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authornamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authorfullhash}{9688a568902e4b07b60557b566bdd820}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Python Tutorial}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://docs.python.org/3/tutorial/index.html
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/tutorial/index.html
+      \endverb
+    \endentry
+    \entry{google-gan}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kurs zaawansowany Machine Learning GAN}
+      \verb{urlraw}
+      \verb https://developers.google.com/machine-learning/gan?hl=pl
+      \endverb
+      \verb{url}
+      \verb https://developers.google.com/machine-learning/gan?hl=pl
+      \endverb
+    \endentry
+    \entry{mediapipe}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Przewodnik po rozwiązaniach MediaPipe}
+      \verb{urlraw}
+      \verb https://ai.google.dev/edge/mediapipe/solutions/guide?hl=pl
+      \endverb
+      \verb{url}
+      \verb https://ai.google.dev/edge/mediapipe/solutions/guide?hl=pl
+      \endverb
+    \endentry
+    \entry{gesture-gan}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5b8b7c2d15069a0b18fdf033d7172e22}{%
+           family={Hao\bibnamedelima Tang},
+           familyi={H\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Hong\bibnamedelima Liu},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=da5596827b4ee2721d6b0cc1010c9fa4}{%
+           family={Sebe},
+           familyi={S\bibinitperiod},
+           given={Nicu},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{37b0c5de7a01e28d2903adb59c543cda}
+      \strng{fullhash}{37b0c5de7a01e28d2903adb59c543cda}
+      \strng{bibnamehash}{37b0c5de7a01e28d2903adb59c543cda}
+      \strng{authorbibnamehash}{37b0c5de7a01e28d2903adb59c543cda}
+      \strng{authornamehash}{37b0c5de7a01e28d2903adb59c543cda}
+      \strng{authorfullhash}{37b0c5de7a01e28d2903adb59c543cda}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Unified Generative Adversarial Networks for Controllable Image-to-Image Translation}
+      \field{year}{2020}
+    \endentry
+    \entry{sztuczna-inteligencja}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a70dfc5c88fa569aad5aa24a7cf6e45a}{%
+           family={Macukow},
+           familyi={M\bibinitperiod},
+           given={Bohdan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a70dfc5c88fa569aad5aa24a7cf6e45a}
+      \strng{fullhash}{a70dfc5c88fa569aad5aa24a7cf6e45a}
+      \strng{bibnamehash}{a70dfc5c88fa569aad5aa24a7cf6e45a}
+      \strng{authorbibnamehash}{a70dfc5c88fa569aad5aa24a7cf6e45a}
+      \strng{authornamehash}{a70dfc5c88fa569aad5aa24a7cf6e45a}
+      \strng{authorfullhash}{a70dfc5c88fa569aad5aa24a7cf6e45a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SIECI NEURONOWE, HISTORIA BADAŃ I PODSTAWOWE MODELE}
+      \verb{urlraw}
+      \verb https://pages.mini.pw.edu.pl/~macukowb/wspolne/PNEiTI.pdf
+      \endverb
+      \verb{url}
+      \verb https://pages.mini.pw.edu.pl/~macukowb/wspolne/PNEiTI.pdf
+      \endverb
+    \endentry
+    \entry{pytorch-nvidia}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2a21e2561359ebf2fb2d634ee7837a8e}{%
+           family={Nvidia},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{fullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{bibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorbibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authornamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorfullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PyTorch}
+      \verb{urlraw}
+      \verb https://www.nvidia.com/en-us/glossary/pytorch/
+      \endverb
+      \verb{url}
+      \verb https://www.nvidia.com/en-us/glossary/pytorch/
+      \endverb
+    \endentry
+    \entry{opencv}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+           family={OpenCV},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{fullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{bibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorbibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{OpenCV is the world's biggest computer vision library.}
+      \verb{urlraw}
+      \verb https://opencv.org/about/
+      \endverb
+      \verb{url}
+      \verb https://opencv.org/about/
+      \endverb
+    \endentry
+    \entry{nlp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4643cc7f5e76f972f6c080ece8b761e2}{%
+           family={Poznaniu},
+           familyi={P\bibinitperiod},
+           given={Blog\bibnamedelimb CSI\bibnamedelimb Uniwersytet\bibnamedelimb Im.\bibnamedelimi Adama\bibnamedelima Mickiewicza},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={w},
+           prefixi={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{4643cc7f5e76f972f6c080ece8b761e2}
+      \strng{fullhash}{4643cc7f5e76f972f6c080ece8b761e2}
+      \strng{bibnamehash}{4643cc7f5e76f972f6c080ece8b761e2}
+      \strng{authorbibnamehash}{4643cc7f5e76f972f6c080ece8b761e2}
+      \strng{authornamehash}{4643cc7f5e76f972f6c080ece8b761e2}
+      \strng{authorfullhash}{4643cc7f5e76f972f6c080ece8b761e2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sieci neuronowe w NLP}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://csi.amu.edu.pl/blog-csi/sieci-neuronowe-w-nlp
+      \endverb
+      \verb{url}
+      \verb https://csi.amu.edu.pl/blog-csi/sieci-neuronowe-w-nlp
+      \endverb
+    \endentry
+    \entry{python-ai}{article}{}
+      \name{author}{1}{}{%
+        {{hash=74fb7844a06fef567fd4d783e6f8c6c0}{%
+           family={Talati},
+           familyi={T\bibinitperiod},
+           given={Dhruvitkumar},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{74fb7844a06fef567fd4d783e6f8c6c0}
+      \strng{fullhash}{74fb7844a06fef567fd4d783e6f8c6c0}
+      \strng{bibnamehash}{74fb7844a06fef567fd4d783e6f8c6c0}
+      \strng{authorbibnamehash}{74fb7844a06fef567fd4d783e6f8c6c0}
+      \strng{authornamehash}{74fb7844a06fef567fd4d783e6f8c6c0}
+      \strng{authorfullhash}{74fb7844a06fef567fd4d783e6f8c6c0}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Python: The alchemist behind AI's intelligent evolution}
+      \field{year}{2021}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

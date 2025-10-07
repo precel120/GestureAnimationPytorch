@@ -2344,16 +2344,31 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">&apos;python-docs&apos;</bcf:citekey>
-    <bcf:citekey order="2">&apos;python-ai&apos;</bcf:citekey>
-    <bcf:citekey order="3">&apos;pytorch-nvidia&apos;</bcf:citekey>
-    <bcf:citekey order="4">&apos;mediapipe&apos;</bcf:citekey>
-    <bcf:citekey order="5">&apos;opencv&apos;</bcf:citekey>
-    <bcf:citekey order="6">&apos;python-docs&apos;</bcf:citekey>
-    <bcf:citekey order="7">&apos;python-ai&apos;</bcf:citekey>
-    <bcf:citekey order="8">&apos;pytorch-nvidia&apos;</bcf:citekey>
-    <bcf:citekey order="9">&apos;mediapipe&apos;</bcf:citekey>
-    <bcf:citekey order="10">&apos;opencv&apos;</bcf:citekey>
+    <bcf:citekey order="1">sztuczna-inteligencja</bcf:citekey>
+    <bcf:citekey order="2">sztuczna-inteligencja</bcf:citekey>
+    <bcf:citekey order="3">nlp</bcf:citekey>
+    <bcf:citekey order="4">nlp</bcf:citekey>
+    <bcf:citekey order="5">nlp</bcf:citekey>
+    <bcf:citekey order="6">google-gan</bcf:citekey>
+    <bcf:citekey order="7">google-gan</bcf:citekey>
+    <bcf:citekey order="8">gesture-gan</bcf:citekey>
+    <bcf:citekey order="9">gesture-gan</bcf:citekey>
+    <bcf:citekey order="10">gesture-gan</bcf:citekey>
+    <bcf:citekey order="11">gesture-gan</bcf:citekey>
+    <bcf:citekey order="12">python-docs</bcf:citekey>
+    <bcf:citekey order="13">python-ai</bcf:citekey>
+    <bcf:citekey order="14">pytorch-nvidia</bcf:citekey>
+    <bcf:citekey order="15">mediapipe</bcf:citekey>
+    <bcf:citekey order="16">opencv</bcf:citekey>
+    <bcf:citekey order="23">sztuczna-inteligencja</bcf:citekey>
+    <bcf:citekey order="24">nlp</bcf:citekey>
+    <bcf:citekey order="25">google-gan</bcf:citekey>
+    <bcf:citekey order="26">gesture-gan</bcf:citekey>
+    <bcf:citekey order="27">python-docs</bcf:citekey>
+    <bcf:citekey order="28">python-ai</bcf:citekey>
+    <bcf:citekey order="29">pytorch-nvidia</bcf:citekey>
+    <bcf:citekey order="30">mediapipe</bcf:citekey>
+    <bcf:citekey order="31">opencv</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
