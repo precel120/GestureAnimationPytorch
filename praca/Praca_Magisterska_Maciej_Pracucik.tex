@@ -13,6 +13,7 @@
 \usepackage{listings}
 \usepackage{float}
 \usepackage{listings}
+\usepackage{subcaption}
 
 \addbibresource{bibliografia.bib}
 \graphicspath{{./zdjecia/}}
@@ -358,9 +359,63 @@
   }
   \subsection{Preprocesowanie danych}
   {
-    Preprocesowanie
+    Preprocesowanie zaczeło się od najprostszej, a zarazem bardzo ważnej części. Przycięcia zdjęć do wielkości 256x256, czyli standardu dla sieci GAN.
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{orig.jpg}
+        \label{fig:original}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cropped.jpg}
+        \label{fig:cropped}
+      \end{subfigure}
+      \caption{Przykłady przed i po przycięciu}
+      \label{fig:orig-crop}
+    \end{figure}
+    Takie zdjęcia stanowiły początkowy input i zdjęcie docelowe dla sieci. 
+    Jednakże jak zostało opisane w podrozdziale o wyborze architektury, to było za mało. \\
+    Następnie idąc za przykładem z GestureGAN \cite{gesture-gan}, kolejną próbą było przekazywanie sieci zarówno zdjęcia oryginalnego, jak i oddzielnie zdjęcia docelowego gestu, ale w formie szkieletu na czarnym tle.
+    \begin{figure}[H]
+      \centering
+      \includegraphics{landmark.jpg}
+      \caption{Wygenerowane zdjęcie szkieletu dłoni}
+      \label{fig:landmark}
+    \end{figure}
+    Kolejnymi próbami obróbki zdjęć było usuwanie tła, a w zasadzie rozmazywanie go, przez wycięcie za pomocą biblioteki rembg \cite{rembg}.
+    Która to pozwala na wykrycie i usuniecie tła z obrazu. Dłoń i część, która powinna zostać jest wykrywana przy wykorzystaniu MediaPipe. \\
+    Tu przykład po takiej obróbce:
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{blurred_just_hand.jpg}
+        \label{fig:just-hand}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{blurred.jpg}
+        \label{fig:blurred}
+      \end{subfigure}
+      \caption{Przykłady po obróbce tła}
+      \label{fig:blurred-pre}
+    \end{figure}
+    Jak widzimy na obrazkach powyżej, efekt jest bardzo różny. Ciężko było o jednoznaczne wykrywanie ręki. 
+    Raz zostawała sam ręka, raz wraz z człowiekiem, jeszcze innym razem potrafił zostać sam człowiek. 
+    Efekty były mało zadowalające, jednakże, mimo wszystko takie dane również zostały wypróbowane, ponownie nie przynosząc żadnych rezultatów. \\
+    Pomimo licznych niepowodzeń i ślepych zaułków, narodził się jeszcze jeden, finalny pomysł. Stworzenie zbioru danych sparowanego, w nieco sztuczny sposób.
+    Każde zdjęcie dłoni zostało przepuszczone przez OpenCV i MediaPipe, w celu wykrycia, nałożenia maski a następnie szkieletu gestu. Dając następujący przykład:
+    \begin{figure}[H]
+      \centering
+      \includegraphics{no_hand.jpg}
+      \caption{Przykład zdjęcia z nałożoną maską i szkieletem gestu}
+      \label{fig:mask}
+    \end{figure}
+    Funkcja nakładająca maski jest na tyle uniwersalna, że może przyjąć dowolny kolor i możemy przekazać jej jako parametr, jak duży obszar ma zająć. 
+    Jednakże każde zdjęcie jest różne dlatego niezbędne było dobranie jednego rozmiaru maski, która będzie pasować dla znacznej większości obrazów. 
+    Tak przygotowane zdjęcia, a w zasadzie zbiór danych posłużył do treningu i testowania sieci.
   }
-  \subsection{Testowanie modelu i animacja}
+  \subsection{Modelu i animacja gestu}
   {
     Tesotowanie
   }

@@ -17,12 +17,12 @@
 \contentsline {subsection}{\numberline {4.1}Dobór zbioru danych}{14}{}%
 \contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{16}{}%
 \contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{18}{}%
-\contentsline {subsection}{\numberline {4.4}Testowanie modelu i animacja}{18}{}%
-\contentsline {section}{\numberline {5}Wyniki i dyskusja}{18}{}%
-\contentsline {section}{\numberline {6}Podsumowanie}{18}{}%
-\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{18}{}%
-\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{18}{}%
-\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{18}{}%
-\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{18}{}%
-\contentsline {section}{Bibliografia}{19}{}%
-\contentsline {section}{Listingi}{22}{}%
+\contentsline {subsection}{\numberline {4.4}Modelu i animacja gestu}{20}{}%
+\contentsline {section}{\numberline {5}Wyniki i dyskusja}{20}{}%
+\contentsline {section}{\numberline {6}Podsumowanie}{21}{}%
+\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{21}{}%
+\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{21}{}%
+\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{21}{}%
+\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{21}{}%
+\contentsline {section}{Bibliografia}{22}{}%
+\contentsline {section}{Listingi}{25}{}%

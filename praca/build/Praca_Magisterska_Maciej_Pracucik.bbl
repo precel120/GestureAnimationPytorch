@@ -69,6 +69,32 @@
       \verb https://docs.python.org/3/tutorial/index.html
       \endverb
     \endentry
+    \entry{rembg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=822dda4b069714e49783adfd0d338211}{%
+           family={Gatis},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{822dda4b069714e49783adfd0d338211}
+      \strng{fullhash}{822dda4b069714e49783adfd0d338211}
+      \strng{bibnamehash}{822dda4b069714e49783adfd0d338211}
+      \strng{authorbibnamehash}{822dda4b069714e49783adfd0d338211}
+      \strng{authornamehash}{822dda4b069714e49783adfd0d338211}
+      \strng{authorfullhash}{822dda4b069714e49783adfd0d338211}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rembg}
+      \verb{urlraw}
+      \verb https://github.com/danielgatis/rembg
+      \endverb
+      \verb{url}
+      \verb https://github.com/danielgatis/rembg
+      \endverb
+    \endentry
     \entry{google-gan}{online}{}
       \name{author}{1}{}{%
         {{hash=8b36e9207c24c76e6719268e49201d94}{%

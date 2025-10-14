@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  14 OCT 2025 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  14 OCT 2025 21:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -434,42 +434,64 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box57
 \@float@everytoks=\toks25
 \@floatcapt=\box58
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen162
+\captionmargin@=\dimen163
+\captionwidth=\dimen164
+\caption@tempdima=\dimen165
+\caption@indent=\dimen166
+\caption@parindent=\dimen167
+\caption@hangindent=\dimen168
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count404
+\c@continuedfloat=\count405
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count406
+\c@subtable=\count407
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-\@quotelevel=\count404
-\@quotereset=\count405
+\@quotelevel=\count408
+\@quotereset=\count409
  (./Praca_Magisterska_Maciej_Pracucik.aux)
 \openout1 = `Praca_Magisterska_Maciej_Pracucik.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count406
-\scratchdimen=\dimen162
+\scratchcounter=\count410
+\scratchdimen=\dimen169
 \scratchbox=\box59
-\nofMPsegments=\count407
-\nofMParguments=\count408
+\nofMPsegments=\count411
+\nofMParguments=\count412
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count409
-\MPscratchDim=\dimen163
-\MPnumerator=\count410
-\makeMPintoPDFobject=\count411
+\MPscratchCnt=\count413
+\MPscratchDim=\dimen170
+\MPnumerator=\count414
+\makeMPintoPDFobject=\count415
 \everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -530,38 +552,40 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Praca_Magisterska_Maciej_Pracucik.bbl' found.
  (./Praca_Magisterska_Maciej_Pracucik.bbl)
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
-\c@lstlisting=\count412
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
+\c@lstlisting=\count416
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 <Strona_Tytulowa.pdf, id=1, 598.235pt x 845.1575pt>
 File: Strona_Tytulowa.pdf Graphic file (type pdf)
 <use Strona_Tytulowa.pdf>
-Package pdftex.def Info: Strona_Tytulowa.pdf  used on input line 54.
+Package pdftex.def Info: Strona_Tytulowa.pdf  used on input line 55.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: Strona_Tytulowa.pdf Graphic file (type pdf)
 <use Strona_Tytulowa.pdf>
-Package pdftex.def Info: Strona_Tytulowa.pdf  used on input line 54.
+Package pdftex.def Info: Strona_Tytulowa.pdf  used on input line 55.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 <Strona_Tytulowa.pdf, id=4, page=1, 598.235pt x 845.1575pt>
 File: Strona_Tytulowa.pdf Graphic file (type pdf)
 <use Strona_Tytulowa.pdf, page 1>
-Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 54.
+Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 55.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: Strona_Tytulowa.pdf Graphic file (type pdf)
 <use Strona_Tytulowa.pdf, page 1>
-Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 54.
+Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 55.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
 File: Strona_Tytulowa.pdf Graphic file (type pdf)
 <use Strona_Tytulowa.pdf, page 1>
-Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 54.
+Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 55.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
 File: Strona_Tytulowa.pdf Graphic file (type pdf)
 <use Strona_Tytulowa.pdf, page 1>
-Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 54.
+Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 55.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
 File: Strona_Tytulowa.pdf Graphic file (type pdf)
 <use Strona_Tytulowa.pdf, page 1>
-Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 54.
+Package pdftex.def Info: Strona_Tytulowa.pdf , page1 used on input line 55.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
  [1
 
@@ -592,86 +616,124 @@ LaTeX Font Info:    External font `plex10' loaded for size
 <./zdjecia//neural-network-stanford.png, id=35, 1505.625pt x 351.3125pt>
 File: ./zdjecia//neural-network-stanford.png Graphic file (type png)
 <use ./zdjecia//neural-network-stanford.png>
-Package pdftex.def Info: ./zdjecia//neural-network-stanford.png  used on input line 121.
+Package pdftex.def Info: ./zdjecia//neural-network-stanford.png  used on input line 122.
 (pdftex.def)             Requested size: 409.71692pt x 95.60075pt.
  [5]
 <./zdjecia//perceptron.png, id=39, 523.20468pt x 261.22594pt>
 File: ./zdjecia//perceptron.png Graphic file (type png)
 <use ./zdjecia//perceptron.png>
-Package pdftex.def Info: ./zdjecia//perceptron.png  used on input line 128.
+Package pdftex.def Info: ./zdjecia//perceptron.png  used on input line 129.
 (pdftex.def)             Requested size: 409.71692pt x 204.56853pt.
  [6 <./zdjecia//neural-network-stanford.png> <./zdjecia//perceptron.png>]
 <./zdjecia//gan.png, id=44, 769.37437pt x 474.27188pt>
 File: ./zdjecia//gan.png Graphic file (type png)
 <use ./zdjecia//gan.png>
-Package pdftex.def Info: ./zdjecia//gan.png  used on input line 149.
+Package pdftex.def Info: ./zdjecia//gan.png  used on input line 150.
 (pdftex.def)             Requested size: 409.71692pt x 252.57144pt.
 <./zdjecia//gan-budowa.png, id=46, 733.23938pt x 328.22626pt>
 File: ./zdjecia//gan-budowa.png Graphic file (type png)
 <use ./zdjecia//gan-budowa.png>
-Package pdftex.def Info: ./zdjecia//gan-budowa.png  used on input line 155.
+Package pdftex.def Info: ./zdjecia//gan-budowa.png  used on input line 156.
 (pdftex.def)             Requested size: 409.71692pt x 183.40979pt.
  [7 <./zdjecia//gan.png>]
 <./zdjecia//gesture-gan.png, id=53, 150.5625pt x 149.05687pt>
 File: ./zdjecia//gesture-gan.png Graphic file (type png)
 <use ./zdjecia//gesture-gan.png>
-Package pdftex.def Info: ./zdjecia//gesture-gan.png  used on input line 178.
+Package pdftex.def Info: ./zdjecia//gesture-gan.png  used on input line 179.
 (pdftex.def)             Requested size: 150.56212pt x 149.0565pt.
  [8 <./zdjecia//gan-budowa.png>]
 <./zdjecia//gesturegan-framework.jpg, id=58, 6050.605pt x 3065.4525pt>
 File: ./zdjecia//gesturegan-framework.jpg Graphic file (type jpg)
 <use ./zdjecia//gesturegan-framework.jpg>
-Package pdftex.def Info: ./zdjecia//gesturegan-framework.jpg  used on input line 185.
+Package pdftex.def Info: ./zdjecia//gesturegan-framework.jpg  used on input line 186.
 (pdftex.def)             Requested size: 409.71692pt x 207.54057pt.
- [9 <./zdjecia//gesture-gan.png> <./zdjecia//gesturegan-framework.jpg>]
-<./zdjecia//pose-gan.png, id=63, 131.74219pt x 91.84312pt>
+<./zdjecia//pose-gan.png, id=59, 131.74219pt x 91.84312pt>
 File: ./zdjecia//pose-gan.png Graphic file (type png)
 <use ./zdjecia//pose-gan.png>
-Package pdftex.def Info: ./zdjecia//pose-gan.png  used on input line 202.
+Package pdftex.def Info: ./zdjecia//pose-gan.png  used on input line 203.
 (pdftex.def)             Requested size: 131.74185pt x 91.84288pt.
+ [9 <./zdjecia//gesture-gan.png> <./zdjecia//gesturegan-framework.jpg>]
 <./zdjecia//pose-gan-ex.jpg, id=64, 940.51375pt x 1204.5pt>
 File: ./zdjecia//pose-gan-ex.jpg Graphic file (type jpg)
 <use ./zdjecia//pose-gan-ex.jpg>
-Package pdftex.def Info: ./zdjecia//pose-gan-ex.jpg  used on input line 208.
+Package pdftex.def Info: ./zdjecia//pose-gan-ex.jpg  used on input line 209.
 (pdftex.def)             Requested size: 409.71692pt x 524.70682pt.
  [10 <./zdjecia//pose-gan.png>] [11 <./zdjecia//pose-gan-ex.jpg>] [12] [13]
 
-LaTeX Warning: Citation 'nuzhdin2024hagridv21mimagesstatic' on page 14 undefined on input line 288.
+LaTeX Warning: Citation 'nuzhdin2024hagridv21mimagesstatic' on page 14 undefined on input line 289.
 
-LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 292.
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 293.
 (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 ) [14] [15]
 
-LaTeX Warning: Citation 'cyclegan-tf' on page 16 undefined on input line 340.
+LaTeX Warning: Citation 'cyclegan-tf' on page 16 undefined on input line 341.
 
 <./zdjecia//cycle-gan-45.jpg, id=86, 867.24pt x 867.24pt>
 File: ./zdjecia//cycle-gan-45.jpg Graphic file (type jpg)
 <use ./zdjecia//cycle-gan-45.jpg>
-Package pdftex.def Info: ./zdjecia//cycle-gan-45.jpg  used on input line 346.
+Package pdftex.def Info: ./zdjecia//cycle-gan-45.jpg  used on input line 347.
 (pdftex.def)             Requested size: 409.71692pt x 409.72014pt.
 
-LaTeX Warning: Citation 'cyclegan-tf' on page 16 undefined on input line 347.
+LaTeX Warning: Citation 'cyclegan-tf' on page 16 undefined on input line 348.
 
-[16] [17 <./zdjecia//cycle-gan-45.jpg>] [18] [19
+
+LaTeX Warning: Citation 'cyclegan-tf' on page 16 undefined on input line 348.
+
+[16]
+<./zdjecia//orig.jpg, id=90, 513.92pt x 685.56125pt>
+File: ./zdjecia//orig.jpg Graphic file (type jpg)
+<use ./zdjecia//orig.jpg>
+Package pdftex.def Info: ./zdjecia//orig.jpg  used on input line 366.
+(pdftex.def)             Requested size: 182.09833pt x 242.9209pt.
+<./zdjecia//cropped.jpg, id=91, 256.96pt x 256.96pt>
+File: ./zdjecia//cropped.jpg Graphic file (type jpg)
+<use ./zdjecia//cropped.jpg>
+Package pdftex.def Info: ./zdjecia//cropped.jpg  used on input line 371.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//landmark.jpg, id=92, 256.96pt x 256.96pt>
+File: ./zdjecia//landmark.jpg Graphic file (type jpg)
+<use ./zdjecia//landmark.jpg>
+Package pdftex.def Info: ./zdjecia//landmark.jpg  used on input line 382.
+(pdftex.def)             Requested size: 256.95937pt x 256.95937pt.
+ [17 <./zdjecia//cycle-gan-45.jpg>] [18 <./zdjecia//orig.jpg> <./zdjecia//cropped.jpg>]
+
+LaTeX Warning: Citation 'rembg' on page 19 undefined on input line 386.
+
+<./zdjecia//blurred_just_hand.jpg, id=99, 256.96pt x 256.96pt>
+File: ./zdjecia//blurred_just_hand.jpg Graphic file (type jpg)
+<use ./zdjecia//blurred_just_hand.jpg>
+Package pdftex.def Info: ./zdjecia//blurred_just_hand.jpg  used on input line 392.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//blurred.jpg, id=100, 256.96pt x 256.96pt>
+File: ./zdjecia//blurred.jpg Graphic file (type jpg)
+<use ./zdjecia//blurred.jpg>
+Package pdftex.def Info: ./zdjecia//blurred.jpg  used on input line 397.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//no_hand.jpg, id=101, 256.96pt x 256.96pt>
+File: ./zdjecia//no_hand.jpg Graphic file (type jpg)
+<use ./zdjecia//no_hand.jpg>
+Package pdftex.def Info: ./zdjecia//no_hand.jpg  used on input line 410.
+(pdftex.def)             Requested size: 256.95937pt x 256.95937pt.
+[19 <./zdjecia//blurred_just_hand.jpg> <./zdjecia//blurred.jpg> <./zdjecia//landmark.jpg>] [20 <./zdjecia//no_hand.jpg>] [21] [22
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lof)
 \tf@lof=\write5
 \openout5 = `Praca_Magisterska_Maciej_Pracucik.lof'.
 
- [20
+ [23
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lot)
 \tf@lot=\write6
 \openout6 = `Praca_Magisterska_Maciej_Pracucik.lot'.
 
- [21
+ [24
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lol)
 \tf@lol=\write7
 \openout7 = `Praca_Magisterska_Maciej_Pracucik.lol'.
 
- [22
+ [25
 
 ] (./Praca_Magisterska_Maciej_Pracucik.aux)
 
@@ -687,18 +749,18 @@ Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.
 
  ) 
 Here is how much of TeX's memory you used:
- 13139 strings out of 480139
- 240086 string characters out of 5893693
- 956674 words of memory out of 5000000
- 30919 multiletter control sequences out of 15000+600000
+ 14515 strings out of 480139
+ 267582 string characters out of 5893693
+ 980292 words of memory out of 5000000
+ 32280 multiletter control sequences out of 15000+600000
  478224 words of font info for 50 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
- 60i,17n,68p,799b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,17n,77p,799b,1860s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca_Magisterska_Maciej_Pracucik.pdf (22 pages, 5861911 bytes).
+Output written on Praca_Magisterska_Maciej_Pracucik.pdf (25 pages, 6046762 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 163 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

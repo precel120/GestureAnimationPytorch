@@ -1,9 +1,13 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Budowa sieci neuronowej \blx@tocontentsinit {0}\cite {nlp}}}{6}{}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Budowa neuronu \blx@tocontentsinit {0}\cite {nlp}}}{6}{}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Generative Adversarial Network \blx@tocontentsinit {0}\cite {google-gan}}}{7}{}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Ogólny model sieci GAN \blx@tocontentsinit {0}\cite {google-gan}}}{8}{}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Model GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}}}{9}{}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Zdjęcie wygenerowane przez GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}}}{9}{}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Model PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}}}{10}{}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Zdjęcie wygenerowane przez PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}}}{11}{}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Zdjęcie wygenerowane przez CycleGAN, po 45 epokach \blx@tocontentsinit {0}\cite {cyclegan-tf}}}{17}{}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Budowa sieci neuronowej \blx@tocontentsinit {0}\cite {nlp}\relax }}{6}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Budowa neuronu \blx@tocontentsinit {0}\cite {nlp}\relax }}{6}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Generative Adversarial Network \blx@tocontentsinit {0}\cite {google-gan}\relax }}{7}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Ogólny model sieci GAN \blx@tocontentsinit {0}\cite {google-gan}\relax }}{8}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Model GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}\relax }}{9}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Zdjęcie wygenerowane przez GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}\relax }}{9}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Model PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}\relax }}{10}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Zdjęcie wygenerowane przez PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}\relax }}{11}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Zdjęcie wygenerowane przez CycleGAN, po 45 epokach \blx@tocontentsinit {0}\cite {cyclegan-tf}\relax }}{17}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Przykłady przed i po przycięciu\relax }}{18}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Przykłady po obróbce tła\relax }}{19}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Wygenerowane zdjęcie szkieletu dłoni\relax }}{19}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Przykład zdjęcia z nałożoną maską i szkieletem gestu\relax }}{20}{}%
