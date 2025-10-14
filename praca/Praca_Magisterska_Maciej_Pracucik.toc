@@ -15,16 +15,14 @@
 \contentsline {subsection}{\numberline {3.4}OpenCV}{13}{}%
 \contentsline {section}{\numberline {4}Proces tworzenia projektu}{14}{}%
 \contentsline {subsection}{\numberline {4.1}Dobór zbioru danych}{14}{}%
-\contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{14}{}%
-\contentsline {subsection}{\numberline {4.4}Tworzenie modelu}{14}{}%
-\contentsline {subsection}{\numberline {4.5}Tesotowanie modelu}{14}{}%
-\contentsline {subsection}{\numberline {4.6}Realizacja projektu}{14}{}%
-\contentsline {section}{\numberline {5}Wyniki i dyskusja}{14}{}%
-\contentsline {section}{\numberline {6}Podsumowanie}{15}{}%
-\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{15}{}%
-\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{15}{}%
-\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{15}{}%
-\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{15}{}%
-\contentsline {section}{Bibliografia}{16}{}%
-\contentsline {section}{Listingi}{19}{}%
+\contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{16}{}%
+\contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{18}{}%
+\contentsline {subsection}{\numberline {4.4}Testowanie modelu i animacja}{18}{}%
+\contentsline {section}{\numberline {5}Wyniki i dyskusja}{18}{}%
+\contentsline {section}{\numberline {6}Podsumowanie}{18}{}%
+\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{18}{}%
+\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{18}{}%
+\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{18}{}%
+\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{18}{}%
+\contentsline {section}{Bibliografia}{19}{}%
+\contentsline {section}{Listingi}{22}{}%

@@ -168,6 +168,58 @@
       \verb https://pages.mini.pw.edu.pl/~macukowb/wspolne/PNEiTI.pdf
       \endverb
     \endentry
+    \entry{nuzhdin2024hagridv21mimagesstatic}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=fcc99a506d9d3bfa5ebfd5f860befd45}{%
+           family={Nuzhdin},
+           familyi={N\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=08818c3cd357eacccdbf7e5c652be5b7}{%
+           family={Nagaev},
+           familyi={N\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2a04772956b66a05d6c4cf8734a3eaaf}{%
+           family={Sautin},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ed8a3acf4b14f9b30fa3309e6888b68a}{%
+           family={Kapitanov},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=82b2579dc989e99defebd7f47df25f7d}{%
+           family={Kvanchiani},
+           familyi={K\bibinitperiod},
+           given={Karina},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3cb59d237c756d254f28426f301de19}
+      \strng{fullhash}{8a872f4a9ee9eb3ef8d260bb1132d9ce}
+      \strng{bibnamehash}{f3cb59d237c756d254f28426f301de19}
+      \strng{authorbibnamehash}{f3cb59d237c756d254f28426f301de19}
+      \strng{authornamehash}{f3cb59d237c756d254f28426f301de19}
+      \strng{authorfullhash}{8a872f4a9ee9eb3ef8d260bb1132d9ce}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{HaGRIDv2: 1M Images for Static and Dynamic Hand Gesture Recognition}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2412.01508
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2412.01508
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2412.01508
+      \endverb
+    \endentry
     \entry{pytorch-nvidia}{online}{}
       \name{author}{1}{}{%
         {{hash=2a21e2561359ebf2fb2d634ee7837a8e}{%
@@ -265,6 +317,30 @@
       \field{labeltitlesource}{title}
       \field{title}{Python: The alchemist behind AI's intelligent evolution}
       \field{year}{2021}
+    \endentry
+    \entry{cyclegan-tf}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cb20b802a3f0255e054e4fb8821c5ed2}{%
+           family={Tensorflow},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{fullhash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{bibnamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authorbibnamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authornamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authorfullhash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CycleGAN}
+      \verb{urlraw}
+      \verb https://www.tensorflow.org/tutorials/generative/cyclegan?hl=pl
+      \endverb
+      \verb{url}
+      \verb https://www.tensorflow.org/tutorials/generative/cyclegan?hl=pl
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

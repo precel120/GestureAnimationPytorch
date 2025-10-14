@@ -6,3 +6,4 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Zdjęcie wygenerowane przez GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}}}{9}{}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Model PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}}}{10}{}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Zdjęcie wygenerowane przez PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}}}{11}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Zdjęcie wygenerowane przez CycleGAN, po 45 epokach \blx@tocontentsinit {0}\cite {cyclegan-tf}}}{17}{}%

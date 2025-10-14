@@ -10,6 +10,7 @@
 \usepackage[hyphens]{url}
 \usepackage[backend=biber]{biblatex}
 \usepackage{array}
+\usepackage{listings}
 \usepackage{float}
 \usepackage{listings}
 
@@ -25,6 +26,27 @@
  left=2.5cm,
  top=1.25cm,
  right=2.5cm
+}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
 }
 
 \begin{document}
@@ -251,27 +273,96 @@
 {
   \subsection{Dobór zbioru danych}
   {
-    zbior
+    Pierwszym i bardzo, ale to bardzo ważnym krokiem jest wybór zbioru danych. 
+    Zbiór danych to podstawa projektu, nasz model jest tyle wart ile nasz dataset i jego obróka. 
+    To od niego będzie zależeć zarówno to jak długo sieć będzie się uczyć, ale przede wszystkim jakie osiągnie rezultaty. 
+    Gdy nasz zbiór jest wyraźny, najlepiej dane są sparowane, to nasza sieć bardzo szybko zrozumie na czym polega różnica i na czym powinna się skupiać. \\
+    Poszukiwania były zaskakująco problematyczne, głównie ze względu na słabą współpracę z biblioteką Mediapipe. 
+    Często te zdjęcia to były białe plamy na czarnym tle, przez co ciężko było nawet rozróżnić ustawienie dłoni czy choćby palce.
+    Inny dataset prezentował zdjęcie robione kamerą nocną, co w zasadzie prowadziło do takich samych rezultatów jak w poprzednio wspomnianym zbiorze.
+    Mediapipe nie umiał wychwycić gdzie znajduje się dłoń, palce czy stawy. 
+    Kolejne próby były już na zbiorze przedstawiającym zdjęcia liter przedstawianych w języku migowym. 
+    Ten zbiór był dobry, ze wględu na to, że przedstawiał same dłonie, na jednolitym tle, był sparowany. 
+    Jednakże co skreśliło go, to fakt, że tych zdjęć było po prostu za mało. 
+    Dla problemu takiego jak generowanie gestów, tych zdjęć musi być dużo. Tam było ich mniej więcej 30 na gest. Jest to dużo za mało \\
+    Finalnie wybór padł na zbiór HaGrid \cite{nuzhdin2024hagridv21mimagesstatic}. \\
+    Ten zbiór nie jest niestety sparowany, jednakże posiada na tyle dużo zalet, że warto było go wybrać. \\
+    Po pierwsze jest ogromny, cały posiada aż 1.5TB, 1 086 158 zdjęć w FullHD, podzielonych na 33 klasy gestów. 
+    Co więcej do zbioru jest dołączony plik json dla każdego gestu, poniżej przykładowy fragment dla jednego zdjęcia:
+    \begin{lstlisting}
+      "04c49801-1101-4b4e-82d0-d4607cd01df0": {
+        "bboxes": [
+            [0.0694444444, 0.3104166667, 0.2666666667, 0.2640625],
+            [0.5993055556, 0.2875, 0.2569444444, 0.2760416667]
+        ],
+        "labels": [
+            "thumb_index2",
+            "thumb_index2"
+        ],
+        "united_bbox": [
+            [0.0694444444, 0.2875, 0.7868055556, 0.2869791667]
+        ],
+        "united_label": [
+            "thumb_index2"
+        ],
+        "user_id": "2fe6a9156ff8ca27fbce8ada318c592b",
+        "hand_landmarks": [
+                [
+                    [0.37233507701702123, 0.5935673528948108],
+                    [0.3997604810145188, 0.5925499847441514],
+                    ...
+                ],
+                [
+                    [0.37388438145820907, 0.47547576284667353],
+                    [0.39460467775730607, 0.4698847093520443],
+                    ...
+                ]
+            ]
+        "meta": {
+            "age": [24.41],
+            "gender": ["female"],
+            "race": ["White"]
+        }
+    \end{lstlisting}
+    Jak widzimy znajduje się tu bardzo dużo przydatnych informacji. Do najważniejszych należą:
+    \begin{itemize}
+      \item bboxes - są ta koordynaty na jakim obszarze znajdują się dłonie, przydało się to do przycinania zdjęć do wielkości 256x256, która jest standardem dla sieci GAN
+      \item labels - dzięki temu wiadomo było którą dłoń wykorzystać do analizy czy też przetwarzania obrazu
+      \item hand landmarks - to koordynaty położenia palca, stawów, oraz dłoni
+    \end{itemize}
+    Tak jak można zauważyć jest to doskonały zbiór danych, do ideału brakuje jednego, żeby był sparowany, ale i to nie jest problem, o czym więcej w rozdziale o preprocessingu. 
   }
   \subsection{Wybór architektury sieci}
   {
-    architektura
+    Wybór architektury był nieco uproszczony, bo z założenia projekt wymaga użycia sieci GAN, jednakże podtypów sieci jest dużo.
+    Początkowo wybrany został CycleGAN, w zwiazku z tym, że wybrany zbiór nie był sparowany, a CycleGAN dzięki dodatkowej funkcji straty, wykorzystuje 
+    utratę spójności cyklu żeby trening nie musiał się odbywać na sparowanych danych. 
+    Jako bazę posłużył tutorial z oficjalnej dokumentacji Tensorflow \cite{cyclegan-tf} (wtedy jeszcze to właśnie ta biblioteka była wybrana).
+    Z założenia wszystko wydawało się że powinno zadziałać. Na tutorialu robione są z koni zebry, czy z jabłek pomarańcze. 
+    To w zasadzie czemu miałoby sobie nie poradzić z gestami?\\
+    Rzeczywistość okazała się być bardzo brutalna.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{cycle-gan-45.jpg}
+      \caption{Zdjęcie wygenerowane przez CycleGAN, po 45 epokach \cite{cyclegan-tf}}
+      \label{fig:cycle-gan-przyklad}
+    \end{figure}
+    Na pozór wydawać by się mogło, że to zdjęcie jest ok, sieć kombinuje i dosyć wiernie odtworzyła ręke, jedynie pojawiają się artefakty.
+    No tak, ale nie takie było jej zadanie. 
+    Ona powinna nałożyć nowy gest, ponownie wydawać by się mogło, że zaczyna dobrze kombinować, bo artefakty pojawiają się na dłoni. 
+    Tylko niestey przy przeróżnych konfiguracjach parametrów, ilości puszczanych epok, czy zmian, nie udało się zmusić sieć do manipulacji gestami.
+    Z tego powodu trzeba było coś zmienić, najwyraźniej zbiór jest zbyt zróżnicowany, tła są inne, przedstwiają innych ludzi itd, żeby CycleGAN sobie poradził. \\
+    Więc wybrane zostało inne podejście. Nastąpiła zmiana architektury na Pix2Pix i zmanipulowany został zbiór żeby uczynić go sparowanym. 
+    Dokładnie co zostało zrobione jest w kolejnym rozdziale. W dużym skrócie, na ręke z danym gestem, została, na dłoń, nakładana maska i na nią szkielet gestu.
+    Co czyni nasz zbiór sparowanym i idealnym kandydatem dla Pix2Pix.
   }
   \subsection{Preprocesowanie danych}
   {
     Preprocesowanie
   }
-  \subsection{Tworzenie modelu}
-  {
-    model
-  }
-  \subsection{Tesotowanie modelu}
+  \subsection{Testowanie modelu i animacja}
   {
     Tesotowanie
-  }
-  \subsection{Realizacja projektu}
-  {
-    realizacja
   }
 }
 

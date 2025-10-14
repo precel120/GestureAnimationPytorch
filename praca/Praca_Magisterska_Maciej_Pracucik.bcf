@@ -2363,16 +2363,21 @@
     <bcf:citekey order="17">pytorch-nvidia</bcf:citekey>
     <bcf:citekey order="18">mediapipe</bcf:citekey>
     <bcf:citekey order="19">opencv</bcf:citekey>
-    <bcf:citekey order="28">sztuczna-inteligencja</bcf:citekey>
-    <bcf:citekey order="29">nlp</bcf:citekey>
-    <bcf:citekey order="30">google-gan</bcf:citekey>
-    <bcf:citekey order="31">gesture-gan</bcf:citekey>
-    <bcf:citekey order="32">pose-gan</bcf:citekey>
-    <bcf:citekey order="33">python-docs</bcf:citekey>
-    <bcf:citekey order="34">python-ai</bcf:citekey>
-    <bcf:citekey order="35">pytorch-nvidia</bcf:citekey>
-    <bcf:citekey order="36">mediapipe</bcf:citekey>
-    <bcf:citekey order="37">opencv</bcf:citekey>
+    <bcf:citekey order="20">nuzhdin2024hagridv21mimagesstatic</bcf:citekey>
+    <bcf:citekey order="21">cyclegan-tf</bcf:citekey>
+    <bcf:citekey order="22">cyclegan-tf</bcf:citekey>
+    <bcf:citekey order="32">sztuczna-inteligencja</bcf:citekey>
+    <bcf:citekey order="33">nlp</bcf:citekey>
+    <bcf:citekey order="34">google-gan</bcf:citekey>
+    <bcf:citekey order="35">gesture-gan</bcf:citekey>
+    <bcf:citekey order="36">pose-gan</bcf:citekey>
+    <bcf:citekey order="37">python-docs</bcf:citekey>
+    <bcf:citekey order="38">python-ai</bcf:citekey>
+    <bcf:citekey order="39">pytorch-nvidia</bcf:citekey>
+    <bcf:citekey order="40">mediapipe</bcf:citekey>
+    <bcf:citekey order="41">opencv</bcf:citekey>
+    <bcf:citekey order="42">nuzhdin2024hagridv21mimagesstatic</bcf:citekey>
+    <bcf:citekey order="43">cyclegan-tf</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
