@@ -13,6 +13,7 @@
 \usepackage{listings}
 \usepackage{float}
 \usepackage{listings}
+\usepackage{amsmath}
 \usepackage{subcaption}
 
 \addbibresource{bibliografia.bib}
@@ -332,7 +333,7 @@
       \item hand landmarks - to koordynaty położenia palca, stawów, oraz dłoni
     \end{itemize}
     Tak jak można zauważyć jest to doskonały zbiór danych, do ideału brakuje jednego, żeby był sparowany, ale i to nie jest problem, o czym więcej w rozdziale o preprocessingu. 
-  }
+    }
   \subsection{Wybór architektury sieci}
   {
     Wybór architektury był nieco uproszczony, bo z założenia projekt wymaga użycia sieci GAN, jednakże podtypów sieci jest dużo.
@@ -415,9 +416,72 @@
     Jednakże każde zdjęcie jest różne dlatego niezbędne było dobranie jednego rozmiaru maski, która będzie pasować dla znacznej większości obrazów. 
     Tak przygotowane zdjęcia, a w zasadzie zbiór danych posłużył do treningu i testowania sieci.
   }
-  \subsection{Modelu i animacja gestu}
+  \subsection{Model sieci}
   {
-    Tesotowanie
+    Architektura Pix2Pix jest typem warunkowej, generatywnej sieci adwersarza (cGAN), ma za zadanie nauczyć się mapowania pomiędzy obrazami, przy sparowanych danych.
+    Pix2Pix jest bardzo uniwersalnym narzędziem, można go zastosować przykładowo do generowania kolorowych zdjęć z czarno białych, przekształcania szkiców w zdjęcia \cite{pix2pix-tf}, czy robienia z dnia nocy. 
+    Architektura, w swojej bazowej formie składa się z generatora, opartego na U-Net, oraz discriminatora, opartego na PatchGAN. \\
+    U-Net jest siecią, w głównej mierze stworzoną do segmentacji obrazów, czyli przypisywania klasy do pikseli na obrazku, w celu np poznania kształtu danego obiektu \cite{image-seg}.
+    Przed jej powstaniem klasyfikacja dotyczyła jedynie całego obrazka, ale dopiero dopiero Ronneberger, w 2015, zaproponował U-Net i to popchnęło dalej cały rozwój translacji image to image. 
+    Składa się z dwóch ścieżek, które razem składają się na kształt litery "U", stąd nazwa. Pierwsza z nich, to enkoder, jest zbliżona swoją budową do klasycznych sieci konwolucyjnych i odpowiada za klasyfikację. 
+    Zbudowany jest z bloków konwolucji, normalizacji wsadowej i LeakyRelu. 
+    Druga z kolei to dekoder\cite{u-net}. Zbudowany jest z konwolucji transponowanej, normalizacji wsadowej, odrzucenia i LeakyRelu.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{generator.png}
+      \caption{Generator U-Net}
+      \label{fig:u-net}
+    \end{figure}
+    Dyskryminator ma bardzo proste zadanie i założenie, ma po prostu sklasyfikować czy każda łatka(patch) jest prawdziwa czy nie.\cite{pix2pix-tf}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{discriminator.png}
+      \caption{Dyskryminator PatchGAN}
+      \label{fig:discriminator}
+    \end{figure}
+    W zasadzie zaproponowane rozwiązanie nie różni się znacznie od klasycznego Pix2Pix. 
+    Jednakże co go wyróżnia i dało kolosalną różnicę w wyglądzie i jakości to zastosowanie straty percepcyjnej VGG \cite{vgg}. \\
+    Jest to stosunkowo nowo zaproponowane podejście. Klasycznym podejściem było sprawdzanie straty pomiędzy wygenerowanym pixelem a prawdziwym obrazem. 
+    W tym, porównuje się ich reprezentacje cechowe uzyskane z warstw konwolucyjnych sieci VGG, wytrenowanej na ImageNet. 
+    Co daje znacznie bardziej realistyczne rezultaty. \\
+    \[ \mathcal{L}_{\text{perc}} = \sum_{l} \lambda_l \, \| \phi_l(I_{\text{gen}}) - \phi_l(I_{\text{ref}}) \|_2^2 \]
+  }
+  \subsection{Flow i animacja}
+  {
+    Flow uczenia sieci jest następujący:
+    \begin{enumerate}
+      \item Przycinane są zdjęcia pobrane z datasetu \cite{nuzhdin2024hagridv21mimagesstatic}
+      \item Generowane są obrazy z nałożoną maską i szkieletem ręki
+      \item Zdjęcia są ładowane, normalizowane i przekazywane do sieci
+      \item Sieć jest inicjalizowana, jeśli istnieją to ładowane są informacje z poprzednich uruchomień.
+      \begin{itemize}
+        \item Generator
+        \item Dyskryminator
+        \item Optymalizatory generatora i dyskryminatora
+        \item Wartości straty dla generatora i dyskryminatora
+      \end{itemize}
+      \item Generator generuje obraz
+      \item Dyskryminator najpierw odbiera prawdziwy obraz i fałszywy
+      \item Obliczana jest strata dyskryminatora
+      \item Propagacja wsteczna straty dyskryminatora
+      \item Obliczana jest strata generatora
+      \item Obliczana jest strata VGG
+      \item Wyliczanana jest całościowa strata generatora
+      \begin{lstlisting}
+        g_loss_total = g_loss + self.lambda_vgg * loss_vgg
+      \end{lstlisting}
+      \item Propagacja wsteczna straty generatora
+      \item Sumowana jest strata generatora i dyskryminatora dla każdej kolejnej pary zdjęć
+      \item Wyliczana jest średnia strata generatora i dyskryminatora, dla epoki
+      \item Generowane są przykładowe obrazki i robiony jest checkpoint
+    \end{enumerate}
+    Flow animacji jest następujący:
+    \begin{enumerate}
+      \item Brany jest przykładowy, pasujący położeniem gest docelowy i wraz z maską nakładany na obrazek, który ma być przerobiony
+      \item Generowane są zdjęcia, z interpolacją szkieletu z gestu startowego do docelowego.
+      \item Zdjęcia są przekazywane do wyuczonej sieci i zapisywane
+      \item Zdjęcia są sklejane w animacje dzięki OpenCV
+    \end{enumerate}
   }
 }
 

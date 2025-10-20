@@ -168,6 +168,29 @@
       \field{title}{Unified Generative Adversarial Networks for Controllable Image-to-Image Translation}
       \field{year}{2020}
     \endentry
+    \entry{vgg}{article}{}
+      \name{author}{1}{}{%
+        {{hash=27a666d2993e9a9923f2370828db08e9}{%
+           family={Justin\bibnamedelima Johnson},
+           familyi={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Li\bibnamedelima Fei-Fei},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinithyphendelim F\bibinitperiod},
+           suffix={Alexandre\bibnamedelima Alahi},
+           suffixi={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{27a666d2993e9a9923f2370828db08e9}
+      \strng{fullhash}{27a666d2993e9a9923f2370828db08e9}
+      \strng{bibnamehash}{27a666d2993e9a9923f2370828db08e9}
+      \strng{authorbibnamehash}{27a666d2993e9a9923f2370828db08e9}
+      \strng{authornamehash}{27a666d2993e9a9923f2370828db08e9}
+      \strng{authorfullhash}{27a666d2993e9a9923f2370828db08e9}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Perceptual Losses for Real-Time Style Transfer and Super-Resolution}
+      \field{year}{2016}
+    \endentry
     \entry{sztuczna-inteligencja}{article}{}
       \name{author}{1}{}{%
         {{hash=a70dfc5c88fa569aad5aa24a7cf6e45a}{%
@@ -356,6 +379,7 @@
       \strng{authorbibnamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
       \strng{authornamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
       \strng{authorfullhash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -367,6 +391,79 @@
       \verb{url}
       \verb https://www.tensorflow.org/tutorials/generative/cyclegan?hl=pl
       \endverb
+    \endentry
+    \entry{pix2pix-tf}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cb20b802a3f0255e054e4fb8821c5ed2}{%
+           family={Tensorflow},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{fullhash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{bibnamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authorbibnamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authornamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authorfullhash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{pix2pix: Tłumaczenie obrazu na obraz z warunkowym GAN}
+      \verb{urlraw}
+      \verb https://www.tensorflow.org/tutorials/generative/pix2pix?hl=pl#import_tensorflow_and_other_libraries
+      \endverb
+      \verb{url}
+      \verb https://www.tensorflow.org/tutorials/generative/pix2pix?hl=pl#import_tensorflow_and_other_libraries
+      \endverb
+    \endentry
+    \entry{image-seg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cb20b802a3f0255e054e4fb8821c5ed2}{%
+           family={Tensorflow},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{fullhash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{bibnamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authorbibnamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authornamehash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \strng{authorfullhash}{cb20b802a3f0255e054e4fb8821c5ed2}
+      \field{extraname}{3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Segmentacja obrazu}
+      \verb{urlraw}
+      \verb https://www.tensorflow.org/tutorials/images/segmentation?hl=pl#what_is_image_segmentation
+      \endverb
+      \verb{url}
+      \verb https://www.tensorflow.org/tutorials/images/segmentation?hl=pl#what_is_image_segmentation
+      \endverb
+    \endentry
+    \entry{u-net}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c08e719a8518bd75a64174a0287b10d5}{%
+           family={Xin\bibnamedelima Wu},
+           familyi={X\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Jocelyn\bibnamedelima Chanussot},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           suffix={Danfeng\bibnamedelima Hong},
+           suffixi={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c08e719a8518bd75a64174a0287b10d5}
+      \strng{fullhash}{c08e719a8518bd75a64174a0287b10d5}
+      \strng{bibnamehash}{c08e719a8518bd75a64174a0287b10d5}
+      \strng{authorbibnamehash}{c08e719a8518bd75a64174a0287b10d5}
+      \strng{authornamehash}{c08e719a8518bd75a64174a0287b10d5}
+      \strng{authorfullhash}{c08e719a8518bd75a64174a0287b10d5}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{UIU-Net: U-Net in U-Net for Infrared Small Object Detection}
+      \field{year}{2022}
     \endentry
   \enddatalist
 \endrefsection

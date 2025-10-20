@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 
 class Discriminator(nn.Module):
-
     def __init__(self, in_channels=3):
         super(Discriminator, self).__init__()
         # helper function to construct layers quickly
