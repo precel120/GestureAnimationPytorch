@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  23 OCT 2025 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  23 OCT 2025 23:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -662,11 +662,11 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <6> on input line 2.
-)
+ [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `Praca_Magisterska_Maciej_Pracucik.toc'.
 
- [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [3] [4]
+ [3] [4]
 <./zdjecia//neural-network-stanford.png, id=35, 1505.625pt x 351.3125pt>
 File: ./zdjecia//neural-network-stanford.png Graphic file (type png)
 <use ./zdjecia//neural-network-stanford.png>
@@ -779,25 +779,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 444--449
 
  []
 
-[23 <./zdjecia//discriminator.png>] [24] [25] [26
+[23 <./zdjecia//discriminator.png>] [24]
+<./zdjecia//cycle-gan/epoch-1.jpg, id=130, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-1.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-1.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-1.jpg  used on input line 515.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-5.jpg, id=131, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-5.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-5.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-5.jpg  used on input line 521.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-15.jpg, id=132, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-15.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-15.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-15.jpg  used on input line 529.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-20.jpg, id=133, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-20.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-20.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-20.jpg  used on input line 535.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-25.jpg, id=134, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-25.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-25.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-25.jpg  used on input line 543.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-30.jpg, id=135, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-30.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-30.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-30.jpg  used on input line 549.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-35.jpg, id=136, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-35.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-35.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-35.jpg  used on input line 557.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-40.jpg, id=137, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-40.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-40.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-40.jpg  used on input line 563.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-45.jpg, id=138, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-45.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-45.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-45.jpg  used on input line 571.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+<./zdjecia//cycle-gan/epoch-50.jpg, id=139, 867.24pt x 867.24pt>
+File: ./zdjecia//cycle-gan/epoch-50.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/epoch-50.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-50.jpg  used on input line 577.
+(pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
+ [25] [26 <./zdjecia//cycle-gan/epoch-1.jpg> <./zdjecia//cycle-gan/epoch-5.jpg> <./zdjecia//cycle-gan/epoch-15.jpg> <./zdjecia//cycle-gan/epoch-20.jpg> <./zdjecia//cycle-gan/epoch-25.jpg> <./zdjecia//cycle-gan/epoch-30.jpg>] [27 <./zdjecia//cycle-gan/epoch-35.jpg> <./zdjecia//cycle-gan/epoch-40.jpg> <./zdjecia//cycle-gan/epoch-45.jpg> <./zdjecia//cycle-gan/epoch-50.jpg>] [28] [29
 
-] [27] (./Praca_Magisterska_Maciej_Pracucik.lof)
+] [30] (./Praca_Magisterska_Maciej_Pracucik.lof)
 \tf@lof=\write5
 \openout5 = `Praca_Magisterska_Maciej_Pracucik.lof'.
 
- [28
+ [31
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lot)
 \tf@lot=\write6
 \openout6 = `Praca_Magisterska_Maciej_Pracucik.lot'.
 
- [29
+ [32
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lol)
 \tf@lol=\write7
 \openout7 = `Praca_Magisterska_Maciej_Pracucik.lol'.
 
- [30
+ [33
 
 ] (./Praca_Magisterska_Maciej_Pracucik.aux)
 Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.xml'.
@@ -805,18 +856,18 @@ Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.
 
  ) 
 Here is how much of TeX's memory you used:
- 15246 strings out of 480139
- 278278 string characters out of 5893693
- 993769 words of memory out of 5000000
- 32993 multiletter control sequences out of 15000+600000
+ 15355 strings out of 480139
+ 281386 string characters out of 5893693
+ 994033 words of memory out of 5000000
+ 33091 multiletter control sequences out of 15000+600000
  478224 words of font info for 50 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
  67i,17n,77p,799b,1712s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca_Magisterska_Maciej_Pracucik.pdf (30 pages, 6542152 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt12.pfb>
+Output written on Praca_Magisterska_Maciej_Pracucik.pdf (33 pages, 7132438 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 236 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

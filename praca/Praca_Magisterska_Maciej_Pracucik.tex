@@ -273,9 +273,9 @@
   }
 }
 
-\section{Proces tworzenia projektu}
+\section{Proces tworzenia projektu} \label{proces}
 {
-  \subsection{Dobór zbioru danych}
+  \subsection{Dobór zbioru danych} \label{dataset}
   {
     Pierwszym i bardzo, ale to bardzo ważnym krokiem jest wybór zbioru danych. 
     Zbiór danych to podstawa projektu, jakość modelu ma bezpośrednie przełożenie, w zależności od danych, jak również ich przygotwania. 
@@ -336,7 +336,7 @@
     \end{itemize}
     Tak jak można zauważyć jest to doskonały zbiór danych, do ideału brakuje jednego, żeby był sparowany, ale i to nie jest problem, o czym więcej w rozdziale o preprocessingu. 
     }
-  \subsection{Wybór architektury sieci}
+  \subsection{Wybór architektury sieci} \label{architektura}
   {
     Wybór architektury był nieco uproszczony, bo z założenia projekt wymaga użycia sieci GAN, jednakże podtypów sieci jest dużo.
     Początkowo wybrany został CycleGAN, w zwiazku z tym, że wybrany zbiór nie był sparowany, a CycleGAN dzięki dodatkowej funkcji straty, wykorzystuje 
@@ -360,7 +360,7 @@
     Dokładnie co zostało zrobione jest w kolejnym rozdziale. W dużym skrócie, na ręke z danym gestem, została, na dłoń, nakładana maska i na nią szkielet gestu.
     Co czyni nasz zbiór sparowanym i idealnym kandydatem dla Pix2Pix.
   }
-  \subsection{Preprocesowanie danych}
+  \subsection{Preprocesowanie danych} \label{preprocesowanie}
   {
     Preprocesowanie zaczeło się od najprostszej, a zarazem bardzo ważnej części. Przycięcia zdjęć do wielkości 256x256, czyli standardu dla sieci GAN.
     \begin{figure}
@@ -418,7 +418,7 @@
     Jednakże każde zdjęcie jest różne dlatego niezbędne było dobranie jednego rozmiaru maski, która będzie pasować dla znacznej większości obrazów. 
     Tak przygotowane zdjęcia, a w zasadzie zbiór danych posłużył do treningu i testowania sieci.
   }
-  \subsection{Model sieci}
+  \subsection{Model sieci} \label{model}
   {
     Architektura Pix2Pix jest typem warunkowej, generatywnej sieci adwersarza (cGAN), ma za zadanie nauczyć się mapowania pomiędzy obrazami, przy sparowanych danych.
     Pix2Pix jest bardzo uniwersalnym narzędziem, można go zastosować przykładowo do generowania kolorowych zdjęć z czarno białych, przekształcania szkiców w zdjęcia \cite{pix2pix-tf}, czy robienia z dnia nocy. 
@@ -441,14 +441,14 @@
       \caption{Dyskryminator PatchGAN}
       \label{fig:discriminator}
     \end{figure}
-    W zasadzie zaproponowane rozwiązanie nie różni się znacznie od klasycznego Pix2Pix. 
+    Zaproponowane rozwiązanie nie różni się znacznie od klasycznego Pix2Pix. 
     Jednakże co go wyróżnia i dało kolosalną różnicę w wyglądzie i jakości to zastosowanie straty percepcyjnej VGG \cite{vgg}. \\
     Jest to stosunkowo nowo zaproponowane podejście. Klasycznym podejściem było sprawdzanie straty pomiędzy wygenerowanym pixelem a prawdziwym obrazem. 
     W tym, porównuje się ich reprezentacje cechowe uzyskane z warstw konwolucyjnych sieci VGG, wytrenowanej na ImageNet. 
     Co daje znacznie bardziej realistyczne rezultaty. \\
     \[ \mathcal{L}_{\text{perc}} = \sum_{l} \lambda_l \, \| \phi_l(I_{\text{gen}}) - \phi_l(I_{\text{ref}}) \|_2^2 \]
   }
-  \subsection{Flow i animacja}
+  \subsection{Flow i animacja} \label{flow}
   {
     Flow uczenia sieci jest następujący:
     \begin{enumerate}
@@ -489,8 +489,101 @@
 
 \section{Wyniki i dyskusja}
 {
-  wyniki
+  Jak zostało omówione w rozdziale wyżej, ścieżka rozwoju i dochodzenia do właściwego rozwiązania, była dosyć wyboista i trudna. 
+  W tym rozdziale zostanie przybliżone, nieco bardziej, jak wyglądały rezultaty niektórych prób. 
+  Niestety nie wszystkie zostały zapisane, ponieważ najczęściej wyglądały bardzo zbliżenie do poprzednich przez co, mijało się to z celem, aby pokazywać dokładnie takie same zdjęcia, czy też suche liczby.
+  \subsection{CycleGAN}
+  {
+    Tak jak zostało omówione w podrozdziale \ref{architektura}, pierwszym wyborem jeśli chodzi o architekturę, był CycleGAN. 
+    Na pierwszy rzut oka, spełniał wszystkie wymagania projektowe. 
+    Operował na zbiorach niesparowanych, był doskonały do translacji image to image, nawet patrząc na tutorial \cite{cyclegan-tf} wyglądało to obiecująco. 
+    W końcu, zrobienie z koni zebry, czy też z jabłek pomarańcze, to manipulacja zdjęciem, ale to dalej to samo zdjęcie tylko z wprowadzonymi wyuczonymi zmianami. 
+    O to dokładnie chodzi, żeby dłoń ze zdjęcia, z określonym gestem, zmieniła tylko gest. Tło, postura, kolor skóry, ubranie, wszystko pozostaje takie samo. \\
+    Niestety najprawdopodobniej to ta różnica, że tu manipulowana jest cecha, a w tych przypadkach kolor czy tekstura obiektu, a w tym przypadku całe ułożenie dłoni, mogło zaważyć na niepowodzeniu. 
+    Przykładowy rezultat treningu przy wykorzystaniu sieci CycleGAN:
+    Parametry treningu:
+    \begin{itemize}
+      \item Liczba epok: 50
+      \item Batch size: 1
+      \item Buffer size: 500
+      \item Lambda: 20
+    \end{itemize}
+
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-1.jpg}
+        \caption{Epoka 1}
+        \label{fig:cg-1}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-5.jpg}
+        \caption{Epoka 5}
+        \label{fig:cg-5}
+      \end{subfigure}
+    \end{figure}
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-15.jpg}
+        \caption{Epoka 15}
+        \label{fig:cg-15}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-20.jpg}
+        \caption{Epoka 20}
+        \label{fig:cg-20}
+      \end{subfigure}
+    \end{figure}
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-25.jpg}
+        \caption{Epoka 25}
+        \label{fig:cg-25}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-30.jpg}
+        \caption{Epoka 30}
+        \label{fig:cg-30}
+      \end{subfigure}
+    \end{figure}
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-35.jpg}
+        \caption{Epoka 35}
+        \label{fig:cg-35}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-40.jpg}
+        \caption{Epoka 40}
+        \label{fig:cg-40}
+      \end{subfigure}
+    \end{figure}
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-45.jpg}
+        \caption{Epoka 45}
+        \label{fig:cg-45}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-50.jpg}
+        \caption{Epoka 50}
+        \label{fig:cg-50}
+      \end{subfigure}
+    \end{figure}
+    Jak możemy zaobserwować po kolejnych epokach
+  }
 }
+
+\newpage
 
 \section{Podsumowanie}
 {
