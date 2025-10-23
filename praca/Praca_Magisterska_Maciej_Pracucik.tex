@@ -64,10 +64,11 @@
   {
     W dzisiejszych czasach bardzo modnym tematem jest sztuczna inteligencja, która zaczyna się wkradać w każdy aspekt naszego życia.
     Możemy ją spotkać w formie chatów, podpowiedzi do pisanego kodu, asystentów internetowych, systemów rozpoznawania głosów, czy nawet we własnej lodówce!
-    Każda firma żeby zaistnieć i pozostać istotną inwestuje w tę część technologii. Jednakże to z czym AI radzi sobie najgorzej są ręce.
+    Każda firma żeby zaistnieć i pozostać istotną inwestuje w tę część technologii. Jedną z gałęzi rozwoju jest generowanie zdjęć, czy filmów.
+    AI już jest w stanie wygenerować przeróżne obrazy, jednakże to z czym AI radzi sobie najgorzej są ręce.
     \newline
     W tym projekcie chodzi o stworzenie sieci typu GAN, która pozwoli na generowanie obrazów rąk, w jak najlepszej jakości.
-    Dodatkowo sieć ma za zadanie nauczyć się, żeby móc modyfikować istniejące zdjęcia i nadawać im zupełnie inny gest, przy zachowaniu jakości i realizmu.
+    Dodatkowo sieć ma za zadanie nauczyć się, żeby modyfikować istniejące zdjęcia i nadawać im zupełnie inny gest, przy zachowaniu jak najlepszej jakości i realizmu.
     Szczególnie ten drugi aspekt pozostaje dla sztucznej inteligencji problematyczny. 
     Myślę, że każdy z nas spotkał się ze zdjęciami, które dosłownie wyglądają, jak żywe, ale to co najczęściej zdradza, że jednak to AI maczało w nim palce są ręce.
     Za długie palce, dziwne ich ułożenie, ilość, czy nawet totalnie odrealniony wygląd. 
@@ -158,7 +159,7 @@
       \caption{Ogólny model sieci GAN \cite{google-gan}}
       \label{fig:gan-budowa}
     \end{figure}
-    Sieci GAN mają oczywiście swoje pod typy, czy też może framworki, czy jeszcze inaczej już wcześniej stworzone typy tej sieci, które są powszechnie znane i używane.
+    Sieci GAN mają oczywiście swoje pod typy, czy też może frameworki, czy jeszcze inaczej już wcześniej stworzone typy tej sieci, które są powszechnie znane i używane.
     Wyróżnić można:
     \begin{itemize}
       \item Pix2Pix jest to sieć, która przetwarza jedno zdjęcie w drugie, co jest istotne w tej sieci to to, że dane musza być sparowane, czyli jeden z obrazów jest obrazem wejsciowym, a drugim obrazem wyjsciowym
@@ -168,7 +169,7 @@
   }
   \subsection{GestureGAN}
   {
-    GestureGAN\cite{gesture-gan} jest to propozycja stworzona przez specjalistów z różnych uczelni, takich jak OXform czy Texas State Univerity.
+    GestureGAN\cite{gesture-gan} jest to propozycja stworzona przez specjalistów z różnych uczelni, takich jak Oxford czy Texas State Univerity.
     W swoim założeniu ma robić to samo co sieć stworzona na potrzeby tego projektu, jednakże to jej budowa jest tym co je rozróżnia.
     Była to bardzo duża inspiracja przy tworzeniu projektu, podobnie jak niniejsza sieć wykorzystywany jest mediapipe do ekstrakcji szkieletu. 
     Co je np rozróżnia to, że GestureGAN otrzymuje dwa zdjęcia na wejściu, jedno prawdziwe, drugie samego szkieletu docelowego i ma wyjściu otrzymujemy wygenerowane zdjęcie i pierwotny szkielet.
@@ -181,7 +182,7 @@
       \caption{Model GestureGAN \cite{gesture-gan}}
       \label{fig:gesture-gan-budowa}
     \end{figure}
-    i tu jeszcze przykładowe efekty i możliwości GestureGAN\cite{gesture-gan}.
+    i tu jeszcze przykładowe efekty i możliwości GestureGAN:
     \begin{figure}[H]
       \centering
       \includegraphics[width=0.9\textwidth]{gesturegan-framework.jpg}
@@ -189,8 +190,8 @@
       \label{fig:gesture-gan-przyklady}
     \end{figure}
     Ten projekt stanowiłby bardzo dobrą baze, generuje wyraźnie i zróżnicowane gesty rąk, jest bardzo uniwersalny, ale problem zaczyna się już na początku.
-    Zbiór danych, który tutaj jest wykorzystywany jest niedostępny, albo wymaga dodatkowych dostępów. Nie wszystkie dane też są dostępne, choćby zdjęcia szkieletów.
-    Te dane, które były dostępne, było ich po prostu za mało, plus możliwości tego projektu nie są aż tak potrzebne do realizacji tego, plus nie wiadomo jak z rozszerzalnością kodu.
+    Zbiór danych, który tutaj jest wykorzystywany jest niedostępny, albo wymaga dodatkowych dostępów. Nie wszystkie dane też są wygenerowane, choćby zdjęcia szkieletów.
+    Te dane, które były dostępne, było ich po prostu za mało. Samego projektu też ciężko zrozumieć i nie wiadomo jak z rozszerzalnością kodu.
     Dlatego najlepszym rozwiązaniem było przygotowanie własnego zbioru danych, własnego modelu i metodą prób i błędów, dochodzenie do rozwiązania.
   }
   \subsection{PoseGAN}
@@ -212,8 +213,9 @@
       \label{fig:pose-gan-przyklady}
     \end{figure}
     Projekt jest niewątpliwie bardzo imponujący jednakże no właśnie skupia się na czymś kompletnie innym. 
-    Tak jak widać na \ref{fig:pose-gan-przyklady} dłonie nawet nie są wyszczególnione na szkielecie, a przerabianie, a w zasadzie dorabianie takiego elementu byłoby zbyt czasochłonne.
-    Sieć i tak by musiała się uczyć wszystkiego od nowa, plus no właśnie do końca interesuje nas cały ludzki szkielet. Dlatego niezbędne było stworzenie własnego projektu.
+    Tak jak widać na rysunek \ref{fig:pose-gan-przyklady} dłonie nawet nie są wyszczególnione na szkielecie, a przerabianie, dorabianie takiego elementu byłoby zbyt czasochłonne. 
+    Ciężko też ocenić czy przyniosłoby zadowalające rezultaty, przy innym zbiorze danych skupionych czysto na dłoniach.
+    Sieć i tak by musiała się uczyć wszystkiego od nowa, plus no właśnie nie do końca interesuje nas cały ludzki szkielet. Dlatego niezbędne było stworzenie własnego projektu.
   }
 }
 
@@ -222,47 +224,47 @@
   \subsection{Python}
   {
     Językiem programowania wykorzystanym do realizacji projektu jest Python. 
-    Jest to bardzo oczywisty wybór, ponieważ jest to najpopularniejszy język programowania do tworzenia sieci neuronowych w dzisiejszych czasach.
-    Przybliżmy go jednak, według oficjalnej dokumentacji, jest "łatwym do nauczenia się i potężnym językiem programowania. 
+    Jest to bardzo oczywisty wybór, ponieważ jest to najpopularniejszy język programowania do tworzenia sieci neuronowych, w dzisiejszych czasach.
+    Przybliżmy go jednak. Według oficjalnej dokumentacji, jest "łatwym do nauczenia się i potężnym językiem programowania. 
     Posiada wydajne struktury danych wysokiego poziomu oraz proste, ale skuteczne podejście do programowania obiektowego"\cite{python-docs}.
-    Co niejako wyróżnia go na tle innych języków to fakt, że jest dynamicznie typowany oraz jest językiem interpetowanym. 
+    Co niejako wyróżnia go na tle innych języków, to fakt, że jest dynamicznie typowany oraz jest językiem interpetowanym. 
     To oznacza, że nie posiada kompilatora a interpeter, który nie kompiluje programu do pliku wykonywalnego, a kod jest wykonywany w czasie rzeczywistym.
     Czyni to Python językiem łatwym w testowaniu, kompilowaniu czy wykonywaniu, przenośny, co oznacza, że ten sam kod uruchomi się niezależnie od systemu operacyjnego czy urządzenia.
-    Sam język Python jest zbudowany na bibliotece C, co oznacza, że jest bardzo szybki i wydajny. 
+    Sam język Python jest napisany w języku C, co oznacza, że jest bardzo szybki i wydajny. 
     Został stworzony przez Guido van Rossuma w roku 1991.
     Co ciekawe jego nazwa wywodzi się z starych serii skeczów grupy Monty Python’s Flying Circus, 
     a zyskał na popularności w momencie gdy firma Google, powiedziała, że wykorzystuje go do własnych, wewnętrzych celów.
     \newline
     Jednakże czemu akurat to on jest najczęściej wykorzystany do AI? Odpowiedź jest tak prosta jak sam Python jest prosty.
-    Wynika to z tego, że Python ma bardzo prostą i czytelną składnię, co pozwala developerom skupianie się na logice i samym problemie, a nie na składni\cite{python-ai}.
+    Wynika to z tego, że Python ma bardzo prostą i czytelną składnię, co pozwala developerom, czy naukowcom skupianie się na logice i samym problemie, a nie na składni\cite{python-ai}.
     Dodatkowo Python sam w sobie nie wymaga dużej ilości kodu. Najprostsza sieć neuronowa może zostać stworzona i uruchomiona w zaledwie 4 linijki!
     Kolejnym powodem przemawiającym dlaczego to własnie Python jest najczęściej używany, 
     jest bardzo duża ilość bibliotek, czy to wbudowanych, czy stworzonych przez społeczność. 
     Biblioteki takie jak NumPy, SciPy, Matplotlib, czy wykorzystane w tym projekcie PyTorch czy MediaPipe, o których będzie w kolejnych podroździałach.
-    Także kolejnym i osatnim już aspektem, o którym chcę wspomnieć, jest wyżej wymieniona społeczność. 
+    Także kolejnym i osatnim już aspektem, o którym warto wspomnieć, jest wyżej wymieniona społeczność. 
     To dzięki dużej liczbie osób i ogromnym zebranym doświadczeniu, tworzenie dowolnego projektu staje się znacznie prostsze. 
-    Praktycznie każdy projekt, aspekt projektu czy problem natrafiało wcześniej duża część ludzi, dzięki czemu możemy szybko i sprawnie rozwiązaywać problem.
+    Praktycznie każdy projekt, aspekt projektu czy problem, ktoś już natrafił, dzięki czemu możemy szybko i sprawnie rozwiązaywać problem.
   }
   \subsection{PyTorch}
   {
-    "PyTorch to w pełni funkcjonalny framewordk do tworzenia modeli do deep learningu, kóry jest typem machine learningu, najczęściej wykorzystywanym w aplikacjach takich jak
+    "PyTorch to w pełni funkcjonalny framework do tworzenia modeli do deep learningu, który jest typem machine learningu, najczęściej wykorzystywanym w aplikacjach takich jak
     rozpoznawanie obrazów czy procesowanie języka."\cite{pytorch-nvidia} 
-    Biblioteka ta została napisana w Pythonie, przez developerów z Facebook AI Research, oraz ma doskonałe wsparcie do wykorzystywania GPU, szczególnie dla GPU od firmy Nvidia, który posiadam.
+    Biblioteka ta została napisana w Pythonie, przez developerów z Facebook AI Research, oraz ma doskonałe wsparcie do wykorzystywania GPU, szczególnie dla GPU od firmy Nvidia.
     Co czyni ją idealną biblioteką dla tego projektu. Jednak projekt dotyczy generowania obrazów rąk, czyli dobre wykorzystanie GPU jest bardzo wskazane.
-    Początkowo jednak używana była konkurencyjna biblioteka, a dokładnie Tensorflow, jednakże była zdecydowanie wolniejsza i mniej klarowna od PyTorch co zaważyło na finalnym wyborze.
+    Początkowo jednak używana była konkurencyjna biblioteka, a dokładnie Tensorflow, jednakże była wolniejsza, miała gorsze wykorzystanie GPU i była mniej klarowna od PyTorch, co zaważyło na finalnym wyborze.
   }
   \subsection{MediaPipe}
   {
     "MediaPipe Solutions to zestaw bibliotek i narzędzi, które umożliwiają szybkie stosowanie w aplikacjach technik sztucznej inteligencji (AI) i uczenia maszynowego (ML). "\cite{mediapipe}
     Opis ten pochodzi z oficjalnej dokumentacji Mediapipe, jednakże sam opis jest zbyt ogólny. 
-    Ta biblioteka ma masę możliiwości i zastosować. Do nich można zaliczyć np. rozpoznawanie obrazu, nie chcemy pisać sieci do rozpoznawania, czy na danym obrazku jest pies czy kot? Mediapipe daje gotowe rozwiązanie!
-    Poza tym do wyboru jest też klasyfikacja obrazu, segmentacja obrazu, wykrywanie twarzy, rozpoznawanie gestu, oraz to co było niezbędne w tym projekcie to wykrywanie rąk.
-    To dzieki tej bibliotece udało się wyłuskać szkielet ręki na każdym z obrazów ze zbioru danych, nałożyć go na zdjęcie wraz z maską i przekazane do modelu. 
-    Później te informacje były użyte do tworzenia kolejnych klatek animacji przechodzenia z jednego gestu w drugi.
+    Ta biblioteka ma masę możliwości i zastosowań. Do nich można zaliczyć np. rozpoznawanie obrazu. Nie chcemy pisać sieci do rozpoznawania, czy na danym obrazku jest pies czy kot? Mediapipe daje gotowe rozwiązanie!
+    Poza tym do wyboru jest też klasyfikacja obrazu, segmentacja obrazu, wykrywanie twarzy, rozpoznawanie gestu, oraz to co było niezbędne w tym projekcie to wykrywanie rąk i tworzenie szkieletu.
+    To dzieki tej bibliotece udało się wyłuskać szkielet ręki na każdym z obrazów, ze zbioru danych, a następnie nałożyć go na zdjęcie wraz z maską i przekazane do modelu. 
+    Później była przydatna do tworzenia kolejnych klatek animacji, przechodzenia z jednego gestu, w drugi.
   }
   \subsection{OpenCV}
   {
-    OpenCV jest to biblioteka do machine learningu oraz computer vision, posiada w swoim arsenale dostęp do takich narzędzi jak wykrywanie i rozpoznawanie twarzy,
+    OpenCV jest to biblioteka do machine learningu oraz computer vision. Posiada w swoim arsenale dostęp do takich narzędzi jak wykrywanie i rozpoznawanie twarzy,
     identyfikowanie obiektów, śledzenie ruchów kamery, śledzenie obiektów 3D, usuwanie czerwonych oczu ze zdjęć, czy nawet łączenie zdjęć razem, by uzyskać obraz całej sceny o wysokiej rozdzielczości.\cite{opencv}
     Jednak to żadna z tych funkcji nie została użyta w projekcie. 
     Wykrywanie i tworzenie szkieletu to zadanie Mediapipe, tworzenie modelu to działka PyTorch. 
@@ -276,21 +278,21 @@
   \subsection{Dobór zbioru danych}
   {
     Pierwszym i bardzo, ale to bardzo ważnym krokiem jest wybór zbioru danych. 
-    Zbiór danych to podstawa projektu, nasz model jest tyle wart ile nasz dataset i jego obróka. 
+    Zbiór danych to podstawa projektu, jakość modelu ma bezpośrednie przełożenie, w zależności od danych, jak również ich przygotwania. 
     To od niego będzie zależeć zarówno to jak długo sieć będzie się uczyć, ale przede wszystkim jakie osiągnie rezultaty. 
-    Gdy nasz zbiór jest wyraźny, najlepiej dane są sparowane, to nasza sieć bardzo szybko zrozumie na czym polega różnica i na czym powinna się skupiać. \\
+    Gdy zbiór zdjęć jest wyraźny, najlepiej dane są sparowane, to sieć bardzo szybko zrozumie na czym polega różnica i na czym powinna się skupiać. \\
     Poszukiwania były zaskakująco problematyczne, głównie ze względu na słabą współpracę z biblioteką Mediapipe. 
-    Często te zdjęcia to były białe plamy na czarnym tle, przez co ciężko było nawet rozróżnić ustawienie dłoni czy choćby palce.
-    Inny dataset prezentował zdjęcie robione kamerą nocną, co w zasadzie prowadziło do takich samych rezultatów jak w poprzednio wspomnianym zbiorze.
-    Mediapipe nie umiał wychwycić gdzie znajduje się dłoń, palce czy stawy. 
+    Często zdjęcia z innych zbiorów, to były białe plamy na czarnym tle, przez co ciężko było nawet rozróżnić ustawienie dłoni czy choćby palce.
+    Inny dataset prezentował zdjęcie robione kamerą nocną, co w zasadzie prowadziło do takich samych rezultatów, jak w poprzednio wspomnianym zbiorze.
+    Mediapipe nie umiał wychwycić gdzie znajduje się dłoń, palce czy stawy. \\
     Kolejne próby były już na zbiorze przedstawiającym zdjęcia liter przedstawianych w języku migowym. 
     Ten zbiór był dobry, ze wględu na to, że przedstawiał same dłonie, na jednolitym tle, był sparowany. 
     Jednakże co skreśliło go, to fakt, że tych zdjęć było po prostu za mało. 
     Dla problemu takiego jak generowanie gestów, tych zdjęć musi być dużo. Tam było ich mniej więcej 30 na gest. Jest to dużo za mało \\
     Finalnie wybór padł na zbiór HaGrid \cite{nuzhdin2024hagridv21mimagesstatic}. \\
     Ten zbiór nie jest niestety sparowany, jednakże posiada na tyle dużo zalet, że warto było go wybrać. \\
-    Po pierwsze jest ogromny, cały posiada aż 1.5TB, 1 086 158 zdjęć w FullHD, podzielonych na 33 klasy gestów. 
-    Co więcej do zbioru jest dołączony plik json dla każdego gestu, poniżej przykładowy fragment dla jednego zdjęcia:
+    Po pierwsze jest ogromny. Cały posiada aż 1.5TB, 1 086 158 zdjęć w FullHD, podzielonych na 33 klasy gestów. 
+    Co więcej, do zbioru jest dołączony plik json dla każdego gestu, poniżej przykładowy fragment dla jednego zdjęcia:
     \begin{lstlisting}
       "04c49801-1101-4b4e-82d0-d4607cd01df0": {
         "bboxes": [
@@ -350,8 +352,8 @@
       \label{fig:cycle-gan-przyklad}
     \end{figure}
     Na pozór wydawać by się mogło, że to zdjęcie jest ok, sieć kombinuje i dosyć wiernie odtworzyła ręke, jedynie pojawiają się artefakty.
-    No tak, ale nie takie było jej zadanie. 
-    Ona powinna nałożyć nowy gest, ponownie wydawać by się mogło, że zaczyna dobrze kombinować, bo artefakty pojawiają się na dłoni. 
+    Zgadza się, ale nie takie było jej zadanie. 
+    Powinna nałożyć nowy gest. Ponownie wydawać by się mogło, że zaczyna dobrze kombinować, bo artefakty pojawiają się na dłoni. 
     Tylko niestey przy przeróżnych konfiguracjach parametrów, ilości puszczanych epok, czy zmian, nie udało się zmusić sieć do manipulacji gestami.
     Z tego powodu trzeba było coś zmienić, najwyraźniej zbiór jest zbyt zróżnicowany, tła są inne, przedstwiają innych ludzi itd, żeby CycleGAN sobie poradził. \\
     Więc wybrane zostało inne podejście. Nastąpiła zmiana architektury na Pix2Pix i zmanipulowany został zbiór żeby uczynić go sparowanym. 

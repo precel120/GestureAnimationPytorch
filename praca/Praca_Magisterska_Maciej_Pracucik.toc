@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {1.3}Struktura pracy}{4}{}%
 \contentsline {section}{\numberline {2}Sieci GAN, analiza konkurencji i techniczne aspekty realizacji}{5}{}%
 \contentsline {subsection}{\numberline {2.1}Sieci neuronowe i AI}{5}{}%
-\contentsline {subsection}{\numberline {2.2}Budowa sieci neuronowej}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Budowa sieci neuronowej}{6}{}%
 \contentsline {subsection}{\numberline {2.3}Sieci typu GAN}{7}{}%
 \contentsline {subsection}{\numberline {2.4}GestureGAN}{8}{}%
 \contentsline {subsection}{\numberline {2.5}PoseGAN}{10}{}%
