@@ -614,7 +614,7 @@
     Jednak nauka przebiegała na zdjęciu szkieletu ręki i oryginalnym zdjęciu, więc zaledwie zmiana szkieletu może wystarczyć. 
     Okazało się ty być częściowo prawdą, ale dopiero później, sama nauka przebiegała bez problemów.
     Przykłady:
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_1.jpg}
@@ -634,7 +634,7 @@
       \caption{Parametry: batch - 256, epochs - 50, learning rate - 1e-4, lambda - 100}
     \end{figure}
     Wyniki są dalej nieco rozmazane, ale dalsze douczenie przyniosło oczekiwane rezultaty.
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_1.jpg}
@@ -665,18 +665,125 @@
     Niestety tu wyszedł problem z takim podejściem. 
     Faktycznie wynik był zdecydowanie bliższy do oczekiwanego rezultatu, ale absolutnie nie był czytelny.
     Ciężko było rozpoznać czy to w ogóle ręka, czy jakiś potwór jak z filmu "The Thing" Johna Carpentera.
-    \begin{figure}
+    \begin{figure}[H]
       \centering
-      \includegraphics[width=.8\linewidth]{pix2pix/generated_single.jpg}
+      \includegraphics{pix2pix/generated_single.jpg}
       \caption{Rezultat przepuszczenia przez sieć zdjęcia z nałożonym szkieletem docelowego gestu}
     \end{figure}
+
     Co okazało się znacząco poprawić rezultaty, było dołożenie do nauki zbioru z drugim gestem, który jest docelowym gestem. 
-    Oczywiście dalej nie były zdjęcia dwóch gestów, wykonywanych przez tą samą osobę, ale dało się rozpoznać chociaż zarysy gestu
-    \begin{figure}
+    Oczywiście dalej nie były zdjęcia dwóch gestów, wykonywanych przez tą samą osobę, ale dało się rozpoznać chociaż zarysy gestu.
+
+    \begin{figure}[H]
       \centering
-      \includegraphics[width=.8\linewidth]{pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg}
+      \includegraphics{pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg}
       \caption{Rezultat po dodaniu zbioru z drugim gestem}
     \end{figure}
+    Kolejnym etapem było dodanie VGG perceptual loss, który został nieco przybliżony w rozdziale \ref{model}, oraz manipulacja parametrami. 
+    \begin{figure}[H]
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_1.jpg}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_20.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_40.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_60.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_80.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_100.jpg}
+      \end{subfigure}
+      \caption{Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 10}
+    \end{figure}
+    \begin{figure}[H]
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_1.jpg}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_20.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_40.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_60.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_80.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
+      \end{subfigure}
+      \caption{Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 15}
+    \end{figure}
+    \begin{figure}[H]
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_1.jpg}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_20.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_40.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_60.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_80.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
+      \end{subfigure}
+      \caption{Parametry: batch - 256, epochs - 200, learning rate - 1e-4, lambda - 20}
+    \end{figure}
+    Na pozór rezultaty są bardzo porównywalne do tych bez VGG, jednak to gdzie najbardziej widać różnicę jest przy wygenerowaniu zdjęcia z nowym gestem:
+    \begin{figure}[H]
+      \begin{subfigure}{.32\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/source.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.32\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/replace.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.32\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/result.jpg}
+      \end{subfigure}
+      \caption{Wygenerowane zdjęcie z dodatkiem VGG}
+    \end{figure}
+    Tu już rezultat był bardzo zadowlający, gest jest w pełni widoczny, palce da się wyróżnić. 
+    Jedynie co pozostaje do dopracowania to poprawienie jakości tła, a dokładniej miejsca gdzie znajduje się maska dłoni. \\
+    Ostatnim i finalnym krokiem było wygenerowanie animacji zmiany gestu, co wymagało wygenerowania dodatkowych zdjęć, które posłużyły jako klatki animacji o czym więcej w rozdziale \ref{flow}. \\
+    Projekt okazał się być zdecydowanie bardziej skomplikowany, niż pozornie było zakładane. 
+    Tym bardziej, że istnieje gotowe rozwiązanie, jednakże im dalej, tym trudności i przeszkody były przeróżne i niestabilne. 
+    Na szczęście finalnie udało się znaleźć złoty środek i sfinalizować projekt, jednocześnie uzyskująć bardzo zadowalające rezultaty. 
+    Gdzie warto przypomnieć, że sztuczna inteligencja ma bardzo duże trudności z dłońmi. Tym bardziej imponujące są rezultaty.
   }
 }
 
