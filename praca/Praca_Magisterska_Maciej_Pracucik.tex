@@ -579,7 +579,104 @@
         \label{fig:cg-50}
       \end{subfigure}
     \end{figure}
-    Jak możemy zaobserwować po kolejnych epokach
+    Jak możemy zaobserwować po kolejnych epokach efekt jest żaden. 
+    Widać już przy epoce 15, że jakby sieć zaczynała łapać o co chodzi, jednakże aż do epoki 45 jedyną zmianą było dalsze zniekształcenie dłoni. 
+    Co ciekawe, jak można zauważyć, w epoce 50 zdjęcie wróciło do oryginalnego wyglądu. 
+    Niestety dalsze douczania nie dawały żadnych rezultatów. Nie wspominając o jakichś zadowalających czy obiecujących. \\
+    Próby modyfikacji parametrów, zmiany w preprocessingu zbioru danych, również nijak nie wpłyneły na efekt. Dalej cel był daleko. 
+    Oto kilka przykładowych rezultatów z różnych prób:
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.9\textwidth]{cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg}
+      \caption{Uczenie na wyciętych dłoniach, na czarnym tle}
+    \end{figure}
+    Jak można zaobserwować na obrazkach powyżej wyniki są przeróżne. 
+    Przez zdjęcia wyglądające jak w negatywie, po rozmazania, plamy niczym z obrazu ekspresjonistycznego.
+  }
+  \subsection{Pix2Pix}
+  {
+    Jak zostało wspomniane w poprzedniej sekcji \ref{proces}, finalny wybór padł na Pix2Pix. 
+    Wymagało to zmiany w zbiorze danych, o czym zostało wspomniane w rozdziale o preprocessingu danych \ref{preprocesowanie}. 
+    Dopiero w końcu dzięki temu pojawiło się światełko w tunelu. Początkowo nauka przebiegała tylko na zbiorze z jednym gestem. 
+    Powodem tego było sprawdzenie czy faktycznie przyniesie to jakieś rezultaty. 
+    Jednak nauka przebiegała na zdjęciu szkieletu ręki i oryginalnym zdjęciu, więc zaledwie zmiana szkieletu może wystarczyć. 
+    Okazało się ty być częściowo prawdą, ale dopiero później, sama nauka przebiegała bez problemów.
+    Przykłady:
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_1.jpg}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_20.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_40.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_50.jpg}
+      \end{subfigure}
+      \caption{Parametry: batch - 256, epochs - 50, learning rate - 1e-4, lambda - 100}
+    \end{figure}
+    Wyniki są dalej nieco rozmazane, ale dalsze douczenie przyniosło oczekiwane rezultaty.
+    \begin{figure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_1.jpg}
+      \end{subfigure}%
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_20.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_40.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_60.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_80.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_100.jpg}
+      \end{subfigure}
+      \caption{Efekty dalszego douczania}
+    \end{figure}
+    Kolejnym etapem było przekazanie zdjęcia ze zmienionym gestem, na docelowy.
+    Niestety tu wyszedł problem z takim podejściem. 
+    Faktycznie wynik był zdecydowanie bliższy do oczekiwanego rezultatu, ale absolutnie nie był czytelny.
+    Ciężko było rozpoznać czy to w ogóle ręka, czy jakiś potwór jak z filmu "The Thing" Johna Carpentera.
+    \begin{figure}
+      \centering
+      \includegraphics[width=.8\linewidth]{pix2pix/generated_single.jpg}
+      \caption{Rezultat przepuszczenia przez sieć zdjęcia z nałożonym szkieletem docelowego gestu}
+    \end{figure}
+    Co okazało się znacząco poprawić rezultaty, było dołożenie do nauki zbioru z drugim gestem, który jest docelowym gestem. 
+    Oczywiście dalej nie były zdjęcia dwóch gestów, wykonywanych przez tą samą osobę, ale dało się rozpoznać chociaż zarysy gestu
+    \begin{figure}
+      \centering
+      \includegraphics[width=.8\linewidth]{pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg}
+      \caption{Rezultat po dodaniu zbioru z drugim gestem}
+    \end{figure}
   }
 }
 

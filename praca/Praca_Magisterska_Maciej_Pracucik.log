@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  23 OCT 2025 23:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  31 OCT 2025 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -830,25 +830,122 @@ File: ./zdjecia//cycle-gan/epoch-50.jpg Graphic file (type jpg)
 <use ./zdjecia//cycle-gan/epoch-50.jpg>
 Package pdftex.def Info: ./zdjecia//cycle-gan/epoch-50.jpg  used on input line 577.
 (pdftex.def)             Requested size: 182.09833pt x 182.08607pt.
- [25] [26 <./zdjecia//cycle-gan/epoch-1.jpg> <./zdjecia//cycle-gan/epoch-5.jpg> <./zdjecia//cycle-gan/epoch-15.jpg> <./zdjecia//cycle-gan/epoch-20.jpg> <./zdjecia//cycle-gan/epoch-25.jpg> <./zdjecia//cycle-gan/epoch-30.jpg>] [27 <./zdjecia//cycle-gan/epoch-35.jpg> <./zdjecia//cycle-gan/epoch-40.jpg> <./zdjecia//cycle-gan/epoch-45.jpg> <./zdjecia//cycle-gan/epoch-50.jpg>] [28] [29
+<./zdjecia//cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg, id=140, 1037.8775pt x 260.975pt>
+File: ./zdjecia//cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg  used on input line 590.
+(pdftex.def)             Requested size: 409.71692pt x 103.02625pt.
+ [25] [26 <./zdjecia//cycle-gan/epoch-1.jpg> <./zdjecia//cycle-gan/epoch-5.jpg> <./zdjecia//cycle-gan/epoch-15.jpg> <./zdjecia//cycle-gan/epoch-20.jpg> <./zdjecia//cycle-gan/epoch-25.jpg> <./zdjecia//cycle-gan/epoch-30.jpg>] [27 <./zdjecia//cycle-gan/epoch-35.jpg> <./zdjecia//cycle-gan/epoch-40.jpg> <./zdjecia//cycle-gan/epoch-45.jpg> <./zdjecia//cycle-gan/epoch-50.jpg>]
+<./zdjecia//cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg, id=152, 519.9425pt x 260.975pt>
+File: ./zdjecia//cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg  used on input line 594.
+(pdftex.def)             Requested size: 409.71692pt x 205.65031pt.
+<./zdjecia//cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg, id=153, 1037.8775pt x 260.975pt>
+File: ./zdjecia//cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg  used on input line 598.
+(pdftex.def)             Requested size: 409.71692pt x 103.02625pt.
+<./zdjecia//cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg, id=154, 519.9425pt x 260.975pt>
+File: ./zdjecia//cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg Graphic file (type jpg)
+<use ./zdjecia//cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg>
+Package pdftex.def Info: ./zdjecia//cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg  used on input line 602.
+(pdftex.def)             Requested size: 409.71692pt x 205.65031pt.
+ [28 <./zdjecia//cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg> <./zdjecia//cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg> <./zdjecia//cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg>]
+<./zdjecia//pix2pix/output_copy/generated_1.jpg, id=158, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy/generated_1.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy/generated_1.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy/generated_1.jpg  used on input line 620.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy/generated_20.jpg, id=159, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy/generated_20.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy/generated_20.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy/generated_20.jpg  used on input line 624.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy/generated_40.jpg, id=160, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy/generated_40.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy/generated_40.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy/generated_40.jpg  used on input line 628.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy/generated_50.jpg, id=161, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy/generated_50.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy/generated_50.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy/generated_50.jpg  used on input line 632.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
 
-] [30] (./Praca_Magisterska_Maciej_Pracucik.lof)
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 618--634
+[]$ $[]$ 
+ []
+
+<./zdjecia//pix2pix/output_copy_2/generated_1.jpg, id=162, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy_2/generated_1.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy_2/generated_1.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy_2/generated_1.jpg  used on input line 640.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy_2/generated_20.jpg, id=163, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy_2/generated_20.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy_2/generated_20.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy_2/generated_20.jpg  used on input line 644.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy_2/generated_40.jpg, id=164, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy_2/generated_40.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy_2/generated_40.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy_2/generated_40.jpg  used on input line 648.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy_2/generated_60.jpg, id=165, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy_2/generated_60.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy_2/generated_60.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy_2/generated_60.jpg  used on input line 652.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy_2/generated_80.jpg, id=166, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy_2/generated_80.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy_2/generated_80.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy_2/generated_80.jpg  used on input line 656.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+<./zdjecia//pix2pix/output_copy_2/generated_100.jpg, id=167, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/output_copy_2/generated_100.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/output_copy_2/generated_100.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/output_copy_2/generated_100.jpg  used on input line 660.
+(pdftex.def)             Requested size: 182.09833pt x 182.10175pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 638--662
+[]$ $[]$
+ []
+
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 638--662
+[]$ $[]$ 
+ []
+
+<./zdjecia//pix2pix/generated_single.jpg, id=168, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/generated_single.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/generated_single.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/generated_single.jpg  used on input line 670.
+(pdftex.def)             Requested size: 364.19667pt x 364.22704pt.
+<./zdjecia//pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg, id=169, 256.96pt x 256.96pt>
+File: ./zdjecia//pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg Graphic file (type jpg)
+<use ./zdjecia//pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg>
+Package pdftex.def Info: ./zdjecia//pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg  used on input line 677.
+(pdftex.def)             Requested size: 364.19667pt x 364.22704pt.
+[29 <./zdjecia//cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg>] [30 <./zdjecia//pix2pix/output_copy/generated_1.jpg> <./zdjecia//pix2pix/output_copy/generated_20.jpg> <./zdjecia//pix2pix/output_copy/generated_40.jpg> <./zdjecia//pix2pix/output_copy/generated_50.jpg>] [31 <./zdjecia//pix2pix/output_copy_2/generated_1.jpg> <./zdjecia//pix2pix/output_copy_2/generated_20.jpg> <./zdjecia//pix2pix/output_copy_2/generated_40.jpg> <./zdjecia//pix2pix/output_copy_2/generated_60.jpg> <./zdjecia//pix2pix/output_copy_2/generated_80.jpg> <./zdjecia//pix2pix/output_copy_2/generated_100.jpg>] [32 <./zdjecia//pix2pix/generated_single.jpg>] [33 <./zdjecia//pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg>] [34] [35
+
+] [36] (./Praca_Magisterska_Maciej_Pracucik.lof)
 \tf@lof=\write5
 \openout5 = `Praca_Magisterska_Maciej_Pracucik.lof'.
 
- [31
+ [37
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lot)
 \tf@lot=\write6
 \openout6 = `Praca_Magisterska_Maciej_Pracucik.lot'.
 
- [32
+ [38
 
 ] (./Praca_Magisterska_Maciej_Pracucik.lol)
 \tf@lol=\write7
 \openout7 = `Praca_Magisterska_Maciej_Pracucik.lol'.
 
- [33
+ [39
 
 ] (./Praca_Magisterska_Maciej_Pracucik.aux)
 Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.xml'.
@@ -856,18 +953,18 @@ Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.
 
  ) 
 Here is how much of TeX's memory you used:
- 15355 strings out of 480139
- 281386 string characters out of 5893693
+ 15484 strings out of 480139
+ 288310 string characters out of 5893693
  994033 words of memory out of 5000000
- 33091 multiletter control sequences out of 15000+600000
+ 33203 multiletter control sequences out of 15000+600000
  478224 words of font info for 50 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
  67i,17n,77p,799b,1712s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca_Magisterska_Maciej_Pracucik.pdf (33 pages, 7132438 bytes).
+Output written on Praca_Magisterska_Maciej_Pracucik.pdf (39 pages, 7496169 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 273 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

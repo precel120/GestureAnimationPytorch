@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is '/home/precel/GestureGANPyTorch/praca/build/Praca_Magisterska_Maciej_Pracucik.blg'
-[95] biber:340> INFO - === Thu Oct 23, 2025, 23:25:19
-[110] Biber.pm:418> INFO - Reading 'Praca_Magisterska_Maciej_Pracucik.bcf'
-[167] Biber.pm:972> INFO - Found 17 citekeys in bib section 0
-[178] Biber.pm:4383> INFO - Processing section 0
-[187] Biber.pm:4574> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[188] bibtex.pm:1713> INFO - LaTeX decoding ...
-[197] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
-[284] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[284] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[284] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[284] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[298] bbl.pm:654> INFO - Writing '/home/precel/GestureGANPyTorch/praca/build/Praca_Magisterska_Maciej_Pracucik.bbl' with encoding 'UTF-8'
-[303] bbl.pm:757> INFO - Output to /home/precel/GestureGANPyTorch/praca/build/Praca_Magisterska_Maciej_Pracucik.bbl
+[80] biber:340> INFO - === Fri Oct 31, 2025, 21:11:55
+[94] Biber.pm:418> INFO - Reading 'Praca_Magisterska_Maciej_Pracucik.bcf'
+[153] Biber.pm:972> INFO - Found 17 citekeys in bib section 0
+[163] Biber.pm:4383> INFO - Processing section 0
+[173] Biber.pm:4574> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[174] bibtex.pm:1713> INFO - LaTeX decoding ...
+[183] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
+[274] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[274] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[274] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[274] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[288] bbl.pm:654> INFO - Writing '/home/precel/GestureGANPyTorch/praca/build/Praca_Magisterska_Maciej_Pracucik.bbl' with encoding 'UTF-8'
+[294] bbl.pm:757> INFO - Output to /home/precel/GestureGANPyTorch/praca/build/Praca_Magisterska_Maciej_Pracucik.bbl

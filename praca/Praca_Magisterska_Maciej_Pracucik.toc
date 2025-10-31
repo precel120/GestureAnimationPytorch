@@ -21,10 +21,11 @@
 \contentsline {subsection}{\numberline {4.5}Flow i animacja}{23}{}%
 \contentsline {section}{\numberline {5}Wyniki i dyskusja}{25}{}%
 \contentsline {subsection}{\numberline {5.1}CycleGAN}{25}{}%
-\contentsline {section}{\numberline {6}Podsumowanie}{28}{}%
-\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{28}{}%
-\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{28}{}%
-\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{28}{}%
-\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{28}{}%
-\contentsline {section}{Bibliografia}{29}{}%
-\contentsline {section}{Listingi}{33}{}%
+\contentsline {subsection}{\numberline {5.2}Pix2Pix}{29}{}%
+\contentsline {section}{\numberline {6}Podsumowanie}{34}{}%
+\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{34}{}%
+\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{34}{}%
+\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{34}{}%
+\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{34}{}%
+\contentsline {section}{Bibliografia}{35}{}%
+\contentsline {section}{Listingi}{39}{}%
