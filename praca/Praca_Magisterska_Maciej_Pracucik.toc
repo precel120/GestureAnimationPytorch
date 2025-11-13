@@ -6,26 +6,26 @@
 \contentsline {subsection}{\numberline {2.1}Sieci neuronowe i AI}{5}{}%
 \contentsline {subsection}{\numberline {2.2}Budowa sieci neuronowej}{6}{}%
 \contentsline {subsection}{\numberline {2.3}Sieci typu GAN}{7}{}%
-\contentsline {subsection}{\numberline {2.4}GestureGAN}{8}{}%
+\contentsline {subsection}{\numberline {2.4}GestureGAN}{9}{}%
 \contentsline {subsection}{\numberline {2.5}PoseGAN}{10}{}%
 \contentsline {section}{\numberline {3}Narzędzia i technologie wybrane do realizacji projektu}{12}{}%
 \contentsline {subsection}{\numberline {3.1}Python}{12}{}%
 \contentsline {subsection}{\numberline {3.2}PyTorch}{13}{}%
 \contentsline {subsection}{\numberline {3.3}MediaPipe}{13}{}%
-\contentsline {subsection}{\numberline {3.4}OpenCV}{13}{}%
+\contentsline {subsection}{\numberline {3.4}OpenCV}{14}{}%
 \contentsline {section}{\numberline {4}Proces tworzenia projektu}{14}{}%
 \contentsline {subsection}{\numberline {4.1}Dobór zbioru danych}{14}{}%
 \contentsline {subsection}{\numberline {4.2}Wybór architektury sieci}{16}{}%
 \contentsline {subsection}{\numberline {4.3}Preprocesowanie danych}{18}{}%
 \contentsline {subsection}{\numberline {4.4}Model sieci}{20}{}%
-\contentsline {subsection}{\numberline {4.5}Flow i animacja}{23}{}%
+\contentsline {subsection}{\numberline {4.5}Ścieżka uczenia sieci i animacja}{23}{}%
 \contentsline {section}{\numberline {5}Wyniki i dyskusja}{25}{}%
 \contentsline {subsection}{\numberline {5.1}CycleGAN}{25}{}%
 \contentsline {subsection}{\numberline {5.2}Pix2Pix}{29}{}%
-\contentsline {section}{\numberline {6}Podsumowanie}{37}{}%
-\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{37}{}%
-\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{37}{}%
-\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{37}{}%
-\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{37}{}%
-\contentsline {section}{Bibliografia}{38}{}%
+\contentsline {section}{\numberline {6}Podsumowanie}{36}{}%
+\contentsline {subsection}{\numberline {6.1}Zalety i wady przyjętych rozwiązań}{36}{}%
+\contentsline {subsection}{\numberline {6.2}Napotkane trudności}{36}{}%
+\contentsline {subsection}{\numberline {6.3}Możliwości rozwoju}{36}{}%
+\contentsline {subsection}{\numberline {6.4}Wnioski końcowe}{36}{}%
+\contentsline {section}{Bibliografia}{37}{}%
 \contentsline {section}{Listingi}{42}{}%

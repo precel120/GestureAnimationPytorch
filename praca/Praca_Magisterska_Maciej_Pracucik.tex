@@ -63,11 +63,11 @@
   \subsection{Problematyka}
   {
     W dzisiejszych czasach bardzo modnym tematem jest sztuczna inteligencja, która zaczyna się wkradać w każdy aspekt naszego życia.
-    Możemy ją spotkać w formie chatów, podpowiedzi do pisanego kodu, asystentów internetowych, systemów rozpoznawania głosów, czy nawet we własnej lodówce!
+    Możemy ją spotkać w formie chatów, podpowiedzi do pisanego kodu, asystentów internetowych czy systemów rozpoznawania mowy.
     Każda firma żeby zaistnieć i pozostać istotną inwestuje w tę część technologii. Jedną z gałęzi rozwoju jest generowanie zdjęć, czy filmów.
-    AI już jest w stanie wygenerować przeróżne obrazy, jednakże to z czym AI radzi sobie najgorzej są ręce.
+    AI już jest w stanie wygenerować przeróżne obrazy, jednakże to z czym AI radzi sobie najgorzej są ręce.\cite{hand1000}
     \newline
-    W tym projekcie chodzi o stworzenie sieci typu GAN, która pozwoli na generowanie obrazów rąk, w jak najlepszej jakości.
+    W niniejszej pracy skupia się na stworzeniu sieci typu GAN, która pozwoli na generowanie obrazów rąk, w jak najlepszej jakości.
     Dodatkowo sieć ma za zadanie nauczyć się, żeby modyfikować istniejące zdjęcia i nadawać im zupełnie inny gest, przy zachowaniu jak najlepszej jakości i realizmu.
     Szczególnie ten drugi aspekt pozostaje dla sztucznej inteligencji problematyczny. 
     Myślę, że każdy z nas spotkał się ze zdjęciami, które dosłownie wyglądają, jak żywe, ale to co najczęściej zdradza, że jednak to AI maczało w nim palce są ręce.
@@ -100,15 +100,16 @@
     To ona sprawia, że w głowie ludzi pojawiają się pytania, a co jeśli? 
     A co jeśli to co wiemy to jest tylko część prawdy? Co jeśli jest coś więcej?
     To dzięki zadawaniu sobie przeróżnych pytań przez różne osoby, najczęściej przez największe umysły jakie chodziły po tej ziemii tak dużo udało nam się osiągnąć.
-    Poczynająć od wynalezienia koła, silniki parowe, elektryczność, internet aż po loty w kosmos. 
+    Poczynając od wynalezienia koła, silniki parowe, elektryczność, loty w kosmos aż po internet. 
     Niektóre z tych wynalazków łączy kolejny aspekt, to że człowiek chce sobie ułatwiać codzienne zadania. 
     Żeby jak najbardziej zwiększyć swoją produktywność, żeby codziennie czynności nie wchodziły w drogę, albo żeby je po prostu ułatwić czy przyspieszyć. \\
-    Kolejnym taki wynalazkiem, który łączy te dwa aspekty jest sztuczna inteligencja. 
+    Kolejnym takim wynalazkiem, który łączy te dwa aspekty jest sztuczna inteligencja. 
     Już od dawien dawna, przeróżne filmy czy książki science-fiction rozbudzały naszą wyobraźnię, o istnieniu robotów, sztucznej inteligencji równej ludzkiej, czy nawet przewyższająca ją. \\
-    Do stworzenia pierwszych wzorów, inspiracją była ludzka sieć neuronowa, to jak działa nasz mózg. 
-    Takie coś starano się przekuć w pierwszej wzory, pierwsze sieci. Początkowo był to prosty matematyczny opis komórki neuronowej przez McCullocha i Pittsa w 1943 \cite{sztuczna-inteligencja}.
+    Inspiracją w pierwszych krokach, ku stowrzeniu sztucznej inteligencji, była ludzka sieć neuronowa, to jak działa nasz mózg. 
+    Taką ideę, starano się przekuć w pierwsze wzory, pierwsze sieci, zalążki sztucznej inteligencji. 
+    Początkowo był to prosty matematyczny opis komórki neuronowej przez McCullocha i Pittsa w 1943 \cite{sztuczna-inteligencja}.
     W połączeniu z zagadnieniem przetwarzania danych mógł modelować proste funkcje logiczne. 
-    Dopiero w 1949 roku Hebb sformułował regułę, którą uznaje sie za pierwszą regułę uczenia sztucznych sieci neuronowych\cite{sztuczna-inteligencja}.\\
+    Dopiero w 1949 roku Hebb sformułował regułę, którą uznaje się za pierwszą regułę uczenia sztucznych sieci neuronowych\cite{sztuczna-inteligencja}.\\
     Obecnie sieci i modeli sieci jest tysiące. Do najpopularniejszych należą np CNN - Convolutional Neural Network, czy RNN - Recurrent Neural Network.
     W tym projekcie wykorzystujemy sieci typu GAN, czyli Generative Adversarial Network, o której więcej w kolejnym podrozdziale.
   }
@@ -116,15 +117,21 @@
   {
     Najmniejszą składową sieci neuronowej są oczywiście neurony, te neurony są poukładane po kilka w tak zwane warstwy. 
     Najmniejsza ilość warstw to 3. 
-    Składają się z warstwy wejściowej, reprezentuje dane wejściowe w postaci numerycznej, warstwy ukryte, liczba mnoga tu jest celowa, ponieważ ich może wystąpić nieskończenie wiele, to one wykonują obliczenia.
-    Ostatnim typem warstwy jest warstawa wyjściowa, ona generuje dane wyjściowe. \\
-    Tylko no właśnie dane. Jako, że sieci neuronowe to matematyka, to muszą działać na liczbach także nasze dane muszą być zmienione na liczby, a następnie znormalizowane do zakresu między 0 a 1.
+    Składają się z warstwy wejściowej, reprezentuje dane wejściowe w postaci numerycznej, warstwy ukryte, liczba mnoga tu jest celowa, ponieważ ich może wystąpić nieskończoność, to one wykonują obliczenia.
+    Ostatnim typem warstwy jest warstawa wyjściowa, ona generuje dane wyjściowe.
     \begin{figure}[H]
       \centering
       \includegraphics[width=0.9\textwidth]{neural-network-stanford.png}
       \caption{Budowa sieci neuronowej \cite{nlp}}
       \label{fig:nn}
     \end{figure}
+    Bardzo często wskazane, niekiedy wymagane, jest przekształcenie danych. 
+    Robi się ją, w zależności od potrzeb, zbioru danych i tego czego oczekujemy i chcemy uzyskać. 
+    Naturalnie jeśli zbiorem danych jest zbiór zdjęć, czy tekst to wymagane jest przekształcenie na postać liczbową, ale często wymagane jest dodatkowe przekształcenie jak normalizacja czy standaryzacja. 
+    Powodem przekształcenia może być fakt iż, większość algorytmów zakłada, że wszystkie cechy mają porównywalny zakres wartości. 
+    Takie informacje jak różne jednostki miary, ceny czy temperatury nie są zrozumiałe dla algorytmów, a mogą mieć wartości o różnicy kilku rzędów wielkości. 
+    W tym celu dane muszą być przekształcone. \\
+
     Zajmijmy się teraz najmniejszą częścią sieci, czyli neuronem.
     \begin{figure}[H]
       \centering
@@ -135,17 +142,19 @@
     "W neuronie wartości sygnałów wejściowych (oznaczone na rysunku jako x1, x2, … , xn) mnożone są przez wagi (oznaczone jako w1, w2,…, wn), a iloczyny są ze sobą dodawane (do wyniku dodawana jest wartość b, która nie jest mnożona przez wartość sygnału wejściowego). 
     Wynik rachunków poddawany jest funkcji aktywacji, która decyduje o ostatecznej wartości wysyłanego sygnału. 
     W najprostszym przypadku może to być funkcja progowa (1 dla wartości dodatnich, 0 dla wartości niedodatnich), która przypomina działanie ludzkiego neuronu: „wysyłam sygnał lub nie”."\cite{nlp}
+    Sieć może składać się z nieskończonej ilości neuronów, jak również warstw. Do każdego neuronu przekazywana jest informacja, wykonuje on obliczenia, w dalszej kolejności wysyła sygnał do kolejnej warstwy. 
+    Następnie, cykl się powtarza i trwa dalej, aż do ostatniej, warstwy wyjsciowej.
   }
   \subsection{Sieci typu GAN}
   {
     Sieci GAN czyli Generative Adversarial Network, a tłumacząc na polski, generatywne sieci współzawodnicze.
-    Jak sama nazwa wskazuje są to sieci generatywne, czyli generują dane, najczęściej są to obrazy, ale nie ma ograniczeń, mogą być to również np filmiki.
+    Jak sama nazwa wskazuje są to sieci generatywne, czyli generują dane, najczęściej są to obrazy, ale nie ma ograniczeń, mogą być to również np tekst czy obraz.
     Sieci GAN składają się tak naprawdę z dwóch sieci, które ze sobą równocześnie współzawodniczą.
     Bardzo często są porównywane do fałszowania pieniędzy, mamy jedną sieć, która się uczy generować jak najdokładniejsze fałszywki, a drugą, która ma za zadanie odrzucać fałszywki.
     Podzielone są na:
     \begin{itemize}
-      \item Generator uczy się generować wiarygodne dane i docelowo oszukać diskriminator, że to co generuje jest prawdziwe
-      \item Diskriminator, uczy się odróżniać prawdę od fikcji
+      \item Generator uczy się generować wiarygodne dane i docelowo oszukać dyskryminator, że to co generuje jest prawdziwe
+      \item Dyskryminator, uczy się odróżniać prawdę od fikcji
     \end{itemize}
     \begin{figure}[H]
       \centering
@@ -159,27 +168,28 @@
       \caption{Ogólny model sieci GAN \cite{google-gan}}
       \label{fig:gan-budowa}
     \end{figure}
-    Sieci GAN mają oczywiście swoje pod typy, czy też może frameworki, czy jeszcze inaczej już wcześniej stworzone typy tej sieci, które są powszechnie znane i używane.
+    Sieci GAN mają oczywiście swoje podtypy, czyli już wcześniej stworzone wariacje tej sieci, które są powszechnie znane i używane.
     Wyróżnić można:
     \begin{itemize}
-      \item Pix2Pix jest to sieć, która przetwarza jedno zdjęcie w drugie, co jest istotne w tej sieci to to, że dane musza być sparowane, czyli jeden z obrazów jest obrazem wejsciowym, a drugim obrazem wyjsciowym
-      \item CycleGAN jest bardzo podobny do Pix2Pix tylko zbiór danych nie jest sparowany. Można za jego pomocą robić takie translację jak np. z koni zebry
+      \item Pix2Pix\cite{pix2pix} jest to sieć, która przetwarza jedno zdjęcie w drugie, co jest istotne w tej sieci to to, że dane musza być sparowane, czyli jeden z obrazów jest obrazem wejściowym, a drugim obrazem wyjściowym
+      \item CycleGAN\cite{cyclegan} jest bardzo podobny do Pix2Pix tylko zbiór danych nie jest sparowany. Można za jego pomocą robić choćby takie przekształcenia obrazów jak: zamiana z koni na zebry czy jabłek na pomarańcze.
     \end{itemize}
-    Ten pierwszy został wykorzystany do stworzenia tego projektu, choć początkowo to ten drugi był używany, ale o tym w oddzielnym rozdziale.
+    Ten pierwszy został wykorzystany do realizacji niniejszej pracy. Jednakże, początkowo to ten CycleGAN był faworytem. 
+    Niestety po długich testach nie okazał się odpowiednim rozwiązaniem, o tym w oddzielnym rozdziale.
   }
   \subsection{GestureGAN}
   {
     GestureGAN\cite{gesture-gan} jest to propozycja stworzona przez specjalistów z różnych uczelni, takich jak Oxford czy Texas State Univerity.
-    W swoim założeniu ma robić to samo co sieć stworzona na potrzeby tego projektu, jednakże to jej budowa jest tym co je rozróżnia.
-    Była to bardzo duża inspiracja przy tworzeniu projektu, podobnie jak niniejsza sieć wykorzystywany jest mediapipe do ekstrakcji szkieletu. 
+    W swoim założeniu ma robić to samo co sieć stworzona na potrzeby niniejszej pracy, jednakże to jej budowa jest tym co je rozróżnia.
+    Stanowiła ogromną inspirację, lecz jedyną cechą wspólną jest wykorzystywanie mediapipe do ekstrakcji szkieletu. 
     Co je np rozróżnia to, że GestureGAN otrzymuje dwa zdjęcia na wejściu, jedno prawdziwe, drugie samego szkieletu docelowego i ma wyjściu otrzymujemy wygenerowane zdjęcie i pierwotny szkielet.
-    Takie rozwiązanie było ok w przypadku ichniego zbioru danych, ponieważ był sparowany, to znaczy ta sama osoba wykonywała wszystkie gesty. 
-    Niestety w wykorzystanym przeze mnie zbiorze danych nie było takiej możliwości, dane stały się sparowane nieco sztucznie, ale o tym później.
+    Takie rozwiązanie było odpowiednie w przypadku, wykorzystywanego w pracy GestureGAN, zbioru danych, ponieważ był sparowany. To znaczy ta sama osoba wykonywała wszystkie gesty. 
+    Niestety w wykorzystanym, w niniejszej pracy, zbiorze danych nie było takiej możliwości. Dane stały się sparowane nieco sztucznie, poprzez wygenerowanie szkieletów dłoni oraz maski i nałożenie ich na zdjęcie.
     Bardzo dużą zaletą tego projektu jest to, że jest bardzo uniwersalny, z każdego gestu jesteśmy w stanie uzyskać każdy gest.
     \begin{figure}[H]
       \centering
       \includegraphics{gesture-gan.png}
-      \caption{Model GestureGAN \cite{gesture-gan}}
+      \caption{Model GestureGAN \cite{gesture-gan}. Oznaczenia: x i y to rzeczywiste obrazy; x' i y' to wygenerowane obrazy; x'' to zrekonstruowane obrazy; $C_{x}$ i $C_{y}$ to kontrolowane struktury, odpowiednio x i y; G to generator; D to dyskryminator }
       \label{fig:gesture-gan-budowa}
     \end{figure}
     i tu jeszcze przykładowe efekty i możliwości GestureGAN:
@@ -203,7 +213,7 @@
     \begin{figure}[H]
       \centering
       \includegraphics{pose-gan.png}
-      \caption{Model PoseGAN \cite{pose-gan}}
+      \caption{Model PoseGAN \cite{pose-gan}. Notacje: x i y to rzeczywiste obrazy; y' to wygenerowany obraz; $S_{y}$ to szkielet y; G to generator; D to dyskryminator }
       \label{fig:pose-gan-budowa}
     \end{figure}
     \begin{figure}[H]
@@ -212,10 +222,10 @@
       \caption{Zdjęcie wygenerowane przez PoseGAN \cite{pose-gan}}
       \label{fig:pose-gan-przyklady}
     \end{figure}
-    Projekt jest niewątpliwie bardzo imponujący jednakże no właśnie skupia się na czymś kompletnie innym. 
-    Tak jak widać na rysunek \ref{fig:pose-gan-przyklady} dłonie nawet nie są wyszczególnione na szkielecie, a przerabianie, dorabianie takiego elementu byłoby zbyt czasochłonne. 
+    Projekt jest niewątpliwie bardzo imponujący jednakże skupia się na czymś zupełnie innym. 
+    Tak jak można zaobserwować na rysunku \ref{fig:pose-gan-przyklady} dłonie nawet nie są wyszczególnione na szkielecie, a przerabianie, dorabianie takiego elementu byłoby zbyt czasochłonne. 
     Ciężko też ocenić czy przyniosłoby zadowalające rezultaty, przy innym zbiorze danych skupionych czysto na dłoniach.
-    Sieć i tak by musiała się uczyć wszystkiego od nowa, plus no właśnie nie do końca interesuje nas cały ludzki szkielet. Dlatego niezbędne było stworzenie własnego projektu.
+    Sieć musiałaby się uczyć wszystkiego od nowa, dodatkowo wykorzystanie całego ludzkiego szkieletu jest zbędne. Nacisk jest stricte na dłonie, za dużo informacji może wpłynąć negatywnie na jakość rezultatów . Dlatego niezbędne było stworzenie własnego rozwiązania.
   }
 }
 
@@ -225,23 +235,22 @@
   {
     Językiem programowania wykorzystanym do realizacji projektu jest Python. 
     Jest to bardzo oczywisty wybór, ponieważ jest to najpopularniejszy język programowania do tworzenia sieci neuronowych, w dzisiejszych czasach.
-    Przybliżmy go jednak. Według oficjalnej dokumentacji, jest "łatwym do nauczenia się i potężnym językiem programowania. 
+    Przybliżmy go jednak. \\
+    Według oficjalnej dokumentacji, jest "łatwym do nauczenia się i potężnym językiem programowania. 
     Posiada wydajne struktury danych wysokiego poziomu oraz proste, ale skuteczne podejście do programowania obiektowego"\cite{python-docs}.
     Co niejako wyróżnia go na tle innych języków, to fakt, że jest dynamicznie typowany oraz jest językiem interpetowanym. 
     To oznacza, że nie posiada kompilatora a interpeter, który nie kompiluje programu do pliku wykonywalnego, a kod jest wykonywany w czasie rzeczywistym.
-    Czyni to Python językiem łatwym w testowaniu, kompilowaniu czy wykonywaniu, przenośny, co oznacza, że ten sam kod uruchomi się niezależnie od systemu operacyjnego czy urządzenia.
+    Czyni to Python językiem łatwym w testowaniu czy wykonywaniu. Również jest przenośny, co oznacza, że ten sam kod uruchomi się niezależnie od systemu operacyjnego czy urządzenia.
     Sam język Python jest napisany w języku C, co oznacza, że jest bardzo szybki i wydajny. 
     Został stworzony przez Guido van Rossuma w roku 1991.
-    Co ciekawe jego nazwa wywodzi się z starych serii skeczów grupy Monty Python’s Flying Circus, 
-    a zyskał na popularności w momencie gdy firma Google, powiedziała, że wykorzystuje go do własnych, wewnętrzych celów.
+    Co ciekawe jego nazwa wywodzi się z starych serii skeczów grupy Monty Python’s Flying Circus.
     \newline
     Jednakże czemu akurat to on jest najczęściej wykorzystany do AI? Odpowiedź jest tak prosta jak sam Python jest prosty.
     Wynika to z tego, że Python ma bardzo prostą i czytelną składnię, co pozwala developerom, czy naukowcom skupianie się na logice i samym problemie, a nie na składni\cite{python-ai}.
-    Dodatkowo Python sam w sobie nie wymaga dużej ilości kodu. Najprostsza sieć neuronowa może zostać stworzona i uruchomiona w zaledwie 4 linijki!
     Kolejnym powodem przemawiającym dlaczego to własnie Python jest najczęściej używany, 
     jest bardzo duża ilość bibliotek, czy to wbudowanych, czy stworzonych przez społeczność. 
     Biblioteki takie jak NumPy, SciPy, Matplotlib, czy wykorzystane w tym projekcie PyTorch czy MediaPipe, o których będzie w kolejnych podroździałach.
-    Także kolejnym i osatnim już aspektem, o którym warto wspomnieć, jest wyżej wymieniona społeczność. 
+    Także kolejnym i ostatnim już aspektem, o którym warto wspomnieć, jest społeczność. 
     To dzięki dużej liczbie osób i ogromnym zebranym doświadczeniu, tworzenie dowolnego projektu staje się znacznie prostsze. 
     Praktycznie każdy projekt, aspekt projektu czy problem, ktoś już natrafił, dzięki czemu możemy szybko i sprawnie rozwiązaywać problem.
   }
@@ -277,10 +286,12 @@
 {
   \subsection{Dobór zbioru danych} \label{dataset}
   {
-    Pierwszym i bardzo, ale to bardzo ważnym krokiem jest wybór zbioru danych. 
+    Pierwszym, a zarazem niezmiernie ważnym krokiem jest wybór zbioru danych. 
     Zbiór danych to podstawa projektu, jakość modelu ma bezpośrednie przełożenie, w zależności od danych, jak również ich przygotwania. 
     To od niego będzie zależeć zarówno to jak długo sieć będzie się uczyć, ale przede wszystkim jakie osiągnie rezultaty. 
-    Gdy zbiór zdjęć jest wyraźny, najlepiej dane są sparowane, to sieć bardzo szybko zrozumie na czym polega różnica i na czym powinna się skupiać. \\
+    Gdy zbiór zdjęć jest wyraźny, najlepiej dane są sparowane, to sieć bardzo szybko zrozumie na czym polega różnica i na czym powinna się skupiać.
+    Zbiór możemy nazwać sparowanym gdy każdy element z jednej grupy odpowiada dokładnie jednemy elementowi z drugiej grupy. 
+    Czyli dane są powiązane parami. W przypadku gestów zbiór sparowany, to taki gdzie dana osoba wykonała wszystkie gesty, w tych samych warunkach. \\
     Poszukiwania były zaskakująco problematyczne, głównie ze względu na słabą współpracę z biblioteką Mediapipe. 
     Często zdjęcia z innych zbiorów, to były białe plamy na czarnym tle, przez co ciężko było nawet rozróżnić ustawienie dłoni czy choćby palce.
     Inny dataset prezentował zdjęcie robione kamerą nocną, co w zasadzie prowadziło do takich samych rezultatów, jak w poprzednio wspomnianym zbiorze.
@@ -288,8 +299,10 @@
     Kolejne próby były już na zbiorze przedstawiającym zdjęcia liter przedstawianych w języku migowym. 
     Ten zbiór był dobry, ze wględu na to, że przedstawiał same dłonie, na jednolitym tle, był sparowany. 
     Jednakże co skreśliło go, to fakt, że tych zdjęć było po prostu za mało. 
-    Dla problemu takiego jak generowanie gestów, tych zdjęć musi być dużo. Tam było ich mniej więcej 30 na gest. Jest to dużo za mało \\
-    Finalnie wybór padł na zbiór HaGrid \cite{nuzhdin2024hagridv21mimagesstatic}. \\
+    Dla problemu takiego jak generowanie gestów, tych zdjęć musi być dużo. Tam było ich mniej więcej 30 na gest. 
+    Jest to dużo za mało. Minimum stanowi około 500-1000 zdjęć na gest, dodatkowo najlepiej jakby te zdjęcia były na jednolitym tle, żeby niepotrzebnie nie utrudniać zadania sieci. 
+    Wraz z ilością zdjęć, rośnie jakość modelu, ale też uniwersalność. Przykładowo, zmiany tła, czy oświetlenia nie powinno znacząco zmniejszyć jakości rezultatów. \\
+    Finalnie wybór padł na zbiór HaGrid \cite{nuzhdin2024hagridv21mimagesstatic}.
     Ten zbiór nie jest niestety sparowany, jednakże posiada na tyle dużo zalet, że warto było go wybrać. \\
     Po pierwsze jest ogromny. Cały posiada aż 1.5TB, 1 086 158 zdjęć w FullHD, podzielonych na 33 klasy gestów. 
     Co więcej, do zbioru jest dołączony plik json dla każdego gestu, poniżej przykładowy fragment dla jednego zdjęcia:
@@ -341,7 +354,7 @@
     Wybór architektury był nieco uproszczony, bo z założenia projekt wymaga użycia sieci GAN, jednakże podtypów sieci jest dużo.
     Początkowo wybrany został CycleGAN, w zwiazku z tym, że wybrany zbiór nie był sparowany, a CycleGAN dzięki dodatkowej funkcji straty, wykorzystuje 
     utratę spójności cyklu żeby trening nie musiał się odbywać na sparowanych danych. 
-    Jako bazę posłużył tutorial z oficjalnej dokumentacji Tensorflow \cite{cyclegan-tf} (wtedy jeszcze to właśnie ta biblioteka była wybrana).
+    Jako bazę posłużył tutorial z oficjalnej dokumentacji Tensorflow \cite{cyclegan-tf}.
     Z założenia wszystko wydawało się że powinno zadziałać. Na tutorialu robione są z koni zebry, czy z jabłek pomarańcze. 
     To w zasadzie czemu miałoby sobie nie poradzić z gestami?\\
     Rzeczywistość okazała się być bardzo brutalna.
@@ -351,9 +364,9 @@
       \caption{Zdjęcie wygenerowane przez CycleGAN, po 45 epokach \cite{cyclegan-tf}}
       \label{fig:cycle-gan-przyklad}
     \end{figure}
-    Na pozór wydawać by się mogło, że to zdjęcie jest ok, sieć kombinuje i dosyć wiernie odtworzyła ręke, jedynie pojawiają się artefakty.
+    Na pozór wydawać by się mogło, że to zdjęcie jest dobre i sieć dosyć wiernie odtworzyła ręke, jedynie pojawiają się artefakty.
     Zgadza się, ale nie takie było jej zadanie. 
-    Powinna nałożyć nowy gest. Ponownie wydawać by się mogło, że zaczyna dobrze kombinować, bo artefakty pojawiają się na dłoni. 
+    Powinna nałożyć nowy gest. Ponownie wydawać by się mogło, że zaczyna zauważać na czym polega jej zadanie, na czym powinna się skupić, bo artefakty pojawiają się na dłoni. 
     Tylko niestey przy przeróżnych konfiguracjach parametrów, ilości puszczanych epok, czy zmian, nie udało się zmusić sieć do manipulacji gestami.
     Z tego powodu trzeba było coś zmienić, najwyraźniej zbiór jest zbyt zróżnicowany, tła są inne, przedstwiają innych ludzi itd, żeby CycleGAN sobie poradził. \\
     Więc wybrane zostało inne podejście. Nastąpiła zmiana architektury na Pix2Pix i zmanipulowany został zbiór żeby uczynić go sparowanym. 
@@ -363,7 +376,7 @@
   \subsection{Preprocesowanie danych} \label{preprocesowanie}
   {
     Preprocesowanie zaczeło się od najprostszej, a zarazem bardzo ważnej części. Przycięcia zdjęć do wielkości 256x256, czyli standardu dla sieci GAN.
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{orig.jpg}
@@ -389,7 +402,7 @@
     Kolejnymi próbami obróbki zdjęć było usuwanie tła, a w zasadzie rozmazywanie go, przez wycięcie za pomocą biblioteki rembg \cite{rembg}.
     Która to pozwala na wykrycie i usuniecie tła z obrazu. Dłoń i część, która powinna zostać jest wykrywana przy wykorzystaniu MediaPipe. \\
     Tu przykład po takiej obróbce:
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{blurred_just_hand.jpg}
@@ -403,7 +416,7 @@
       \caption{Przykłady po obróbce tła}
       \label{fig:blurred-pre}
     \end{figure}
-    Jak widzimy na obrazkach powyżej, efekt jest bardzo różny. Ciężko było o jednoznaczne wykrywanie ręki. 
+    Jak widzimy na obrazkach powyżej (rysunek \ref{fig:blurred-pre}), efekt jest bardzo różny. Ciężko było o jednoznaczne wykrywanie ręki. 
     Raz zostawała sam ręka, raz wraz z człowiekiem, jeszcze innym razem potrafił zostać sam człowiek. 
     Efekty były mało zadowalające, jednakże, mimo wszystko takie dane również zostały wypróbowane, ponownie nie przynosząc żadnych rezultatów. \\
     Pomimo licznych niepowodzeń i ślepych zaułków, narodził się jeszcze jeden, finalny pomysł. Stworzenie zbioru danych sparowanego, w nieco sztuczny sposób.
@@ -443,14 +456,15 @@
     \end{figure}
     Zaproponowane rozwiązanie nie różni się znacznie od klasycznego Pix2Pix. 
     Jednakże co go wyróżnia i dało kolosalną różnicę w wyglądzie i jakości to zastosowanie straty percepcyjnej VGG \cite{vgg}. \\
-    Jest to stosunkowo nowo zaproponowane podejście. Klasycznym podejściem było sprawdzanie straty pomiędzy wygenerowanym pixelem a prawdziwym obrazem. 
+    Jest to stosunkowo nowo zaproponowane podejście. 
+    Jak dotąd sprawdzało się straty pomiędzy pojedynczymi pixelami, pomiędzy przewidywaną wartością, a faktyczną wartością dla niego, na docelowym obrazku. 
     W tym, porównuje się ich reprezentacje cechowe uzyskane z warstw konwolucyjnych sieci VGG, wytrenowanej na ImageNet. 
-    Co daje znacznie bardziej realistyczne rezultaty. \\
+    Co daje znacznie bardziej realistyczne rezultaty. Wzór na stratę VGG to: \\
     \[ \mathcal{L}_{\text{perc}} = \sum_{l} \lambda_l \, \| \phi_l(I_{\text{gen}}) - \phi_l(I_{\text{ref}}) \|_2^2 \]
   }
-  \subsection{Flow i animacja} \label{flow}
+  \subsection{Ścieżka uczenia sieci i animacja} \label{flow}
   {
-    Flow uczenia sieci jest następujący:
+    Ścieżka uczenia sieci jest następujący:
     \begin{enumerate}
       \item Przycinane są zdjęcia pobrane z datasetu \cite{nuzhdin2024hagridv21mimagesstatic}
       \item Generowane są obrazy z nałożoną maską i szkieletem ręki
@@ -477,7 +491,7 @@
       \item Wyliczana jest średnia strata generatora i dyskryminatora, dla epoki
       \item Generowane są przykładowe obrazki i robiony jest checkpoint
     \end{enumerate}
-    Flow animacji jest następujący:
+    Animowanie przebiega następująco:
     \begin{enumerate}
       \item Brany jest przykładowy, pasujący położeniem gest docelowy i wraz z maską nakładany na obrazek, który ma być przerobiony
       \item Generowane są zdjęcia, z interpolacją szkieletu z gestu startowego do docelowego.
@@ -509,7 +523,7 @@
       \item Lambda: 20
     \end{itemize}
 
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{cycle-gan/epoch-1.jpg}
@@ -523,7 +537,7 @@
         \label{fig:cg-5}
       \end{subfigure}
     \end{figure}
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{cycle-gan/epoch-15.jpg}
@@ -537,7 +551,7 @@
         \label{fig:cg-20}
       \end{subfigure}
     \end{figure}
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{cycle-gan/epoch-25.jpg}
@@ -551,7 +565,7 @@
         \label{fig:cg-30}
       \end{subfigure}
     \end{figure}
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{cycle-gan/epoch-35.jpg}
@@ -565,7 +579,7 @@
         \label{fig:cg-40}
       \end{subfigure}
     \end{figure}
-    \begin{figure}
+    \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{cycle-gan/epoch-45.jpg}
@@ -631,7 +645,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_50.jpg}
       \end{subfigure}
-      \caption{Parametry: batch - 256, epochs - 50, learning rate - 1e-4, lambda - 100}
+      \caption{Odpowiednio: epoka 1, 20, 40, 50. Parametry: batch - 256, epochs - 50, learning rate - 1e-4, lambda - 100}
     \end{figure}
     Wyniki są dalej nieco rozmazane, ale dalsze douczenie przyniosło oczekiwane rezultaty.
     \begin{figure}[H]
@@ -659,7 +673,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_100.jpg}
       \end{subfigure}
-      \caption{Efekty dalszego douczania}
+      \caption{Efekty dalszego douczania. Odpowiednio: epoka 1, 20, 40, 60, 80, 100.}
     \end{figure}
     Kolejnym etapem było przekazanie zdjęcia ze zmienionym gestem, na docelowy.
     Niestety tu wyszedł problem z takim podejściem. 
@@ -705,7 +719,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_100.jpg}
       \end{subfigure}
-      \caption{Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 10}
+      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 10}
     \end{figure}
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
@@ -732,7 +746,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
       \end{subfigure}
-      \caption{Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 15}
+      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 15}
     \end{figure}
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
@@ -759,7 +773,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
       \end{subfigure}
-      \caption{Parametry: batch - 256, epochs - 200, learning rate - 1e-4, lambda - 20}
+      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 200, learning rate - 1e-4, lambda - 20}
     \end{figure}
     Na pozór rezultaty są bardzo porównywalne do tych bez VGG, jednak to gdzie najbardziej widać różnicę jest przy wygenerowaniu zdjęcia z nowym gestem:
     \begin{figure}[H]

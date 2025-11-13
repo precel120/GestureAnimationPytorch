@@ -145,6 +145,27 @@
       \verb https://ai.google.dev/edge/mediapipe/solutions/guide?hl=pl
       \endverb
     \endentry
+    \entry{hand1000}{article}{}
+      \name{author}{1}{}{%
+        {{hash=de45c9524284ed168b752c4b88371e67}{%
+           family={Haozhuo\bibnamedelimb ZHANG\bibnamedelimb i\bibnamedelimb Bin\bibnamedelima ZHU},
+           familyi={H\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Yu\bibnamedelima CAO\bibnamedelimb i\bibnamedelimb Yanbin\bibnamedelima HAO},
+           giveni={Y\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{de45c9524284ed168b752c4b88371e67}
+      \strng{fullhash}{de45c9524284ed168b752c4b88371e67}
+      \strng{bibnamehash}{de45c9524284ed168b752c4b88371e67}
+      \strng{authorbibnamehash}{de45c9524284ed168b752c4b88371e67}
+      \strng{authornamehash}{de45c9524284ed168b752c4b88371e67}
+      \strng{authorfullhash}{de45c9524284ed168b752c4b88371e67}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hand1000: Generating realistic hands from text with only 1,000 images}
+      \field{year}{2025}
+    \endentry
     \entry{gesture-gan}{article}{}
       \name{author}{1}{}{%
         {{hash=772cf3236c8f824c2ca22b9cbcf4f641}{%
@@ -167,6 +188,29 @@
       \field{labeltitlesource}{title}
       \field{title}{Unified Generative Adversarial Networks for Controllable Image-to-Image Translation}
       \field{year}{2020}
+    \endentry
+    \entry{pix2pix}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f7e656a9b2f7f21b80c8ee92aeb44324}{%
+           family={Jun-Yan\bibnamedelimb Zhu\bibnamedelimb i\bibnamedelimb Tinghui\bibnamedelimb Zhou\bibnamedelimb i\bibnamedelimb Alexei\bibnamedelimb A.\bibnamedelimi Efros},
+           familyi={J\bibinithyphendelim Y\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Phillip\bibnamedelima Isola},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={i},
+           prefixi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7e656a9b2f7f21b80c8ee92aeb44324}
+      \strng{fullhash}{f7e656a9b2f7f21b80c8ee92aeb44324}
+      \strng{bibnamehash}{f7e656a9b2f7f21b80c8ee92aeb44324}
+      \strng{authorbibnamehash}{f7e656a9b2f7f21b80c8ee92aeb44324}
+      \strng{authornamehash}{f7e656a9b2f7f21b80c8ee92aeb44324}
+      \strng{authorfullhash}{f7e656a9b2f7f21b80c8ee92aeb44324}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Image-to-Image Translation with Conditional Adversarial Networks}
+      \field{year}{2018}
     \endentry
     \entry{vgg}{article}{}
       \name{author}{1}{}{%
@@ -345,6 +389,29 @@
       \verb{url}
       \verb https://csi.amu.edu.pl/blog-csi/sieci-neuronowe-w-nlp
       \endverb
+    \endentry
+    \entry{cyclegan}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b4574c4fcd4450817ac03078d250993b}{%
+           family={Taesung\bibnamedelimb Park\bibnamedelimb i\bibnamedelimb Phillip\bibnamedelimb Isola\bibnamedelimb i\bibnamedelimb Alexei\bibnamedelimb A.\bibnamedelimi Efros},
+           familyi={T\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Jun-Yan\bibnamedelima Zhu},
+           giveni={J\bibinithyphendelim Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           prefix={i},
+           prefixi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4574c4fcd4450817ac03078d250993b}
+      \strng{fullhash}{b4574c4fcd4450817ac03078d250993b}
+      \strng{bibnamehash}{b4574c4fcd4450817ac03078d250993b}
+      \strng{authorbibnamehash}{b4574c4fcd4450817ac03078d250993b}
+      \strng{authornamehash}{b4574c4fcd4450817ac03078d250993b}
+      \strng{authorfullhash}{b4574c4fcd4450817ac03078d250993b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks}
+      \field{year}{2020}
     \endentry
     \entry{python-ai}{article}{}
       \name{author}{1}{}{%
