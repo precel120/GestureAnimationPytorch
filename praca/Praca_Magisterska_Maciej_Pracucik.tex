@@ -805,22 +805,27 @@
 
 \section{Podsumowanie}
 {
-  \subsection{Zalety i wady przyjętych rozwiązań}
-  {
-    Zalety
-  }
-  \subsection{Napotkane trudności}
-  {
-    trudności
-  }
-  \subsection{Możliwości rozwoju}
-  {
-    rozwoj
-  }
-  \subsection{Wnioski końcowe}
-  {
-    wnioski
-  }
+  Celem pracy było stworzenie sieci neuronowej typu GAN, która pozwoli na generowanie animacji przechodzenia z jednego gestu dłoni, w drugi. 
+  Docelowo w jak najlepszej jakości. 
+  Udało sie zrealizować założone cele, sieć generuje dobrej jakości zdjęcia ze zmienionymi gestami rąk, a następnie za pomocą biblioteki OpenCV, zdjęcia łączone są w animację. 
+  Zastosowano podstawowe narzędzia i technologie do realizacji projektu. 
+  Sam Pix2Pix, który jest jednym z podstawowych podtypów sieci GAN, wystarczył by uzyskać zadowalające efekty, a dodanie VGG perceptual loss, oraz odpowiednia manipulacja parametrami, pozwoliły na uzyskanie wyraźnych i ładnych zdjęć. \\
+  W trakcie realizacji, nie brakowało trudności czy problemów. 
+  Pierwszym z nich był dobór zbioru danych, który wymagał większej ilości zdjęć, niż większość zbiorów oferowała. 
+  Finalnie wybór padł na HaGrid\cite{nuzhdin2024hagridv21mimagesstatic}, który swoją ilościa zdjęć, oraz dostarczonemu pliku json, z informacjami, dla każdego zdjęcia, okazał się być świetnym wyborem. \\
+  Kolejnym problemem okazał się być dobór architektury, choć nie ujawnił się on od razu. 
+  Dopiero po licznych próbach okazało się, że przy danym zbiór danych jest najprawdopodobniej za trudny dla CycleGAN, ponieważ nie dawał żadnych rezultatów. 
+  Nie pozostało nic innego jak zmienić podejście i wraz z nim architekturę. Co okazało się być kluczowe do pchnięcia dalej prac. \\
+  Jak zostało wspomniane, efekt jest zadowlający, lecz nie idealny. 
+  Najlepiej można to zaobserwować na samej animacji, gdzie klatki pośrednie są mało wyraźne. 
+  Podobnie obszar, gdzie znajdowała się maska dłoni, jest mało wyraźny. 
+  Potencjalnie jest to ściśle ze sobą powiązane. 
+  Pierwszy problem udało by się rozwiązać, choćby poprzez przekazanie sieci do nauki klatek pośrednich wraz z maską dłoni i szkieletem. 
+  Niestety oryginalne zdjęcia dla tych klatek nie istnieją, czyli nie ma prawdziwego zdjęcia gdzie dana osoba wykonała gest. 
+  Możnaby to rozwiązać poprzez znalezienie zbioru danych z filmami zmiany gestu, a następnie pocięcie go na klatki i nałożenie maski oraz szkieletu. 
+  Niestety byłoby to bardzo czasochłonne i zasobożerne. Dlatego niezbędny by był dodatkowy czas na zbadanie potencjalnego lepszego rozwiązania. \\
+  Podsumowując, realizacja przebiegła pomyślnie, ale nie bez problemowo. Cel został zrealizowany, a samo zagadnienie było interesujące. 
+  Szczególnie przy obecnym zapotrzebowaniu na sztuczną inteligencję, niniejsza praca bardzo wpisuje się w panujące trendy i ma dużą perspektywą rozwoju.
 }
 
 \clearpage

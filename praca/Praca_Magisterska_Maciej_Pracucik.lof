@@ -1,24 +1,24 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Budowa sieci neuronowej \blx@tocontentsinit {0}\cite {nlp}\relax }}{6}{}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Budowa neuronu \blx@tocontentsinit {0}\cite {nlp}\relax }}{7}{}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Generative Adversarial Network \blx@tocontentsinit {0}\cite {google-gan}\relax }}{8}{}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Ogólny model sieci GAN \blx@tocontentsinit {0}\cite {google-gan}\relax }}{8}{}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Model GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}. Oznaczenia: x i y to rzeczywiste obrazy; x' i y' to wygenerowane obrazy; x'' to zrekonstruowane obrazy; $C_{x}$ i $C_{y}$ to kontrolowane struktury, odpowiednio x i y; G to generator; D to dyskryminator \relax }}{9}{}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Zdjęcie wygenerowane przez GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}\relax }}{10}{}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Model PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}. Notacje: x i y to rzeczywiste obrazy; y' to wygenerowany obraz; $S_{y}$ to szkielet y; G to generator; D to dyskryminator \relax }}{11}{}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Zdjęcie wygenerowane przez PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}\relax }}{11}{}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Zdjęcie wygenerowane przez CycleGAN, po 45 epokach \blx@tocontentsinit {0}\cite {cyclegan-tf}\relax }}{17}{}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Przykłady przed i po przycięciu\relax }}{18}{}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Wygenerowane zdjęcie szkieletu dłoni\relax }}{19}{}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Przykłady po obróbce tła\relax }}{19}{}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Przykład zdjęcia z nałożoną maską i szkieletem gestu\relax }}{20}{}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Generator U-Net\relax }}{22}{}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Dyskryminator PatchGAN\relax }}{23}{}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Uczenie na wyciętych dłoniach, na czarnym tle\relax }}{28}{}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 50. Parametry: batch - 256, epochs - 50, learning rate - 1e-4, lambda - 100\relax }}{29}{}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Efekty dalszego douczania. Odpowiednio: epoka 1, 20, 40, 60, 80, 100.\relax }}{30}{}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Rezultat przepuszczenia przez sieć zdjęcia z nałożonym szkieletem docelowego gestu\relax }}{31}{}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Rezultat po dodaniu zbioru z drugim gestem\relax }}{31}{}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 10\relax }}{32}{}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 15\relax }}{33}{}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 200, learning rate - 1e-4, lambda - 20\relax }}{34}{}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Wygenerowane zdjęcie z dodatkiem VGG\relax }}{35}{}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Budowa sieci neuronowej \blx@tocontentsinit {0}\cite {nlp}\relax }}{5}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Budowa neuronu \blx@tocontentsinit {0}\cite {nlp}\relax }}{6}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Generative Adversarial Network \blx@tocontentsinit {0}\cite {google-gan}\relax }}{7}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Ogólny model sieci GAN \blx@tocontentsinit {0}\cite {google-gan}\relax }}{7}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Model GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}. Oznaczenia: x i y to rzeczywiste obrazy; x' i y' to wygenerowane obrazy; x'' to zrekonstruowane obrazy; $C_{x}$ i $C_{y}$ to kontrolowane struktury, odpowiednio x i y; G to generator; D to dyskryminator \relax }}{8}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Zdjęcie wygenerowane przez GestureGAN \blx@tocontentsinit {0}\cite {gesture-gan}\relax }}{9}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Model PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}. Notacje: x i y to rzeczywiste obrazy; y' to wygenerowany obraz; $S_{y}$ to szkielet y; G to generator; D to dyskryminator \relax }}{10}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Zdjęcie wygenerowane przez PoseGAN \blx@tocontentsinit {0}\cite {pose-gan}\relax }}{10}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Zdjęcie wygenerowane przez CycleGAN, po 45 epokach \blx@tocontentsinit {0}\cite {cyclegan-tf}\relax }}{16}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Przykłady przed i po przycięciu\relax }}{17}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Wygenerowane zdjęcie szkieletu dłoni\relax }}{18}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Przykłady po obróbce tła\relax }}{18}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Przykład zdjęcia z nałożoną maską i szkieletem gestu\relax }}{19}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Generator U-Net\relax }}{21}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Dyskryminator PatchGAN\relax }}{22}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Uczenie na wyciętych dłoniach, na czarnym tle\relax }}{27}{}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 50. Parametry: batch - 256, epochs - 50, learning rate - 1e-4, lambda - 100\relax }}{28}{}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Efekty dalszego douczania. Odpowiednio: epoka 1, 20, 40, 60, 80, 100.\relax }}{29}{}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Rezultat przepuszczenia przez sieć zdjęcia z nałożonym szkieletem docelowego gestu\relax }}{30}{}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Rezultat po dodaniu zbioru z drugim gestem\relax }}{30}{}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 10\relax }}{31}{}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 15\relax }}{32}{}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 200, learning rate - 1e-4, lambda - 20\relax }}{33}{}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Wygenerowane zdjęcie z dodatkiem VGG\relax }}{34}{}%
