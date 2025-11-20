@@ -50,6 +50,8 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, num_workers=2, s
 train = Train(device, train_loader, learning_rate, num_epochs, lambda_l1, lambda_vgg)
 # train_g_losses, train_d_losses = train.train_pix2pix(display_interval)
 
+train.generate_image('./result.jpg', './generated_single_v2.jpg')
+
 # for dirpath, _, filenames in os.walk('./gesture_seq'):
 #     for filename in filenames:
 #         file_path = os.path.join(dirpath, filename)

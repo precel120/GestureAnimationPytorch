@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'Praca_Magisterska_Maciej_Pracucik.blg'
-[77] biber:340> INFO - === Mon Oct 20, 2025, 22:52:31
-[91] Biber.pm:418> INFO - Reading 'Praca_Magisterska_Maciej_Pracucik.bcf'
-[145] Biber.pm:972> INFO - Found 17 citekeys in bib section 0
-[156] Biber.pm:4383> INFO - Processing section 0
-[165] Biber.pm:4574> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[166] bibtex.pm:1713> INFO - LaTeX decoding ...
-[174] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
-[265] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[266] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[266] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[266] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[283] bbl.pm:654> INFO - Writing 'Praca_Magisterska_Maciej_Pracucik.bbl' with encoding 'UTF-8'
-[288] bbl.pm:757> INFO - Output to Praca_Magisterska_Maciej_Pracucik.bbl
+[93] biber:340> INFO - === Thu Nov 20, 2025, 11:49:00
+[109] Biber.pm:418> INFO - Reading 'Praca_Magisterska_Maciej_Pracucik.bcf'
+[171] Biber.pm:972> INFO - Found 21 citekeys in bib section 0
+[182] Biber.pm:4383> INFO - Processing section 0
+[193] Biber.pm:4574> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[194] bibtex.pm:1713> INFO - LaTeX decoding ...
+[206] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
+[302] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[302] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[303] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[303] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[313] bbl.pm:654> INFO - Writing 'Praca_Magisterska_Maciej_Pracucik.bbl' with encoding 'UTF-8'
+[320] bbl.pm:757> INFO - Output to Praca_Magisterska_Maciej_Pracucik.bbl

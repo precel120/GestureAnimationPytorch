@@ -8,7 +8,7 @@
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage[hyphens]{url}
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, sorting=none]{biblatex}
 \usepackage{array}
 \usepackage{listings}
 \usepackage{float}
@@ -139,11 +139,23 @@
       \caption{Budowa neuronu \cite{nlp}}
       \label{fig:neuron}
     \end{figure}
-    "W neuronie wartości sygnałów wejściowych (oznaczone na rysunku jako x1, x2, … , xn) mnożone są przez wagi (oznaczone jako w1, w2,…, wn), a iloczyny są ze sobą dodawane (do wyniku dodawana jest wartość b, która nie jest mnożona przez wartość sygnału wejściowego). 
+    "W neuronie wartości sygnałów wejściowych (oznaczone na Rysunku jako x1, x2, … , xn) mnożone są przez wagi (oznaczone jako w1, w2,…, wn), a iloczyny są ze sobą dodawane (do wyniku dodawana jest wartość b, która nie jest mnożona przez wartość sygnału wejściowego). 
     Wynik rachunków poddawany jest funkcji aktywacji, która decyduje o ostatecznej wartości wysyłanego sygnału. 
     W najprostszym przypadku może to być funkcja progowa (1 dla wartości dodatnich, 0 dla wartości niedodatnich), która przypomina działanie ludzkiego neuronu: „wysyłam sygnał lub nie”."\cite{nlp}
     Sieć może składać się z nieskończonej ilości neuronów, jak również warstw. Do każdego neuronu przekazywana jest informacja, wykonuje on obliczenia, w dalszej kolejności wysyła sygnał do kolejnej warstwy. 
     Następnie, cykl się powtarza i trwa dalej, aż do ostatniej, warstwy wyjsciowej.
+  }
+  \subsection{Pojęcia związane z sieciami neuronowymi}
+  {
+    \begin{itemize}
+      \item Overfitting - jest to zjawisko gdy model jest zbyt dobrze dopasowany do zbioru treningowego, a nie radzi sobie z z danymi testowymi (słaba zdolność do generalizacji nowych danych) \cite{overfit}
+      \item Epoka - jedno przejście sieci przez wszystkie dane treningowe
+      \item Learning rate - jak szybko model zmienia i dopasowuje wagi parametrów i "uczy się" z poprzednich iteracji
+      \item Batch size - ile danych model przeprocesuje podczas każdej iteracji treningu, zanim zmieni wartości parametrów
+      \item Lambda - parametr regularyzacji, ma za zadanie uniknąć overfitingu i wzmocnić dokładność modelu, poprzez nakładanie kar na wagi. 
+      W tym przypadku lambda ma wpływ na stratę generatora. Domyślną wartością używaną w Pix2Pix jest 100. Przy małych wartościach np. 1-10 generator będzie bardziej skupiać się na oszukaniu dyskryminatora, wyniki wyglądają realistycznie ale nie odwzorowują dobrze obrazu docelowego. 
+      Dla dużych wartości np 100-200 generator skupia się bardziej na dokładności pixelowej, wyniki będą jak najdokładniejsze oryginałowi, ale mogą być rozmazane.
+    \end{itemize}
   }
   \subsection{Sieci typu GAN}
   {
@@ -223,7 +235,7 @@
       \label{fig:pose-gan-przyklady}
     \end{figure}
     Projekt jest niewątpliwie bardzo imponujący jednakże skupia się na czymś zupełnie innym. 
-    Tak jak można zaobserwować na rysunku \ref{fig:pose-gan-przyklady} dłonie nawet nie są wyszczególnione na szkielecie, a przerabianie, dorabianie takiego elementu byłoby zbyt czasochłonne. 
+    Tak jak można zaobserwować na Rysunku \ref{fig:pose-gan-przyklady} dłonie nawet nie są wyszczególnione na szkielecie, a przerabianie, dorabianie takiego elementu byłoby zbyt czasochłonne. 
     Ciężko też ocenić czy przyniosłoby zadowalające rezultaty, przy innym zbiorze danych skupionych czysto na dłoniach.
     Sieć musiałaby się uczyć wszystkiego od nowa, dodatkowo wykorzystanie całego ludzkiego szkieletu jest zbędne. Nacisk jest stricte na dłonie, za dużo informacji może wpłynąć negatywnie na jakość rezultatów . Dlatego niezbędne było stworzenie własnego rozwiązania.
   }
@@ -371,7 +383,7 @@
     Z tego powodu trzeba było coś zmienić, najwyraźniej zbiór jest zbyt zróżnicowany, tła są inne, przedstwiają innych ludzi itd, żeby CycleGAN sobie poradził. \\
     Więc wybrane zostało inne podejście. Nastąpiła zmiana architektury na Pix2Pix i zmanipulowany został zbiór żeby uczynić go sparowanym. 
     Dokładnie co zostało zrobione jest w kolejnym rozdziale. W dużym skrócie, na ręke z danym gestem, została, na dłoń, nakładana maska i na nią szkielet gestu.
-    Co czyni nasz zbiór sparowanym i idealnym kandydatem dla Pix2Pix.
+    Co czyni nasz zbiór sparowanym i idealnym kandydatem dla Pix2Pix. \\ 
   }
   \subsection{Preprocesowanie danych} \label{preprocesowanie}
   {
@@ -416,7 +428,7 @@
       \caption{Przykłady po obróbce tła}
       \label{fig:blurred-pre}
     \end{figure}
-    Jak widzimy na obrazkach powyżej (rysunek \ref{fig:blurred-pre}), efekt jest bardzo różny. Ciężko było o jednoznaczne wykrywanie ręki. 
+    Jak widzimy na obrazkach powyżej (Rysunek \ref{fig:blurred-pre}), efekt jest bardzo różny. Ciężko było o jednoznaczne wykrywanie ręki. 
     Raz zostawała sam ręka, raz wraz z człowiekiem, jeszcze innym razem potrafił zostać sam człowiek. 
     Efekty były mało zadowalające, jednakże, mimo wszystko takie dane również zostały wypróbowane, ponownie nie przynosząc żadnych rezultatów. \\
     Pomimo licznych niepowodzeń i ślepych zaułków, narodził się jeszcze jeden, finalny pomysł. Stworzenie zbioru danych sparowanego, w nieco sztuczny sposób.
@@ -461,6 +473,9 @@
     W tym, porównuje się ich reprezentacje cechowe uzyskane z warstw konwolucyjnych sieci VGG, wytrenowanej na ImageNet. 
     Co daje znacznie bardziej realistyczne rezultaty. Wzór na stratę VGG to: \\
     \[ \mathcal{L}_{\text{perc}} = \sum_{l} \lambda_l \, \| \phi_l(I_{\text{gen}}) - \phi_l(I_{\text{ref}}) \|_2^2 \]
+    Jako optymalizator dla generatora i dyskryminatora został wybrany algorytm Adam. 
+    Jest to bardzo popularny algorytm optymalizacji, który jest bardzo szybki i wydajny. Poprzez połączenie zalet technik Momentum i RMSprop pozwala na dostosowywanie learning rate-u podczas trwania treningu. 
+    Dodatkowo doskonale sprawdza się w przypadku dużych zbiorów danych i złożonych modeli, ponieważ doskonale zarządza pamięcią i automatycznie dostosowywuje learning rate dla każdego parametru.
   }
   \subsection{Ścieżka uczenia sieci i animacja} \label{flow}
   {
@@ -498,6 +513,16 @@
       \item Zdjęcia są przekazywane do wyuczonej sieci i zapisywane
       \item Zdjęcia są sklejane w animacje dzięki OpenCV
     \end{enumerate}
+  }
+
+  \subsection{Animacja}
+  {
+    Animacja, jak zostało po krótce opisano w podrozdziale \ref{flow}, jest bardzo prosta. 
+    Zdjęcie startowe, z gestem od którego ma zacząć, oraz zdjęcie docelowe jest zczytywane przez bibliotekę OpenCV. 
+    Następnie mediapipe, procesuje oba zdjęcia i zczytuje z nich szkielety rąk. 
+    Te dane są zamieniane na tablicę numpy, ponieważ mediapipe oryginalnie zwraca obiekt specyficzny dla biblioteki, przez co nie tak łatwo operować na nim za pomocą działań matematycznych. 
+    Kolejno, współrzędne stawów są interpolowane w taki sposób żeby uzyskać kolejne klatki animacji, czyli są przesuwane o taką odległość, żeby ta zmiana zmieściła się w wyznaczonej ilości klatek. 
+    Tak uzyskane klatki są zapisywane w formacie jpg, a następnie łączone są w animacje za pomocą biblioteki OpenCV.
   }
 }
 
@@ -621,12 +646,17 @@
   }
   \subsection{Pix2Pix}
   {
-    Jak zostało wspomniane w poprzedniej sekcji \ref{proces}, finalny wybór padł na Pix2Pix. 
+    Jak zostało wspomniane w poprzedniej Sekcji \ref{proces}, finalny wybór padł na Pix2Pix. 
     Wymagało to zmiany w zbiorze danych, o czym zostało wspomniane w rozdziale o preprocessingu danych \ref{preprocesowanie}. 
     Dopiero w końcu dzięki temu pojawiło się światełko w tunelu. Początkowo nauka przebiegała tylko na zbiorze z jednym gestem. 
     Powodem tego było sprawdzenie czy faktycznie przyniesie to jakieś rezultaty. 
     Jednak nauka przebiegała na zdjęciu szkieletu ręki i oryginalnym zdjęciu, więc zaledwie zmiana szkieletu może wystarczyć. 
-    Okazało się ty być częściowo prawdą, ale dopiero później, sama nauka przebiegała bez problemów.
+    Okazało się ty być częściowo prawdą, ale dopiero później, sama nauka przebiegała bez problemów. \\
+    Zdjęcia w tej sekcji mogą przedstawiać różne osoby, w zależności od epoki. 
+    Wynika to ze sposobu zapisywania próbek zdjęć, który bierz losowe zdjęcie przy każdym zapisie. 
+    Pozwala to na lepszy obraz tego, jak sieć radzi sobie przy różnych osobach, tłach, oświetleniach itd. \\
+    Średni czas dla epoki, przy batchu 16 wynosi około 1 minuta 53 sekundy. Czyli dla 100 epok wynik ten to ponad 3 godziny.
+    Parametry jakie może przyjąć sieć to batch size, liczba epok, learning rate, lambda dla straty generatora, lambda dla straty VGG oraz co ile epok ma występować zapis próbek oraz punktów kontrolnych.
     Przykłady:
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
@@ -645,7 +675,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_50.jpg}
       \end{subfigure}
-      \caption{Odpowiednio: epoka 1, 20, 40, 50. Parametry: batch - 256, epochs - 50, learning rate - 1e-4, lambda - 100}
+      \caption{Odpowiednio: epoka 1, 20, 40, 50. Parametry: batch - 16, epochs - 50, learning rate - 1e-4, lambda - 100}
     \end{figure}
     Wyniki są dalej nieco rozmazane, ale dalsze douczenie przyniosło oczekiwane rezultaty.
     \begin{figure}[H]
@@ -719,7 +749,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_100.jpg}
       \end{subfigure}
-      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 10}
+      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 16, epochs - 100, learning rate - 1e-4, lambda - 10}
     \end{figure}
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
@@ -746,7 +776,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
       \end{subfigure}
-      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 100, learning rate - 1e-4, lambda - 15}
+      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 16, epochs - 100, learning rate - 1e-4, lambda - 15}
     \end{figure}
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
@@ -773,7 +803,7 @@
         \centering
         \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
       \end{subfigure}
-      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 256, epochs - 200, learning rate - 1e-4, lambda - 20}
+      \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 15, epochs - 200, learning rate - 1e-4, lambda - 20}
     \end{figure}
     Na pozór rezultaty są bardzo porównywalne do tych bez VGG, jednak to gdzie najbardziej widać różnicę jest przy wygenerowaniu zdjęcia z nowym gestem:
     \begin{figure}[H]
@@ -790,9 +820,28 @@
         \includegraphics[width=.8\linewidth]{pix2pix/result.jpg}
       \end{subfigure}
       \caption{Wygenerowane zdjęcie z dodatkiem VGG}
+      \label{final}
+    \end{figure}
+    \begin{figure}[H]
+      \begin{subfigure}{.32\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/1a4cce92-979f-4754-a765-9849669a9dda.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.32\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/result_v2.jpg}
+      \end{subfigure}
+      \begin{subfigure}{.32\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{pix2pix/generated_single_v2.jpg}
+      \end{subfigure}
+      \caption{Wygenerowane zdjęcie, kolejny przykład}
+      \label{final}
     \end{figure}
     Tu już rezultat był bardzo zadowlający, gest jest w pełni widoczny, palce da się wyróżnić. 
-    Jedynie co pozostaje do dopracowania to poprawienie jakości tła, a dokładniej miejsca gdzie znajduje się maska dłoni. \\
+    Sama nauka sieci zajeła 100 epok, następnie została podjęta próba douczenia, o kolejne 100 epok, ale różnica była znikoma. 
+    Więc finalnie sieć przeszła 200 epok.
+    Co pozostaje do dopracowania, to poprawienie jakości tła, a dokładniej miejsca gdzie znajduje się maska dłoni. \\
     Ostatnim i finalnym krokiem było wygenerowanie animacji zmiany gestu, co wymagało wygenerowania dodatkowych zdjęć, które posłużyły jako klatki animacji o czym więcej w rozdziale \ref{flow}. \\
     Projekt okazał się być zdecydowanie bardziej skomplikowany, niż pozornie było zakładane. 
     Tym bardziej, że istnieje gotowe rozwiązanie, jednakże im dalej, tym trudności i przeszkody były przeróżne i niestabilne. 
@@ -816,9 +865,35 @@
   Kolejnym problemem okazał się być dobór architektury, choć nie ujawnił się on od razu. 
   Dopiero po licznych próbach okazało się, że przy danym zbiór danych jest najprawdopodobniej za trudny dla CycleGAN, ponieważ nie dawał żadnych rezultatów. 
   Nie pozostało nic innego jak zmienić podejście i wraz z nim architekturę. Co okazało się być kluczowe do pchnięcia dalej prac. \\
-  Jak zostało wspomniane, efekt jest zadowlający, lecz nie idealny. 
-  Najlepiej można to zaobserwować na samej animacji, gdzie klatki pośrednie są mało wyraźne. 
-  Podobnie obszar, gdzie znajdowała się maska dłoni, jest mało wyraźny. 
+  Jak zostało wspomniane, efekt jest zadowlający, lecz nie idealny. Finalny rezultat można zaobserwować na Rysunku \ref{final}, jak również na rysunku poniżej. 
+  \begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{anim/frame_000.jpg}
+    \end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{anim/frame_005.jpg}
+    \end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{anim/frame_015.jpg}
+    \end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{anim/frame_025.jpg}
+    \end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{anim/frame_029.jpg}
+    \end{subfigure}
+    \caption{Wygenerowane klatki animacji dla 30 klatek. Odpowiednio 1, 5, 15, 25, 30 klatka.}
+    \label{anim}
+  \end{figure}
+  Na Rysunku \ref{anim} można zauważyć, że gest startowy jak i końcowy są zdecydowanie najlepsze. 
+  Wynika to z faktu, że to właśnie na tych dwóch gestach uczyła się sieć, a wszystkie inne wariacje ustawień szkieletu stanowią większy problem. 
+  Jak najbardziej, da się wyszczególnić zarys dłoni, ale porównując z wejściowym i wyjściowym gestem jest bardzo mało wyraźne. 
+  Najbardziej rzuca się to w oczy na samej animacji, gdzie klatki pośrednie są mało wyraźne, podobnie obszar, gdzie znajdowała się maska dłoni. 
   Potencjalnie jest to ściśle ze sobą powiązane. 
   Pierwszy problem udało by się rozwiązać, choćby poprzez przekazanie sieci do nauki klatek pośrednich wraz z maską dłoni i szkieletem. 
   Niestety oryginalne zdjęcia dla tych klatek nie istnieją, czyli nie ma prawdziwego zdjęcia gdzie dana osoba wykonała gest. 

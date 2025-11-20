@@ -101,9 +101,9 @@ def replace_gesture(source_gesture, target_gesture, expand=60, fill_color=(255,2
     for hand in result.multi_hand_landmarks:
         mp_drawing.draw_landmarks(out, hand, mp_hands.HAND_CONNECTIONS)
 
-    return out
+    cv2.imwrite("result.jpg", out)
 
-# replace_gesture('./0a9ddce1-2cd4-4b14-9e43-3889b6a6e87c.jpg', './0a14f51b-4cf4-4694-adb2-4f3f41ae9f19.jpg', 40)
+replace_gesture('./1a4cce92-979f-4754-a765-9849669a9dda.jpg', './0a14f51b-4cf4-4694-adb2-4f3f41ae9f19.jpg', 30)
 
 def create_transition_sequence(img, source_keypoints, target_keypoints,  out_dir="./gesture_seq", num_frames=30, expand=60):
     # Interpolate
