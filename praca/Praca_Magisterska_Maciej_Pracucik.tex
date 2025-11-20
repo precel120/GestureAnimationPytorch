@@ -844,6 +844,7 @@
     Co pozostaje do dopracowania, to poprawienie jakości tła, a dokładniej miejsca gdzie znajduje się maska dłoni. \\
     Ostatnim i finalnym krokiem było wygenerowanie animacji zmiany gestu, co wymagało wygenerowania dodatkowych zdjęć, które posłużyły jako klatki animacji o czym więcej w rozdziale \ref{flow}. \\
     Projekt okazał się być zdecydowanie bardziej skomplikowany, niż pozornie było zakładane. 
+    Choć finalnie jest to rozbudowana wersja Pix2Pix, o dodatkowy element czyli VGG. 
     Tym bardziej, że istnieje gotowe rozwiązanie, jednakże im dalej, tym trudności i przeszkody były przeróżne i niestabilne. 
     Na szczęście finalnie udało się znaleźć złoty środek i sfinalizować projekt, jednocześnie uzyskująć bardzo zadowalające rezultaty. 
     Gdzie warto przypomnieć, że sztuczna inteligencja ma bardzo duże trudności z dłońmi. Tym bardziej imponujące są rezultaty.
@@ -890,9 +891,10 @@
     \caption{Wygenerowane klatki animacji dla 30 klatek. Odpowiednio 1, 5, 15, 25, 30 klatka.}
     \label{anim}
   \end{figure}
-  Na Rysunku \ref{anim} można zauważyć, że gest startowy jak i końcowy są zdecydowanie najlepsze. 
-  Wynika to z faktu, że to właśnie na tych dwóch gestach uczyła się sieć, a wszystkie inne wariacje ustawień szkieletu stanowią większy problem. 
-  Jak najbardziej, da się wyszczególnić zarys dłoni, ale porównując z wejściowym i wyjściowym gestem jest bardzo mało wyraźne. 
+  Na Rysunku \ref{anim} można zauważyć, że gest startowy jak i końcowy są zdecydowanie najlepsze. Są wyraźnie widoczne palce wskazujący, środkowy oraz kciuk. 
+  Pozostałe palce są zwinięte w pięść, więc niestety one nie są widoczne. 
+  Fakt iż, klatki pośrednie są rozmazane, jest spowodowane tym, że to właśnie na tych dwóch gestach uczyła się sieć, a wszystkie inne wariacje ustawień szkieletu stanowią większy problem. 
+  Jak najbardziej, da się wyszczególnić zarys dłoni, ale porównując z wejściowym i wyjściowym gestem jest bardzo mało wyraźne.  
   Najbardziej rzuca się to w oczy na samej animacji, gdzie klatki pośrednie są mało wyraźne, podobnie obszar, gdzie znajdowała się maska dłoni. 
   Potencjalnie jest to ściśle ze sobą powiązane. 
   Pierwszy problem udało by się rozwiązać, choćby poprzez przekazanie sieci do nauki klatek pośrednich wraz z maską dłoni i szkieletem. 
