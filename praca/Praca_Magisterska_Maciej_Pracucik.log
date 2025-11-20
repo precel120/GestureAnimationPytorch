@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  20 NOV 2025 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  20 NOV 2025 13:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -515,11 +515,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 \@quotelevel=\count420
 \@quotereset=\count421
- (./Praca_Magisterska_Maciej_Pracucik.aux
-
-LaTeX Warning: Label `final' multiply defined.
-
-)
+ (./Praca_Magisterska_Maciej_Pracucik.aux)
 \openout1 = `Praca_Magisterska_Maciej_Pracucik.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
@@ -1095,6 +1091,9 @@ File: ./zdjecia//pix2pix/generated_single_v2.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./zdjecia//pix2pix/generated_single_v2.jpg  used on input line 836.
 (pdftex.def)             Requested size: 116.5456pt x 116.54842pt.
  [37 <./zdjecia//pix2pix/output/generated_1.jpg> <./zdjecia//pix2pix/output/generated_20.jpg> <./zdjecia//pix2pix/output/generated_40.jpg> <./zdjecia//pix2pix/output/generated_60.jpg> <./zdjecia//pix2pix/output/generated_80.jpg>] [38 <./zdjecia//pix2pix/source.jpg> <./zdjecia//pix2pix/replace.jpg> <./zdjecia//pix2pix/result.jpg> <./zdjecia//pix2pix/1a4cce92-979f-4754-a765-9849669a9dda.jpg> <./zdjecia//pix2pix/result_v2.jpg> <./zdjecia//pix2pix/generated_single_v2.jpg>]
+
+LaTeX Warning: Reference `finalv2' on page 39 undefined on input line 868.
+
 <./zdjecia//anim/frame_000.jpg, id=225, 256.96pt x 256.96pt>
 File: ./zdjecia//anim/frame_000.jpg Graphic file (type jpg)
 <use ./zdjecia//anim/frame_000.jpg>
@@ -1152,22 +1151,22 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 870--890
 
 ] (./Praca_Magisterska_Maciej_Pracucik.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.xml'.
 \openout1 = `Praca_Magisterska_Maciej_Pracucik.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15710 strings out of 480139
- 298224 string characters out of 5893693
- 988341 words of memory out of 5000000
- 33414 multiletter control sequences out of 15000+600000
+ 15712 strings out of 480139
+ 298242 string characters out of 5893693
+ 988312 words of memory out of 5000000
+ 33416 multiletter control sequences out of 15000+600000
  478224 words of font info for 50 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
  67i,17n,77p,799b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca_Magisterska_Maciej_Pracucik.pdf (47 pages, 8240725 bytes).
+Output written on Praca_Magisterska_Maciej_Pracucik.pdf (47 pages, 8240924 bytes).
 PDF statistics:
  326 PDF objects out of 1000 (max. 8388607)
  162 compressed objects within 2 object streams
