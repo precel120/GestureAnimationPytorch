@@ -839,7 +839,39 @@
     \end{figure}
     Tu już rezultat był bardzo zadowlający, gest jest w pełni widoczny, palce da się wyróżnić. 
     Sama nauka sieci zajeła 100 epok, następnie została podjęta próba douczenia, o kolejne 100 epok, ale różnica była znikoma. 
-    Więc finalnie sieć przeszła 200 epok.
+    Więc finalnie sieć przeszła 200 epok. \\
+    Specyfikacje sprzętu wykorzystanego na potrzeby projektu:
+    \begin{itemize}
+      \item Procesor - AMD Ryzen 5 5600 6-Core Processor (3.50 GHz)
+      \item 16 GB RAM
+      \item Karta graficzna - NVIDIA GeForce RTX 3070
+    \end{itemize}
+    Dla powyższej specyfikacji został zmierzony czas sieci, od załadowania modelu, do wygenerowania pełnej animacji. Wyniki przedstawiają się następująco:
+    \begin{itemize}
+      \item Załadowanie modelu, wraz z poprzednim punktem kontrolnym - 8.4s
+      \item Wygenerowanie jednego zdjęcia 0.46s
+      \item Wygenerowanie 1 sekundy animacji, czyli 30 klatek - 0.46s
+      \item Stworzenie z nich animacji - 0.04s
+    \end{itemize}
+    Jest to bardzo dobry czas, czego w głównej mierze zasługą jest specyfikacja sprzętu. 
+    Nie jest to nowoczesny komputer, zdecydowanie bliżej mu do średniej, czy niskiej półki, ale jak najbardziej spełnił oczekiwania i sprawnie wykonał zadanie.
+    Szczególnie ważna jest jakość sprzętu przy nauce sieci, a jeszcze bardziej, gdy ma się do czynienia ze zdjęciami. 
+    Wtedy niezbędna jest dobra karta graficzna. 
+    RTX 3070 dla 100 epok potrzebował ponad 3h do nauki, gdzie dla sprzętu niższej półki ten czas znacznie by wzrósł. 
+    Choćby ze względu na fakt, iż firma Nvidia coraz bardziej stawia na AI i rozwój sztucznej inteligencji, przez co kolejne modele kart, coraz lepiej wspierają AI. 
+    Przechodząc dalej, załadowanie modelu sieci zajeło niewiele ponad 8 sekund (wartość ta jest bardzo zmienna, raz przyjmuje mniejszą wartość np 4 sekundy, innym razem większą). Na ten czas składa się załadowanie modelu, zainicjowanie parametrów, wczytanie danych z punktu kontrolnego, z ostatniego zapisu. 
+    W skład danych wczytanych z punktu kontrolnego wchodzi dyskryminator, generator oraz ich strata i optymalizator. 
+    Czas załadowania modelu jest na pozór długi, ponieważ sam model nie jest skomplikowany. 
+    Jednakże należy pamiętać, że poza parametrami, niezbędne jest wczytanie dwóch modeli, czyli generatora i dyskryminatora. 
+    To samo w sobie wydłuża czas, a jeszcze należy te dwie sieci połączyć w jeden model Pix2Pix. Mając te rzeczy na uwadze, czas załadowania można uznać za odpowiedni. 
+    Kolejnym zmierzonym czasem jest wygenerowanie jednego obrazu oraz 30. Co ciekawe czas wygenerowania jednego zdjęcia jest taki sam jak wygenerowanie 30 klatek animacji. 
+    Nie można jednoznacznie stwierdzić z czego to wynika. 
+    Może to być spowodowane kwestią zarządzania pamięci, biblioteka OpenCV, która wczytuje obrazy, nie inicjuje się na nowo przy każdej klatce i na nowo jest wykorzystywana. 
+    Przy generowaniu jednej klatki, zasób może już zostać zwolniony. 
+    Niezależnie od różnicy czasów wygenerowania 1 czy 30 obrazów, sieć osiągneła bardzo dobry wynik. 
+    Tu duży wpływ może mieć sprzęt, ale jak również odpowiednio dobrany model, który nie wykonuje dużej ilości obliczeń, a otrzymane efekty są bardzo dobre. 
+    Przechodząc do zmiany klatek w animację to czas nie dziwi, jest to łączenie zdjęć i zapis jako plik mp4. 
+    Taki proces nie jest skomplikowany i biblioteka OpenCV radzi sobie z nim doskonale. \\
     Co pozostaje do dopracowania, to poprawienie jakości tła, a dokładniej miejsca gdzie znajduje się maska dłoni. \\
     Ostatnim i finalnym krokiem było wygenerowanie animacji zmiany gestu, co wymagało wygenerowania dodatkowych zdjęć, które posłużyły jako klatki animacji o czym więcej w rozdziale \ref{flow}. \\
     Projekt okazał się być zdecydowanie bardziej skomplikowany, niż pozornie było zakładane. 

@@ -16,13 +16,13 @@ class Train():
         self.discriminator = Discriminator().to(device)
         self.g_optimizer = optim.Adam(self.generator.parameters(), lr=learning_rate, betas=(0.5, 0.999))
         self.d_optimizer = optim.Adam(self.discriminator.parameters(), lr=learning_rate, betas=(0.5, 0.999))
-        self.pix2pix = Pix2Pix(self.generator, self.discriminator).to(device)
         self.epochs = epochs
         self.lambda_l1 = lambda_l1
         self.lambda_vgg = lambda_vgg
         self.train_loader = train_loader
         self.vgg_model = VGGPerceptual(device=device)
         self.load_checkpoint()
+        self.pix2pix = Pix2Pix(self.generator, self.discriminator).to(device)
 
     def train_pix2pix(self, display_interval):
         start_time = time.time()

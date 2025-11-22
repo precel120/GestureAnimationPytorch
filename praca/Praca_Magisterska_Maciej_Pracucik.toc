@@ -24,5 +24,5 @@
 \contentsline {section}{\numberline {5}Wyniki i dyskusja}{23}{}%
 \contentsline {subsection}{\numberline {5.1}CycleGAN}{23}{}%
 \contentsline {subsection}{\numberline {5.2}Pix2Pix}{27}{}%
-\contentsline {section}{\numberline {6}Podsumowanie}{32}{}%
-\contentsline {section}{Bibliografia}{35}{}%
+\contentsline {section}{\numberline {6}Podsumowanie}{33}{}%
+\contentsline {section}{Bibliografia}{36}{}%

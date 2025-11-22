@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  22 NOV 2025 13:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  22 NOV 2025 15:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1041,51 +1041,51 @@ File: ./zdjecia//pix2pix/generated_single_v2.jpg Graphic file (type jpg)
 <use ./zdjecia//pix2pix/generated_single_v2.jpg>
 Package pdftex.def Info: ./zdjecia//pix2pix/generated_single_v2.jpg  used on input line 835.
 (pdftex.def)             Requested size: 145.68144pt x 145.68454pt.
- [31 <./zdjecia//pix2pix/source.jpg> <./zdjecia//pix2pix/replace.jpg> <./zdjecia//pix2pix/result.jpg> <./zdjecia//pix2pix/1a4cce92-979f-4754-a765-9849669a9dda.jpg> <./zdjecia//pix2pix/result_v2.jpg> <./zdjecia//pix2pix/generated_single_v2.jpg>]
-<./zdjecia//anim/frame_000.jpg, id=203, 256.96pt x 256.96pt>
+ [31 <./zdjecia//pix2pix/source.jpg> <./zdjecia//pix2pix/replace.jpg> <./zdjecia//pix2pix/result.jpg> <./zdjecia//pix2pix/1a4cce92-979f-4754-a765-9849669a9dda.jpg> <./zdjecia//pix2pix/result_v2.jpg> <./zdjecia//pix2pix/generated_single_v2.jpg>] [32]
+<./zdjecia//anim/frame_000.jpg, id=206, 256.96pt x 256.96pt>
 File: ./zdjecia//anim/frame_000.jpg Graphic file (type jpg)
 <use ./zdjecia//anim/frame_000.jpg>
-Package pdftex.def Info: ./zdjecia//anim/frame_000.jpg  used on input line 870.
+Package pdftex.def Info: ./zdjecia//anim/frame_000.jpg  used on input line 902.
 (pdftex.def)             Requested size: 216.24025pt x 216.24484pt.
-<./zdjecia//anim/frame_005.jpg, id=204, 256.96pt x 256.96pt>
+<./zdjecia//anim/frame_005.jpg, id=207, 256.96pt x 256.96pt>
 File: ./zdjecia//anim/frame_005.jpg Graphic file (type jpg)
 <use ./zdjecia//anim/frame_005.jpg>
-Package pdftex.def Info: ./zdjecia//anim/frame_005.jpg  used on input line 874.
+Package pdftex.def Info: ./zdjecia//anim/frame_005.jpg  used on input line 906.
 (pdftex.def)             Requested size: 216.24025pt x 216.24484pt.
-<./zdjecia//anim/frame_015.jpg, id=205, 256.96pt x 256.96pt>
+<./zdjecia//anim/frame_015.jpg, id=208, 256.96pt x 256.96pt>
 File: ./zdjecia//anim/frame_015.jpg Graphic file (type jpg)
 <use ./zdjecia//anim/frame_015.jpg>
-Package pdftex.def Info: ./zdjecia//anim/frame_015.jpg  used on input line 878.
+Package pdftex.def Info: ./zdjecia//anim/frame_015.jpg  used on input line 910.
 (pdftex.def)             Requested size: 216.24025pt x 216.24484pt.
-<./zdjecia//anim/frame_025.jpg, id=206, 256.96pt x 256.96pt>
+<./zdjecia//anim/frame_025.jpg, id=209, 256.96pt x 256.96pt>
 File: ./zdjecia//anim/frame_025.jpg Graphic file (type jpg)
 <use ./zdjecia//anim/frame_025.jpg>
-Package pdftex.def Info: ./zdjecia//anim/frame_025.jpg  used on input line 882.
+Package pdftex.def Info: ./zdjecia//anim/frame_025.jpg  used on input line 914.
 (pdftex.def)             Requested size: 216.24025pt x 216.24484pt.
-<./zdjecia//anim/frame_029.jpg, id=207, 256.96pt x 256.96pt>
+<./zdjecia//anim/frame_029.jpg, id=210, 256.96pt x 256.96pt>
 File: ./zdjecia//anim/frame_029.jpg Graphic file (type jpg)
 <use ./zdjecia//anim/frame_029.jpg>
-Package pdftex.def Info: ./zdjecia//anim/frame_029.jpg  used on input line 886.
+Package pdftex.def Info: ./zdjecia//anim/frame_029.jpg  used on input line 918.
 (pdftex.def)             Requested size: 227.62206pt x 227.62718pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 868--888
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 900--920
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 868--888
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 900--920
 []$ $[]$
  []
 
-[32] [33 <./zdjecia//anim/frame_000.jpg> <./zdjecia//anim/frame_005.jpg> <./zdjecia//anim/frame_015.jpg> <./zdjecia//anim/frame_025.jpg> <./zdjecia//anim/frame_029.jpg>] [34] [35
+[33] [34 <./zdjecia//anim/frame_000.jpg> <./zdjecia//anim/frame_005.jpg> <./zdjecia//anim/frame_015.jpg> <./zdjecia//anim/frame_025.jpg> <./zdjecia//anim/frame_029.jpg>] [35] [36
 
-] [36] (./Praca_Magisterska_Maciej_Pracucik.lof [37
+] [37] (./Praca_Magisterska_Maciej_Pracucik.lof [38
 
 ])
 \tf@lof=\write5
 \openout5 = `Praca_Magisterska_Maciej_Pracucik.lof'.
 
- [38] (./Praca_Magisterska_Maciej_Pracucik.aux)
+ [39] (./Praca_Magisterska_Maciej_Pracucik.aux)
 Package logreq Info: Writing requests to 'Praca_Magisterska_Maciej_Pracucik.run.xml'.
 \openout1 = `Praca_Magisterska_Maciej_Pracucik.run.xml'.
 
@@ -1099,10 +1099,10 @@ Here is how much of TeX's memory you used:
  79 hyphenation exceptions out of 8191
  67i,17n,77p,799b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc} </home/precel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca_Magisterska_Maciej_Pracucik.pdf (38 pages, 8291545 bytes).
+Output written on Praca_Magisterska_Maciej_Pracucik.pdf (39 pages, 8295688 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 301 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  376 words of extra memory for PDF output out of 10000 (max. 10000000)
 
