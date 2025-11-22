@@ -121,7 +121,7 @@
     Ostatnim typem warstwy jest warstawa wyjściowa, ona generuje dane wyjściowe.
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{neural-network-stanford.png}
+      \includegraphics[width=\textwidth]{neural-network-stanford.png}
       \caption{Budowa sieci neuronowej \cite{nlp}}
       \label{fig:nn}
     \end{figure}
@@ -131,11 +131,10 @@
     Powodem przekształcenia może być fakt iż, większość algorytmów zakłada, że wszystkie cechy mają porównywalny zakres wartości. 
     Takie informacje jak różne jednostki miary, ceny czy temperatury nie są zrozumiałe dla algorytmów, a mogą mieć wartości o różnicy kilku rzędów wielkości. 
     W tym celu dane muszą być przekształcone. \\
-
     Zajmijmy się teraz najmniejszą częścią sieci, czyli neuronem.
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{perceptron.png}
+      \includegraphics[height=0.2\textheight]{perceptron.png}
       \caption{Budowa neuronu \cite{nlp}}
       \label{fig:neuron}
     \end{figure}
@@ -170,13 +169,13 @@
     \end{itemize}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{gan.png}
+      \includegraphics[height=0.3\textheight]{gan.png}
       \caption{Generative Adversarial Network \cite{google-gan}}
       \label{fig:gan}
     \end{figure}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{gan-budowa.png}
+      \includegraphics[height=0.2\textheight]{gan-budowa.png}
       \caption{Ogólny model sieci GAN \cite{google-gan}}
       \label{fig:gan-budowa}
     \end{figure}
@@ -200,14 +199,14 @@
     Bardzo dużą zaletą tego projektu jest to, że jest bardzo uniwersalny, z każdego gestu jesteśmy w stanie uzyskać każdy gest.
     \begin{figure}[H]
       \centering
-      \includegraphics{gesture-gan.png}
+      \includegraphics[height=0.25\textwidth]{gesture-gan.png}
       \caption{Model GestureGAN \cite{gesture-gan}. Oznaczenia: x i y to rzeczywiste obrazy; x' i y' to wygenerowane obrazy; x'' to zrekonstruowane obrazy; $C_{x}$ i $C_{y}$ to kontrolowane struktury, odpowiednio x i y; G to generator; D to dyskryminator }
       \label{fig:gesture-gan-budowa}
     \end{figure}
     i tu jeszcze przykładowe efekty i możliwości GestureGAN:
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{gesturegan-framework.jpg}
+      \includegraphics[height=0.3\textheight]{gesturegan-framework.jpg}
       \caption{Zdjęcie wygenerowane przez GestureGAN \cite{gesture-gan}}
       \label{fig:gesture-gan-przyklady}
     \end{figure}
@@ -230,7 +229,7 @@
     \end{figure}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{pose-gan-ex.jpg}
+      \includegraphics[height=0.3\textheight]{pose-gan-ex.jpg}
       \caption{Zdjęcie wygenerowane przez PoseGAN \cite{pose-gan}}
       \label{fig:pose-gan-przyklady}
     \end{figure}
@@ -389,14 +388,14 @@
   {
     Preprocesowanie zaczeło się od najprostszej, a zarazem bardzo ważnej części. Przycięcia zdjęć do wielkości 256x256, czyli standardu dla sieci GAN.
     \begin{figure}[H]
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.4\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{orig.jpg}
+        \includegraphics[width=\textwidth]{orig.jpg}
         \label{fig:original}
-      \end{subfigure}%
+      \end{subfigure}
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cropped.jpg}
+        \includegraphics[width=\textwidth]{cropped.jpg}
         \label{fig:cropped}
       \end{subfigure}
       \caption{Przykłady przed i po przycięciu}
@@ -407,7 +406,7 @@
     Następnie idąc za przykładem z GestureGAN \cite{gesture-gan}, kolejną próbą było przekazywanie sieci zarówno zdjęcia oryginalnego, jak i oddzielnie zdjęcia docelowego gestu, ale w formie szkieletu na czarnym tle.
     \begin{figure}[H]
       \centering
-      \includegraphics{landmark.jpg}
+      \includegraphics[height=0.25\textheight]{landmark.jpg}
       \caption{Wygenerowane zdjęcie szkieletu dłoni}
       \label{fig:landmark}
     \end{figure}
@@ -417,12 +416,12 @@
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{blurred_just_hand.jpg}
+        \includegraphics[width=.95\textwidth]{blurred_just_hand.jpg}
         \label{fig:just-hand}
       \end{subfigure}%
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{blurred.jpg}
+        \includegraphics[width=.95\textwidth]{blurred.jpg}
         \label{fig:blurred}
       \end{subfigure}
       \caption{Przykłady po obróbce tła}
@@ -435,7 +434,7 @@
     Każde zdjęcie dłoni zostało przepuszczone przez OpenCV i MediaPipe, w celu wykrycia, nałożenia maski a następnie szkieletu gestu. Dając następujący przykład:
     \begin{figure}[H]
       \centering
-      \includegraphics{no_hand.jpg}
+      \includegraphics[height=0.2\textheight]{no_hand.jpg}
       \caption{Przykład zdjęcia z nałożoną maską i szkieletem gestu}
       \label{fig:mask}
     \end{figure}
@@ -551,13 +550,13 @@
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-1.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-1.jpg}
         \caption{Epoka 1}
         \label{fig:cg-1}
       \end{subfigure}%
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-5.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-5.jpg}
         \caption{Epoka 5}
         \label{fig:cg-5}
       \end{subfigure}
@@ -565,13 +564,13 @@
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-15.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-15.jpg}
         \caption{Epoka 15}
         \label{fig:cg-15}
       \end{subfigure}%
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-20.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-20.jpg}
         \caption{Epoka 20}
         \label{fig:cg-20}
       \end{subfigure}
@@ -579,13 +578,13 @@
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-25.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-25.jpg}
         \caption{Epoka 25}
         \label{fig:cg-25}
       \end{subfigure}%
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-30.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-30.jpg}
         \caption{Epoka 30}
         \label{fig:cg-30}
       \end{subfigure}
@@ -593,13 +592,13 @@
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-35.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-35.jpg}
         \caption{Epoka 35}
         \label{fig:cg-35}
       \end{subfigure}%
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-40.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-40.jpg}
         \caption{Epoka 40}
         \label{fig:cg-40}
       \end{subfigure}
@@ -607,13 +606,13 @@
     \begin{figure}[H]
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-45.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-45.jpg}
         \caption{Epoka 45}
         \label{fig:cg-45}
       \end{subfigure}%
       \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{cycle-gan/epoch-50.jpg}
+        \includegraphics[width=\linewidth]{cycle-gan/epoch-50.jpg}
         \caption{Epoka 50}
         \label{fig:cg-50}
       \end{subfigure}
@@ -626,19 +625,19 @@
     Oto kilka przykładowych rezultatów z różnych prób:
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg}
+      \includegraphics[width=\textwidth]{cycle-gan/random/3eba8ca0-dc5f-4021-9dd5-3105e3f6f3c4.jpg}
     \end{figure}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg}
+      \includegraphics[height=0.2\textheight]{cycle-gan/random/385d1e83-effb-44aa-aae0-791c4d7501da.jpg}
     \end{figure}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg}
+      \includegraphics[width=\textwidth]{cycle-gan/random/91b77fa0-174d-464e-9cef-2c76388613eb.jpg}
     \end{figure}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.9\textwidth]{cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg}
+      \includegraphics[height=0.2\textheight]{cycle-gan/random/03f12c67-1c59-4e35-9fca-8c9332564fe9.jpg}
       \caption{Uczenie na wyciętych dłoniach, na czarnym tle}
     \end{figure}
     Jak można zaobserwować na obrazkach powyżej wyniki są przeróżne. 
@@ -659,49 +658,49 @@
     Parametry jakie może przyjąć sieć to batch size, liczba epok, learning rate, lambda dla straty generatora, lambda dla straty VGG oraz co ile epok ma występować zapis próbek oraz punktów kontrolnych.
     Przykłady:
     \begin{figure}[H]
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.24\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_1.jpg}
+        \includegraphics[width=\textwidth]{pix2pix/output_copy/generated_1.jpg}
       \end{subfigure}%
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.24\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_20.jpg}
+        \includegraphics[width=\textwidth]{pix2pix/output_copy/generated_20.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.24\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_40.jpg}
+        \includegraphics[width=\textwidth]{pix2pix/output_copy/generated_40.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.24\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy/generated_50.jpg}
+        \includegraphics[width=\textwidth]{pix2pix/output_copy/generated_50.jpg}
       \end{subfigure}
       \caption{Odpowiednio: epoka 1, 20, 40, 50. Parametry: batch - 16, epochs - 50, learning rate - 1e-4, lambda - 100}
     \end{figure}
     Wyniki są dalej nieco rozmazane, ale dalsze douczenie przyniosło oczekiwane rezultaty.
     \begin{figure}[H]
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_1.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_2/generated_1.jpg}
       \end{subfigure}%
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_20.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_2/generated_20.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_40.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_2/generated_40.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_60.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_2/generated_60.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_80.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_2/generated_80.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_2/generated_100.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_2/generated_100.jpg}
       \end{subfigure}
       \caption{Efekty dalszego douczania. Odpowiednio: epoka 1, 20, 40, 60, 80, 100.}
     \end{figure}
@@ -711,7 +710,7 @@
     Ciężko było rozpoznać czy to w ogóle ręka, czy jakiś potwór jak z filmu "The Thing" Johna Carpentera.
     \begin{figure}[H]
       \centering
-      \includegraphics{pix2pix/generated_single.jpg}
+      \includegraphics[height=0.25\textheight]{pix2pix/generated_single.jpg}
       \caption{Rezultat przepuszczenia przez sieć zdjęcia z nałożonym szkieletem docelowego gestu}
     \end{figure}
 
@@ -720,88 +719,88 @@
 
     \begin{figure}[H]
       \centering
-      \includegraphics{pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg}
+      \includegraphics[height=0.25\textheight]{pix2pix/a7c3c2bf-fdaf-47a4-a976-280a1a4ad3dc.jpg}
       \caption{Rezultat po dodaniu zbioru z drugim gestem}
     \end{figure}
     Kolejnym etapem było dodanie VGG perceptual loss, który został nieco przybliżony w rozdziale \ref{model}, oraz manipulacja parametrami. 
     \begin{figure}[H]
-      \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_1.jpg}
+      \begin{subfigure}{.33\textwidth}
+
+        \includegraphics[width=\textwidth]{pix2pix/output_copy_5/generated_1.jpg}
       \end{subfigure}%
-      \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_20.jpg}
+      \begin{subfigure}{.33\textwidth}
+
+        \includegraphics[width=\textwidth]{pix2pix/output_copy_5/generated_20.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_40.jpg}
+      \begin{subfigure}{.33\textwidth}
+
+        \includegraphics[width=\textwidth]{pix2pix/output_copy_5/generated_40.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_60.jpg}
+      \begin{subfigure}{.32\textwidth}
+
+        \includegraphics[width=\textwidth]{pix2pix/output_copy_5/generated_60.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_80.jpg}
+      \begin{subfigure}{.32\textwidth}
+
+        \includegraphics[width=\textwidth]{pix2pix/output_copy_5/generated_80.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
-        \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_5/generated_100.jpg}
+      \begin{subfigure}{.32\textwidth}
+
+        \includegraphics[width=\textwidth]{pix2pix/output_copy_5/generated_100.jpg}
       \end{subfigure}
       \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 16, epochs - 100, learning rate - 1e-4, lambda - 10}
     \end{figure}
     \begin{figure}[H]
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_1.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_6/generated_1.jpg}
       \end{subfigure}%
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_20.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_6/generated_20.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_40.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_6/generated_40.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_60.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_6/generated_60.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_80.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_6/generated_80.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
       \end{subfigure}
       \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 16, epochs - 100, learning rate - 1e-4, lambda - 15}
     \end{figure}
     \begin{figure}[H]
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_1.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output/generated_1.jpg}
       \end{subfigure}%
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_20.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output/generated_20.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.33\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_40.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output/generated_40.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_60.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output/generated_60.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output/generated_80.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output/generated_80.jpg}
       \end{subfigure}
-      \begin{subfigure}{.5\textwidth}
+      \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/output_copy_6/generated_100.jpg}
       \end{subfigure}
       \caption{Odpowiednio: epoka 1, 20, 40, 60, 80, 100. Parametry: batch - 15, epochs - 200, learning rate - 1e-4, lambda - 20}
     \end{figure}
@@ -809,15 +808,15 @@
     \begin{figure}[H]
       \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/source.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/source.jpg}
       \end{subfigure}
       \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/replace.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/replace.jpg}
       \end{subfigure}
       \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/result.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/result.jpg}
       \end{subfigure}
       \caption{Wygenerowane zdjęcie z dodatkiem VGG}
       \label{final}
@@ -825,15 +824,15 @@
     \begin{figure}[H]
       \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/1a4cce92-979f-4754-a765-9849669a9dda.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/1a4cce92-979f-4754-a765-9849669a9dda.jpg}
       \end{subfigure}
       \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/result_v2.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/result_v2.jpg}
       \end{subfigure}
       \begin{subfigure}{.32\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{pix2pix/generated_single_v2.jpg}
+        \includegraphics[width=\linewidth]{pix2pix/generated_single_v2.jpg}
       \end{subfigure}
       \caption{Wygenerowane zdjęcie, kolejny przykład}
       \label{finalV2}
@@ -851,8 +850,6 @@
   }
 }
 
-\newpage
-
 \section{Podsumowanie}
 {
   Celem pracy było stworzenie sieci neuronowej typu GAN, która pozwoli na generowanie animacji przechodzenia z jednego gestu dłoni, w drugi. 
@@ -866,27 +863,27 @@
   Kolejnym problemem okazał się być dobór architektury, choć nie ujawnił się on od razu. 
   Dopiero po licznych próbach okazało się, że przy danym zbiór danych jest najprawdopodobniej za trudny dla CycleGAN, ponieważ nie dawał żadnych rezultatów. 
   Nie pozostało nic innego jak zmienić podejście i wraz z nim architekturę. Co okazało się być kluczowe do pchnięcia dalej prac. \\
-  Jak zostało wspomniane, efekt jest zadowlający, lecz nie idealny. Finalny rezultat można zaobserwować na Rysunku \ref{final}, \ref{finalv2}, jak również na rysunku poniżej. 
+  Jak zostało wspomniane, efekt jest zadowlający, lecz nie idealny. Finalny rezultat można zaobserwować na Rysunku \ref{final}, \ref{finalV2}, jak również na rysunku poniżej. 
   \begin{figure}[H]
     \begin{subfigure}{.5\textwidth}
       \centering
-      \includegraphics[width=.8\linewidth]{anim/frame_000.jpg}
+      \includegraphics[width=0.95\linewidth]{anim/frame_000.jpg}
     \end{subfigure}
     \begin{subfigure}{.5\textwidth}
       \centering
-      \includegraphics[width=.8\linewidth]{anim/frame_005.jpg}
+      \includegraphics[width=0.95\linewidth]{anim/frame_005.jpg}
     \end{subfigure}
     \begin{subfigure}{.5\textwidth}
       \centering
-      \includegraphics[width=.8\linewidth]{anim/frame_015.jpg}
+      \includegraphics[width=0.95\linewidth]{anim/frame_015.jpg}
     \end{subfigure}
     \begin{subfigure}{.5\textwidth}
       \centering
-      \includegraphics[width=.8\linewidth]{anim/frame_025.jpg}
+      \includegraphics[width=0.95\linewidth]{anim/frame_025.jpg}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{\textwidth}
       \centering
-      \includegraphics[width=.8\linewidth]{anim/frame_029.jpg}
+      \includegraphics[width=0.5\linewidth]{anim/frame_029.jpg}
     \end{subfigure}
     \caption{Wygenerowane klatki animacji dla 30 klatek. Odpowiednio 1, 5, 15, 25, 30 klatka.}
     \label{anim}
@@ -913,13 +910,6 @@
 
 \clearpage
 \listoffigures
-
-\clearpage
-\listoftables
-
-\clearpage
-\addcontentsline{toc}{section}{Listingi}
-\lstlistoflistings
 
 \end{sloppypar}
 \end{document}
