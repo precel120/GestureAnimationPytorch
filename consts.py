@@ -11,7 +11,7 @@ GESTURES = ['call', 'three_gun']
 
 @dataclass
 class Record:
-    bboxes: List[List[float]]  # List of [x, y, width, height]
+    bboxes: List[List[float]]
     labels: List[str]
-    hand_landmarks: List[List[List[float]]]  # 2D landmarks per hand
+    hand_landmarks: List[List[List[float]]]
 DataStructure = Dict[str, Record]

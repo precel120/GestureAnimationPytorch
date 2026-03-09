@@ -4,7 +4,6 @@ import torch.nn as nn
 class Discriminator(nn.Module):
     def __init__(self, in_channels=3):
         super(Discriminator, self).__init__()
-        # helper function to construct layers quickly
         def conv_block(in_c, out_c, stride):
             return nn.Sequential(
                 nn.Conv2d(in_c, out_c, kernel_size=4, stride=stride, padding=1),
@@ -12,16 +11,14 @@ class Discriminator(nn.Module):
                 nn.LeakyReLU(0.2, inplace=True)
             )
 
-        # due to concatenated input of segmented+real, in_channels=in_channels*2
         self.model = nn.Sequential(
-            nn.Conv2d(in_channels*2, 64, kernel_size=4, stride=2, padding=1),     # C64, no BatchNorm
+            nn.Conv2d(in_channels*2, 64, kernel_size=4, stride=2, padding=1),
             nn.LeakyReLU(0.2, inplace=True),
 
-            conv_block(64, 128, stride=2),                                        # C128
-            conv_block(128, 256, stride=2),                                       # C256
-            conv_block(256, 512, stride=1),                                       # C512 (stride 1 for 70x70 patches)
-
-            nn.Conv2d(512, 1, kernel_size=4, stride=1, padding=1),                # Final layer
+            conv_block(64, 128, stride=2),
+            conv_block(128, 256, stride=2), 
+            conv_block(256, 512, stride=1),
+            nn.Conv2d(512, 1, kernel_size=4, stride=1, padding=1),
             nn.Sigmoid()
         )
 
@@ -77,23 +74,23 @@ class Generator(nn.Module):
     def __init__(self, in_channels=3, out_channels=3):
         super(Generator, self).__init__()
         # Encoder (DownSampling)
-        self.down1 = DownSample(in_channels, 64, apply_batchnorm=False)         # C64
-        self.down2 = DownSample(64, 128)                                        # C128
-        self.down3 = DownSample(128, 256)                                       # C256
-        self.down4 = DownSample(256, 512)                                       # C512
-        self.down5 = DownSample(512, 512)                                       # C512
-        self.down6 = DownSample(512, 512)                                       # C512
-        self.down7 = DownSample(512, 512)                                       # C512
-        self.down8 = DownSample(512, 512)                                       # C512
+        self.down1 = DownSample(in_channels, 64, apply_batchnorm=False)
+        self.down2 = DownSample(64, 128)
+        self.down3 = DownSample(128, 256)
+        self.down4 = DownSample(256, 512)
+        self.down5 = DownSample(512, 512)
+        self.down6 = DownSample(512, 512)
+        self.down7 = DownSample(512, 512)
+        self.down8 = DownSample(512, 512)
 
         # Decoder (Upsampling)
-        self.up1 = UpSample(512, 512, apply_dropout=True)                       # CD512
-        self.up2 = UpSample(1024, 512, apply_dropout=True)                      # CD1024
-        self.up3 = UpSample(1024, 512, apply_dropout=True)                      # CD1024
-        self.up4 = UpSample(1024, 512)                                          # C1024
-        self.up5 = UpSample(1024, 256)                                          # C1024
-        self.up6 = UpSample(512, 128)                                           # C512
-        self.up7 = UpSample(256, 64)                                            # C256
+        self.up1 = UpSample(512, 512, apply_dropout=True)
+        self.up2 = UpSample(1024, 512, apply_dropout=True)
+        self.up3 = UpSample(1024, 512, apply_dropout=True)
+        self.up4 = UpSample(1024, 512)
+        self.up5 = UpSample(1024, 256)
+        self.up6 = UpSample(512, 128)
+        self.up7 = UpSample(256, 64)
 
         self.final = nn.Sequential(
             nn.ConvTranspose2d(128, out_channels, kernel_size=4, stride=2, padding=1),

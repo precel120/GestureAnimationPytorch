@@ -1,9 +1,7 @@
-# Add at the top of the file
 import torchvision.models as models
 import torch.nn as nn
 import torch.nn.functional as F
 
-# Define a simple VGG perceptual module
 class VGGPerceptual(nn.Module):
     def __init__(self, layers=(3, 8, 15), device='cuda'):
         super().__init__()
