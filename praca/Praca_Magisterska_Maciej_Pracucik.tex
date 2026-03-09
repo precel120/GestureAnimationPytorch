@@ -67,7 +67,7 @@
     Każda firma żeby zaistnieć i pozostać istotną inwestuje w tę część technologii. Jedną z gałęzi rozwoju jest generowanie zdjęć, czy filmów.
     AI już jest w stanie wygenerować przeróżne obrazy, jednakże to z czym AI radzi sobie najgorzej są ręce.\cite{hand1000}
     \newline
-    W niniejszej pracy skupia się na stworzeniu sieci typu GAN, która pozwoli na generowanie obrazów rąk, w jak najlepszej jakości.
+    Niniejsza praca skupia się na stworzeniu sieci typu GAN, która pozwoli na generowanie obrazów rąk, w jak najlepszej jakości.
     Dodatkowo sieć ma za zadanie nauczyć się, żeby modyfikować istniejące zdjęcia i nadawać im zupełnie inny gest, przy zachowaniu jak najlepszej jakości i realizmu.
     Szczególnie ten drugi aspekt pozostaje dla sztucznej inteligencji problematyczny. 
     Myślę, że każdy z nas spotkał się ze zdjęciami, które dosłownie wyglądają, jak żywe, ale to co najczęściej zdradza, że jednak to AI maczało w nim palce są ręce.
@@ -865,11 +865,10 @@
     Jednakże należy pamiętać, że poza parametrami, niezbędne jest wczytanie dwóch modeli, czyli generatora i dyskryminatora. 
     To samo w sobie wydłuża czas, a jeszcze należy te dwie sieci połączyć w jeden model Pix2Pix. Mając te rzeczy na uwadze, czas załadowania można uznać za odpowiedni. 
     Kolejnym zmierzonym czasem jest wygenerowanie jednego obrazu oraz 30. Co ciekawe czas wygenerowania jednego zdjęcia jest taki sam jak wygenerowanie 30 klatek animacji. 
-    Nie można jednoznacznie stwierdzić z czego to wynika. 
-    Może to być spowodowane kwestią zarządzania pamięci, biblioteka OpenCV, która wczytuje obrazy, nie inicjuje się na nowo przy każdej klatce i na nowo jest wykorzystywana. 
-    Przy generowaniu jednej klatki, zasób może już zostać zwolniony. 
-    Niezależnie od różnicy czasów wygenerowania 1 czy 30 obrazów, sieć osiągneła bardzo dobry wynik. 
-    Tu duży wpływ może mieć sprzęt, ale jak również odpowiednio dobrany model, który nie wykonuje dużej ilości obliczeń, a otrzymane efekty są bardzo dobre. 
+    Odpowiedź dlaczego wyniki są takie same, jest bardzo prosta. To zasługa faktu, że wszystkie operacje wykonywane są przez GPU, co umożliwia przetwarzanie obrazów wszystkich klatek równolegle, w tym samym czasie. 
+    Właśnie dlatego przy skomplikowanych modelach sieci czy obliczeniach, odpowiednia karta graficzna i jej specyfikacja ma ogromne znaczenie.  
+    W obu przypadkach sieć osiągneła bardzo dobry wynik. \\
+    Duży wpływ może mieć sprzęt, ale jak również odpowiednio dobrany model, który nie wykonuje dużej ilości obliczeń, a otrzymane efekty są bardzo dobre. 
     Przechodząc do zmiany klatek w animację to czas nie dziwi, jest to łączenie zdjęć i zapis jako plik mp4. 
     Taki proces nie jest skomplikowany i biblioteka OpenCV radzi sobie z nim doskonale. \\
     Co pozostaje do dopracowania, to poprawienie jakości tła, a dokładniej miejsca gdzie znajduje się maska dłoni. \\
